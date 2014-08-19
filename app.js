@@ -34,33 +34,33 @@ function retrieveFile(asset) {
   });
 }
 
-function getStyleStats(site, fileNames, fileType, skin) {
-  fileNames.forEach(function(fileName) {
-    var asset = {};
+function getStyleStats(styleItem) {
+  var asset = {};
 
-    request(site, function (error, response, body) {
-      if (!error && response.statusCode == 200) {
-        relativePath = "assets/consumer/skin/"+ skin + "/" + fileName;
-        exp = "(" + relativePath + ").+?(\." + fileType + ")";
+  request(styleItem.url, function (error, response, body) {
+    if (!error && response.statusCode == 200) {
+      relativePath = "assets/consumer/skin/"+ styleItem.skin + "/" + styleItem.fileName;
+      exp = "(" + relativePath + ").+?(\.css)";
 
-        var test = new RegExp(exp);
-        filePath = body.match(test) && body.match(test)[0];
+      var test = new RegExp(exp);
+      filePath = body.match(test) && body.match(test)[0];
 
-        asset.path     = cdn + filePath;
-        asset.fileType = fileType;
-        asset.name     = fileName;
+      asset.path     = cdn + filePath;
+      asset.fileType = "css";
+      asset.name     = styleItem.fileName;
 
-        assets.push(asset);
-        retrieveFile(asset);
-      }
-    });
-
+      assets.push(asset);
+      retrieveFile(asset);
+    }
   });
 }
 
-var skin = 'qantas',
-    fileType = 'css',
-    fileNames = ['common_vendor','common_app','search'],
-    site = 'http://hotel.qantas.com.au/search/list';
+var sources = require('./sources.js');
 
-getStyleStats(site, fileNames, fileType, skin);
+(function init() {
+  sources.forEach(function(item){
+
+    getStyleStats(item);
+
+  });
+}());
