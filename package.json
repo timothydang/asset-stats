@@ -1,0 +1,10 @@
+{
+  "name": "assets_stats",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "request": "~2.40.0",
+    "stylestats": "~4.1.2",
+    "jsonminify": "~0.2.3"
+  }
+}
