@@ -4,7 +4,6 @@ var StyleStats = require('stylestats'),
 
 
 var cdn = "http://dej6bpy8oabji.cloudfront.net/",
-    assets = [],
     outputPath = "./results/";
 
 
@@ -12,18 +11,23 @@ function parseStyle(file, asset) {
   stats = new StyleStats(file);
 
   stats.parse(function (error, result) {
-    console.log("parsing...");
+    // console.log("parsing...");
 
     if(error) {
       console.log(error);
     } else  {
-      utils.outputResults(result, outputPath + asset.name);
+      result.assetName = asset.name;
+      brandAssets[asset.brand].push(result);
+
+      if (brandAssets[asset.brand].length == brandAssetsCounter[asset.brand]) {
+        utils.outputResults(brandAssets[asset.brand], outputPath + asset.brand);
+      }
     }
   });
 }
 
 function retrieveFile(asset) {
-  console.log("retrieving file...");
+  // console.log("retrieving file...");
 
   utils.downloadFile(asset, function(tmpFile, asset) {
 
@@ -34,12 +38,12 @@ function retrieveFile(asset) {
   });
 }
 
-function getStyleStats(styleItem) {
+function getStyleStats(styleItem, brand) {
   var asset = {};
 
   request(styleItem.url, function (error, response, body) {
     if (!error && response.statusCode == 200) {
-      relativePath = "assets/consumer/skin/"+ styleItem.skin + "/" + styleItem.fileName;
+      relativePath = "assets/consumer/skin/"+ brand + "/" + styleItem.fileName;
       exp = "(" + relativePath + ").+?(\.css)";
 
       var test = new RegExp(exp);
@@ -48,19 +52,34 @@ function getStyleStats(styleItem) {
       asset.path     = cdn + filePath;
       asset.fileType = "css";
       asset.name     = styleItem.fileName;
+      asset.brand    = brand;
 
-      assets.push(asset);
       retrieveFile(asset);
     }
   });
 }
 
-var sources = require('./sources.js');
+var brands = ['qantas', 'jetstar', 'hooroo'];
+var brandAssets = [];
+var brandAssetsCounter = [];
+var configFiles = [];
+var index;
+
+brands.forEach(function(brand) {
+  var configFile = require('./sites-' + brand + '.js');
+  configFiles.push(configFile);
+  brandAssets[brand] = [];
+  brandAssetsCounter[brand] = 0;
+});
 
 (function init() {
-  sources.forEach(function(item){
+  for(index = 0; index < configFiles.length; index++) {
+    configFile = configFiles[index];
 
-    getStyleStats(item);
+    configFile.forEach(function(item){
+      getStyleStats(item, brands[index]);
+      brandAssetsCounter[brands[index]]++;
+    });
+  }
 
-  });
 }());
