@@ -2,10 +2,21 @@ var StyleStats = require('stylestats'),
     utils = require('./assets.js'),
     request = require('request');
 
+var cdn                = "http://dej6bpy8oabji.cloudfront.net/",
+    outputPath         = "./results/",
+    brands             = ['qantas', 'jetstar', 'hooroo'],
+    brandAssets        = [],
+    brandAssetsCounter = [],
+    configFiles        = [],
+    index;
 
-var cdn = "http://dej6bpy8oabji.cloudfront.net/",
-    outputPath = "./results/";
-
+// Setting up
+brands.forEach(function(brand) {
+  var configFile = require('./sites-' + brand + '.js');
+  configFiles.push(configFile);
+  brandAssets[brand] = [];
+  brandAssetsCounter[brand] = 0;
+});
 
 function parseStyle(file, asset) {
   stats = new StyleStats(file);
@@ -59,19 +70,8 @@ function getStyleStats(styleItem, brand) {
   });
 }
 
-var brands = ['qantas', 'jetstar', 'hooroo'];
-var brandAssets = [];
-var brandAssetsCounter = [];
-var configFiles = [];
-var index;
 
-brands.forEach(function(brand) {
-  var configFile = require('./sites-' + brand + '.js');
-  configFiles.push(configFile);
-  brandAssets[brand] = [];
-  brandAssetsCounter[brand] = 0;
-});
-
+// Go...
 (function init() {
   for(index = 0; index < configFiles.length; index++) {
     configFile = configFiles[index];
