@@ -4,22 +4,27 @@ var numeral = require('numeral');
 
 var StyleStats = require('stylestats');
 var aliases = require('../node_modules/stylestats/assets/aliases.json');
+var fs = require('fs-extra');
 
 exports.index = function(request, response) {
     response.render('index', {
-        title: 'StyleStats'
+        title: 'CSS Stats'
     });
 };
 
 exports.parse = function(request, response) {
     var path = request.body.path;
     var css = request.body.css;
-    var stylestats = new StyleStats(path || css);
-    stylestats.parse(function(error, result) {
-        if(error) {
-            response.send(500, 'Something broke!');
-        }
-        response.send(prettify(result));
+
+    var skin = request.query.skin;
+    var fileName = request.query.file;
+
+    fs.readJson("../analyser/results/" + skin + "-2014-09-30" + ".json", function(err, packageObj) {
+        file = _.filter(packageObj, function(file) {
+            return file.assetName == fileName;
+        })[0];
+
+        response.send(prettify(file));
     });
 };
 

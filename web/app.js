@@ -41,16 +41,8 @@ if (env === 'development') {
 }
 
 app.get('/', routes.index);
-app.post('/parse', routes.parse);
+app.get('/parse', routes.parse);
 
-// 404 Page Not Found
-app.use(function(request, response, next) {
-    response.status(404);
-    response.render('404', {
-        title: "404 Page Not Found :("
-    });
-});
-
-app.listen(process.env.PORT || 5000, function() {
-    console.log('Express server listening on port ' + (process.env.PORT || 5000));
+app.listen(process.env.PORT || 5005, function() {
+    console.log('Express server listening on port ' + (process.env.PORT || 5005));
 });
