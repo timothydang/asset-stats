@@ -1,0 +1,44 @@
+extends layout
+
+block content
+  .l-wrapper
+    .l-paneInput
+      h1.c-title #{title}
+      p.c-description Style Stats
+
+      ul.c-tabs#js-tabs
+        li.c-tabs-s-item.is-active.js-tab-uri(data-mode='qantas')
+          a.block(href="#qantas") Qantas
+        li.c-tabs-s-item.js-tab-uri(data-mode='jetstar')
+          a.block(href="#jetstar") File Upload
+        li.c-tabs-s-item.js-tab-uri(data-mode='hooroo')
+          a.block(href="#hooroo") Hooroo
+
+      .u-mbm
+        button.c-button#js-parse
+          span#js-text Parse
+
+    .l-paneOutput#js-view
+
+  .html-jade.
+    <script type="text/template" id="js-tmpResult">
+      <ul class="c-resultBox">
+      <% _.each(results, function (result) { %>
+         <li class="c-resultBox-s-item <%- result.name %>"><div class="inner">
+           <h3 class="header"><%- result.prop %></h3>
+           <div class="section"><%= result.value %></div></div></li>
+      <% }); %>
+      </ul>
+    </script>
+    <script type="text/template" id="js-tmpColor">
+      <ul class="list">
+      <% if(colors !== 'N/A' ) {%>
+      <% _.each(colors, function (color) { %>
+        <li><span class="c-colorBox" style="background:<%- color %>"></span>
+        <em><%- color %></em></li>
+      <% }); %>
+      <% } else {%>
+        <li><%- colors %></li>
+      <% }%>
+      </ul>
+    </script>

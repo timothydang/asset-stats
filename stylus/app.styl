@@ -1,0 +1,82 @@
+// Reset 
+html,body,div,span,iframe,h1,h2,h3,p,blockquote,pre,a,address,code,del,em,img,small,strong,b,u,i,dl,dt,dd,ol,ul,li,fieldset,form,label,table,tr,th,td,article,aside,canvas,figure,footer,header,nav,section
+    margin: 0
+    padding: 0
+    border: 0
+    vertical-align: baseline
+    font: inherit
+    font-size: 100%
+article,aside,figure,footer,header,,nav,section
+    display: block
+ol,ul
+    list-style: none
+body
+    line-height: 1
+    padding: 0 40px
+    color: #333
+    font: 16px 'Helvetica Neue', Helvetica, Arial, sans-serif
+    word-break: break-all
+a
+    text-decoration: none
+    color: inherit
+    
+select, button, input, textarea
+    display: block
+    box-sizing: border-box
+    width: 100%
+    border: 0
+
+
+// Variables
+// ======================================
+$mainColor = #66bec8
+$subColor = #2b9cce
+$twColor = #00aced
+$fbColor = #3b5999
+$gpColor = #d44332
+
+// Import
+// ======================================
+@require 'icons'
+
+
+// Utility
+// ======================================
+.u-cf:before, .u-cf:after
+    display: table !important
+    content: ""
+.u-cf:after
+    clear: both
+.u-mls
+    margin-left: 10px
+.u-mts
+    margin-top: 10px
+.u-mbm
+    margin-bottom: 20px
+.u-nw
+    white-space: nowrap
+
+// Layout
+// ======================================
+.l-wrapper
+    display: flex
+.l-paneInput
+    position: fixed
+    max-width: 480px
+.l-paneOutput
+    width: 100%
+    padding: 80px 0 100px 520px
+
+// Animation
+// ======================================
+@keyframes shake
+    0%, 100%
+        transform: translateX(0)
+    10%, 30%, 50%, 70%, 90%
+        transform: translateX(-10px)
+    20%, 40%, 60%, 80%
+        transform: translateX(10px)
+
+// Component
+// ======================================
+@require 'Component'

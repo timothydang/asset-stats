@@ -1,85 +1,56 @@
-var StyleStats = require('stylestats'),
-    utils = require('./assets.js'),
-    request = require('request');
+var path = require('path');
+var csrf = require('csurf');
+var morgan = require('morgan');
+var session = require('express-session');
+var express = require('express');
+var compress = require('compression');
+var bodyParser = require('body-parser');
+var serveStatic = require('serve-static');
+var cookieParser = require('cookie-parser');
+var errorHandler = require('errorhandler');
+var methodOverride = require('method-override');
 
-var cdn                = "http://dej6bpy8oabji.cloudfront.net/",
-    outputPath         = "./results/",
-    brands             = ['qantas', 'jetstar', 'hooroo'],
-    brandAssets        = [],
-    brandAssetsCounter = [],
-    configFiles        = [],
-    index;
+var app = express();
+var env = process.env.NODE_ENV || 'development';
+var routes = require('./routes');
 
-// Setting up
-brands.forEach(function(brand) {
-  var configFile = require('./sites-' + brand + '.js');
-  configFiles.push(configFile);
-  brandAssets[brand] = [];
-  brandAssetsCounter[brand] = 0;
+app.use(morgan('dev'));
+app.use(compress());
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded());
+app.use(methodOverride());
+
+app.set('view engine', 'jade');
+app.set('views', path.join(__dirname, 'views'));
+
+// CSRF
+app.use(cookieParser());
+app.use(session({ secret: '234D&CSSF' }));
+app.use(csrf());
+app.use(function(request, response, next) {
+    response.cookie('XSRF-TOKEN', request.csrfToken());
+    response.locals.csrf_token = request.csrfToken();
+    next();
 });
 
-function parseStyle(file, asset) {
-  stats = new StyleStats(file);
+app.use(serveStatic(path.join(__dirname, 'public')));
 
-  stats.parse(function (error, result) {
-    // console.log("parsing...");
 
-    if(error) {
-      console.log(error);
-    } else  {
-      result.assetName = asset.name;
-      brandAssets[asset.brand].push(result);
-
-      if (brandAssets[asset.brand].length == brandAssetsCounter[asset.brand]) {
-        utils.outputResults(brandAssets[asset.brand], outputPath + asset.brand);
-      }
-    }
-  });
+if (env === 'development') {
+    app.use(errorHandler());
 }
 
-function retrieveFile(asset) {
-  // console.log("retrieving file...");
+app.get('/', routes.index);
+app.post('/parse', routes.parse);
 
-  utils.downloadFile(asset, function(tmpFile, asset) {
-
-    utils.unGzipContent(tmpFile, asset, function(css_file, asset) {
-      parseStyle(css_file, asset);
+// 404 Page Not Found
+app.use(function(request, response, next) {
+    response.status(404);
+    response.render('404', {
+        title: "404 Page Not Found :("
     });
+});
 
-  });
-}
-
-function getStyleStats(styleItem, brand) {
-  var asset = {};
-
-  request(styleItem.url, function (error, response, body) {
-    if (!error && response.statusCode == 200) {
-      relativePath = "assets/consumer/skin/"+ brand + "/" + styleItem.fileName;
-      exp = "(" + relativePath + ").+?(\.css)";
-
-      var test = new RegExp(exp);
-      filePath = body.match(test) && body.match(test)[0];
-
-      asset.path     = cdn + filePath;
-      asset.fileType = "css";
-      asset.name     = styleItem.fileName;
-      asset.brand    = brand;
-
-      retrieveFile(asset);
-    }
-  });
-}
-
-
-// Go...
-(function init() {
-  for(index = 0; index < configFiles.length; index++) {
-    configFile = configFiles[index];
-
-    configFile.forEach(function(item){
-      getStyleStats(item, brands[index]);
-      brandAssetsCounter[brands[index]]++;
-    });
-  }
-
-}());
+app.listen(process.env.PORT || 5000, function() {
+    console.log('Express server listening on port ' + (process.env.PORT || 5000));
+});

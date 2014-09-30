@@ -1,4 +1,4 @@
-var fs = require('fs'),
+var fs = require('fs-extra'),
     exec = require('child_process').exec,
     spawn = require('child_process').spawn,
     url = require('url');
@@ -30,6 +30,12 @@ module.exports = {
         console.log("JSON saved to " + fileName);
       }
     });
+  },
+
+  clean: function() {
+    console.log("cleaning out temporary files");
+    fs.remove(tmpPath);
+    fs.mkdirpSync(tmpPath);
   },
 
   unGzipContent: function (tmpFileName, asset, callback) {

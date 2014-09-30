@@ -1,0 +1,263 @@
+// Component
+// ======================================
+.c-ribbon
+    position: fixed;
+    top: 0
+    right: 0
+
+.c-title
+    margin: 80px 0 8px
+    color: #999
+    font-weight: 100
+    font-size: 80px
+
+.c-description
+    margin-bottom: 20px
+    font-size: 14px
+
+.c-tabs
+    display: flex
+    margin: 20px 0
+
+.c-tabs-s-item
+    width: 200px
+    border-bottom: 3px #eee solid
+    color: #999
+    text-indent: 1em
+    font-size: 18px
+    transition-timing-function: ease-out
+    transition-duration: 0.4s
+    transition-property: border-bottom-color
+
+.c-tabs-s-item.is-active
+    border-bottom-color: $mainColor
+
+.c-tabs-s-item > .block
+    display: block
+    padding: 10px 0
+    text-decoration: none
+
+.c-tabContents-s-item
+    display: none
+    min-height: 40px
+
+.c-tabContents-s-item.is-active
+    display: block
+
+.c-textBox
+    padding: 1em
+    height: 240px
+    border-radius: 4px
+    background: #eee
+    color: #666
+    font-weight: bold
+    font-size: 14px
+    font-family: Consolas, 'Andale Mono', 'Lucida Console', Monaco, 'Courier New', Courier, monospace
+
+.c-uriBox
+    padding: 1em
+    height: 40px
+    border-radius: 4px
+    background: #eee
+    color: #666
+    font-weight: bold
+    font-size: 14px
+    font-family: Consolas, 'Andale Mono', 'Lucida Console', Monaco, 'Courier New', Courier, monospace
+
+.c-button
+    position: relative
+    display: block
+    margin: 40px 0
+    padding: 0 1em
+    max-width: 240px
+    height: 48px
+    border: 0
+    border-radius: 4px
+    background: $mainColor
+    color: #fff
+    text-align: center
+    font-size: 18px
+    line-height: 48px
+
+.c-button:hover
+    background: $subColor
+
+.c-button img
+    display: none
+
+.c-button.is-loading img
+    display: inline
+
+.c-button.c-button-m-danger
+    background-color: #db7080
+    animation-name: shake
+    animation-duration: 1s
+    animation-fill-mode: both
+
+.c-button.c-button-m-danger:hover
+    background-color: #db7080
+
+.c-resultBox
+    column-count: 3
+    column-gap: 20px
+
+.c-resultBox-s-item
+    margin: 2px 2px 16px
+    padding-top: 12px
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2)
+
+.c-resultBox-s-item .inner
+    display: inline-block
+
+.c-resultBox-s-item .header
+    display: inline
+    margin-left: -2px
+    padding: 2px 24px 2px 8px
+    border-left: 2px #ccc solid
+    color: #666
+    line-height: 1.5
+    background: #eee
+    font-size: 14px
+
+.c-resultBox-s-item.share .header
+    border-left: 2px $subColor solid
+    color: #fff
+    background: $mainColor
+
+
+.c-resultBox-s-item .section
+    padding: 12px 12px 24px
+    color: $mainColor
+    font-weight: bold
+    font-size: 32px
+
+.c-resultBox-s-share
+    padding: 4px 4px 12px
+
+.c-resultBox-s-share li
+    float: left
+    margin: 8px
+
+.c-resultBox-s-share a
+    display: inline-block
+
+.c-resultBox-s-share i
+    color: #ccc
+    font-size: 48px
+    transition-timing-function: ease-out
+    transition-duration: 0.4s
+    transition-property: color
+
+.c-resultBox-s-share a:hover .icon-twitter
+    color: $twColor
+.c-resultBox-s-share a:hover .icon-facebook
+    color: $fbColor
+.c-resultBox-s-share a:hover .icon-plus
+    color: $gpColor
+
+.uniqueColor .inner,
+.uniqueFontSize .inner
+    display: block
+
+.published .section,
+.paths .section,
+.mostIdentifierSelector .section,
+.lowestCohesionSelector .section,
+.uniqueColor .section,
+.uniqueFontSize .section,
+.propertiesCount .section
+    font-size: 20px
+    line-height: 1.3
+
+.c-colorBox
+    display: inline-block
+    margin-right: 8px
+    width: 20px
+    height: 20px
+    border-radius: 2px
+    box-shadow: 0 0 1px 0 rgba(0,0,0, 0.4)
+    vertical-align: -4px
+
+.c-footer
+    position: fixed
+    bottom: 0
+    left: 0
+    right: 0
+    margin: 120px 40px 0
+    padding-top: 20px
+    border-top: 1px #eee solid
+    background-color: #FFFFFF
+    color: #999
+    font-size: 14px
+
+.c-footer-s-item
+    float: left
+    margin-bottom: 20px
+    & + &
+      border-left: 1px #ccc solid
+      margin-left: 20px
+      padding-left: 20px
+
+.c-footer-s-item-m-copyright
+    margin-right: 0
+    padding-right: 0
+    border-right: 0
+
+.c-footer-s-item > a
+    color: $mainColor
+    transition-timing-function: ease-out
+    transition-duration: 0.4s
+    transition-property: color
+
+.c-footer-s-item > a:hover
+    color: $subColor
+
+@media screen and (min-width: 1680px)
+    .c-resultBox
+        column-count: 4
+
+@media screen and (max-width: 1280px)
+    .c-resultBox
+        column-count: 2
+
+@media screen and (max-width: 1024px)
+    .c-resultBox
+        column-count: 1
+
+@media screen and (max-width: 800px)
+    body
+        padding: 0 20px
+        font-size: 12px
+    .l-wrapper
+        display: flex
+        flex-direction: column
+    .l-paneInput
+        position: relative
+    .l-paneOutput
+        padding: 0
+    .c-title
+        margin: 60px 0 4px
+        font-size: 40px
+    .c-tabs-s-item
+        font-size: 14px
+    .c-button
+        max-width: 100%
+    .c-textBox
+        height: 120px
+    .c-footer
+        position: static
+        margin-left: 0
+        margin-right: 0
+    .c-footer-s-item
+        & + &
+          margin-left: 10px
+          padding-left: 10px
+        & + .c-footer-s-item-m-copyright
+          border-left: 0
+          margin-left: 0
+          padding-left: 0
+          
+    .c-footer-s-item-m-copyright
+        clear: left
+        float: none
+        margin-bottom: 20px
