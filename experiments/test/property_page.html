@@ -1,0 +1,1599 @@
+<!DOCTYPE html>
+<html lang="en-AU" class="os-mac theme-hooroo ui-loading no-js">
+
+  <head>
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-1.newrelic.com","errorBeacon":"bam.nr-data.net","licenseKey":"0f888fabb0","applicationID":"3522068","transactionName":"J1tdQxcJVVxXQxxVCwpHRloAFBZAQF5DUxYQTRxEDQlO","queueTime":1,"applicationTime":402,"ttGuid":"","agentToken":null,"agent":"js-agent.newrelic.com/nr-460.min.js"}</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"UQcGVFJACwYCVlFUDw=="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,o){t&&t(e,n,o),o||(o={});for(var a=i(e),s=a.length,c=o[r]||(o[r]={}),f=0;s>f;f++)a[f].apply(c,n);return c}function o(t,e){s[t]=i(t).concat(e)}function i(t){return s[t]||[]}function a(){return n(e)}var s={};return{on:o,emit:e,create:a,listeners:i,_events:s}}var r="nr@context";e.exports=n()},{}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(4),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,window.onerror=e,NREUM.noticeError=n;try{throw new Error}catch(f){"stack"in f&&(t(5),t(3),"addEventListener"in window&&t(1),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&t(2),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:4,2:7,3:5,4:15,5:6,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],4:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=(t(1),t("ee").create()),i=t(2)(o);if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var a=document;a&&!a.hasOwnProperty("addEventListener");)a=Object.getPrototypeOf(a);a&&n(a);for(var s=XMLHttpRequest.prototype;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=e["nr@wrapped"]?t[1]=e["nr@wrapped"]:e["nr@wrapped"]=t[1]=i(e,"fn-",null,e.name||"anonymous"):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:15,2:16,ee:"QJf3ax"}],5:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:16,2:15,ee:"QJf3ax"}],6:[function(t,e){function n(t,e,n){var r=t[0];"string"==typeof r&&(r=new Function(r)),t[0]=o(r,"fn-",null,n)}var r=(t(2),t("ee").create()),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:16,2:15,ee:"QJf3ax"}],7:[function(t,e){function n(){c.inPlace(this,d,"fn-")}function r(t,e){c.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}var i=t("ee").create(),a=t(1),s=t(2),c=s(i),f=s(a),u=window.XMLHttpRequest,d=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=i,window.XMLHttpRequest=function(t){var e=new u(t);try{i.emit("new-xhr",[],e),f.inPlace(e,["addEventListener","removeEventListener"],"-",function(t,e){return e}),e.addEventListener("readystatechange",n,!1)}catch(r){try{i.emit("internal-error",r)}catch(o){}}return e},window.XMLHttpRequest.prototype=u.prototype,c.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),i.on("send-xhr-start",r),i.on("open-xhr-start",r)},{1:4,2:16,ee:"QJf3ax"}],8:[function(t){function e(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function n(t){var n=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!n.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){n.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=e(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(n.cat=d.split(", ").pop())}}else n.status=0;r.cbTime=this.cbTime,o("xhr",[n,r,this.startTime])}}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(1),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(2);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=n,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,n){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=e(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof n.onload))&&i.end(n)}catch(e){try{a.emit("internal-error",e)}catch(r){}}};for(var u=0;c>u;u++)n.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:9,2:12,3:7,4:4,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],9:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):(o[t]||(o[t]=[]),void o[t].push(e))}var r=t("ee").create(),o={};e.exports=n,n.ee=r,r.q=o},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],12:[function(t,e){function n(t){if(!t||"object"!=typeof t&&"function"!=typeof t)return-1;if(t===window)return 0;if(o.call(t,"__nr"))return t.__nr;try{return Object.defineProperty(t,"__nr",{value:r,writable:!0,enumerable:!1}),r}catch(e){return t.__nr=r,r}finally{r+=1}}var r=1,o=Object.prototype.hasOwnProperty;e.exports=n},{}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID&&c&&c.body){p.proto="https"===d.split(":")[0]||t.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=c.createElement("script");e.src=p.proto+t.agent,c.body.appendChild(e)}}function r(){"complete"===c.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=window,c=s.document,f="addEventListener",u="attachEvent",d=(""+location).split("?")[0],p=e.exports={offset:i(),origin:d,features:{}};c[f]?(c[f]("DOMContentLoaded",o,!1),s[f]("load",n,!1)):(c[u]("onreadystatechange",r),s[u]("onload",n)),a("mark",["firstbyte",i()])},{handle:"D5DuLP"}],15:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],16:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper";e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,f,u;try{i=this,n=o(arguments),f=r&&r(n,i)||{}}catch(d){c([d,"",[n,i,a],f])}s(e+"start",[n,i,a],f);try{return u=t.apply(i,n)}catch(p){throw s(e+"err",[n,i,p],f),p}finally{s(e+"end",[n,i,u],f)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,nrWrapper)}function a(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s,t))}function s(e,n,r){try{t.emit(e,n,r)}catch(o){c([o,e,n,r])}}function c(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=a,e.flag=i,e}},{1:15,ee:"QJf3ax"}]},{},["G9z0Bl",3,8]);</script>
+
+  <script type="text/javascript">window.domReadyStarted = new Date()</script>
+  <meta charset="utf-8">
+  <title>
+    Rydges Sydney Central (formerly Sebel Surry Hills) | Hooroo hotels
+  </title>
+
+  <meta content="authenticity_token" name="csrf-param" />
+<meta content="wsNdwiuXJ93AqNaFOx+um06oesn5O7F+tqqSXEzWNlY=" name="csrf-token" />
+
+
+<script type="text/javascript">
+/*! head.core - v1.0.2 */
+(function(n,t){"use strict";function r(n){a[a.length]=n}function k(n){var t=new RegExp(" ?\\b"+n+"\\b");c.className=c.className.replace(t,"")}function p(n,t){for(var i=0,r=n.length;i<r;i++)t.call(n,n[i],i)}function tt(){var t,e,f,o;c.className=c.className.replace(/ (w-|eq-|gt-|gte-|lt-|lte-|portrait|no-portrait|landscape|no-landscape)\d+/g,"");t=n.innerWidth||c.clientWidth;e=n.outerWidth||n.screen.width;u.screen.innerWidth=t;u.screen.outerWidth=e;r("w-"+t);p(i.screens,function(n){t>n?(i.screensCss.gt&&r("gt-"+n),i.screensCss.gte&&r("gte-"+n)):t<n?(i.screensCss.lt&&r("lt-"+n),i.screensCss.lte&&r("lte-"+n)):t===n&&(i.screensCss.lte&&r("lte-"+n),i.screensCss.eq&&r("e-q"+n),i.screensCss.gte&&r("gte-"+n))});f=n.innerHeight||c.clientHeight;o=n.outerHeight||n.screen.height;u.screen.innerHeight=f;u.screen.outerHeight=o;u.feature("portrait",f>t);u.feature("landscape",f<t)}function it(){n.clearTimeout(b);b=n.setTimeout(tt,50)}var y=n.document,rt=n.navigator,ut=n.location,c=y.documentElement,a=[],i={screens:[240,320,480,640,768,800,1024,1280,1440,1680,1920],screensCss:{gt:!0,gte:!1,lt:!0,lte:!1,eq:!1},browsers:[{ie:{min:6,max:11}}],browserCss:{gt:!0,gte:!1,lt:!0,lte:!1,eq:!0},html5:!0,page:"-page",section:"-section",head:"head"},v,u,s,w,o,h,l,d,f,g,nt,e,b;if(n.head_conf)for(v in n.head_conf)n.head_conf[v]!==t&&(i[v]=n.head_conf[v]);u=n[i.head]=function(){u.ready.apply(null,arguments)};u.feature=function(n,t,i){return n?(Object.prototype.toString.call(t)==="[object Function]"&&(t=t.call()),r((t?"":"no-")+n),u[n]=!!t,i||(k("no-"+n),k(n),u.feature()),u):(c.className+=" "+a.join(" "),a=[],u)};u.feature("js",!0);s=rt.userAgent.toLowerCase();w=/mobile|android|kindle|silk|midp|phone|(windows .+arm|touch)/.test(s);u.feature("mobile",w,!0);u.feature("desktop",!w,!0);s=/(chrome|firefox)[ \/]([\w.]+)/.exec(s)||/(iphone|ipad|ipod)(?:.*version)?[ \/]([\w.]+)/.exec(s)||/(android)(?:.*version)?[ \/]([\w.]+)/.exec(s)||/(webkit|opera)(?:.*version)?[ \/]([\w.]+)/.exec(s)||/(msie) ([\w.]+)/.exec(s)||/(trident).+rv:(\w.)+/.exec(s)||[];o=s[1];h=parseFloat(s[2]);switch(o){case"msie":case"trident":o="ie";h=y.documentMode||h;break;case"firefox":o="ff";break;case"ipod":case"ipad":case"iphone":o="ios";break;case"webkit":o="safari"}for(u.browser={name:o,version:h},u.browser[o]=!0,l=0,d=i.browsers.length;l<d;l++)for(f in i.browsers[l])if(o===f)for(r(f),g=i.browsers[l][f].min,nt=i.browsers[l][f].max,e=g;e<=nt;e++)h>e?(i.browserCss.gt&&r("gt-"+f+e),i.browserCss.gte&&r("gte-"+f+e)):h<e?(i.browserCss.lt&&r("lt-"+f+e),i.browserCss.lte&&r("lte-"+f+e)):h===e&&(i.browserCss.lte&&r("lte-"+f+e),i.browserCss.eq&&r("eq-"+f+e),i.browserCss.gte&&r("gte-"+f+e));else r("no-"+f);r(o);r(o+parseInt(h,10));i.html5&&o==="ie"&&h<9&&p("abbr|article|aside|audio|canvas|details|figcaption|figure|footer|header|hgroup|main|mark|meter|nav|output|progress|section|summary|time|video".split("|"),function(n){y.createElement(n)});p(ut.pathname.split("/"),function(n,u){if(this.length>2&&this[u+1]!==t)u&&r(this.slice(u,u+1).join("-").toLowerCase()+i.section);else{var f=n||"index",e=f.indexOf(".");e>0&&(f=f.substring(0,e));c.id=f.toLowerCase()+i.page;u||r("root"+i.section)}});u.screen={height:n.screen.height,width:n.screen.width};tt();b=0;n.addEventListener?n.addEventListener("resize",it,!1):n.attachEvent("onresize",it)})(window);
+/*! head.css3 - v1.0.0 */
+(function(n,t){"use strict";function a(n){for(var r in n)if(i[n[r]]!==t)return!0;return!1}function r(n){var t=n.charAt(0).toUpperCase()+n.substr(1),i=(n+" "+c.join(t+" ")+t).split(" ");return!!a(i)}var h=n.document,o=h.createElement("i"),i=o.style,s=" -o- -moz- -ms- -webkit- -khtml- ".split(" "),c="Webkit Moz O ms Khtml".split(" "),l=n.head_conf&&n.head_conf.head||"head",u=n[l],f={gradient:function(){var n="background-image:";return i.cssText=(n+s.join("gradient(linear,left top,right bottom,from(#9f9),to(#fff));"+n)+s.join("linear-gradient(left top,#eee,#fff);"+n)).slice(0,-n.length),!!i.backgroundImage},rgba:function(){return i.cssText="background-color:rgba(0,0,0,0.5)",!!i.backgroundColor},opacity:function(){return o.style.opacity===""},textshadow:function(){return i.textShadow===""},multiplebgs:function(){i.cssText="background:url(https://),url(https://),red url(https://)";var n=(i.background||"").match(/url/g);return Object.prototype.toString.call(n)==="[object Array]"&&n.length===3},boxshadow:function(){return r("boxShadow")},borderimage:function(){return r("borderImage")},borderradius:function(){return r("borderRadius")},cssreflections:function(){return r("boxReflect")},csstransforms:function(){return r("transform")},csstransitions:function(){return r("transition")},touch:function(){return"ontouchstart"in n},retina:function(){return n.devicePixelRatio>1},fontface:function(){var t=u.browser.name,n=u.browser.version;switch(t){case"ie":return n>=9;case"chrome":return n>=13;case"ff":return n>=6;case"ios":return n>=5;case"android":return!1;case"webkit":return n>=5.1;case"opera":return n>=10;default:return!1}}};for(var e in f)f[e]&&u.feature(e,f[e].call(),!0);u.feature()})(window);
+/*! head.load - v1.0.3 */
+(function(n,t){"use strict";function w(){}function u(n,t){if(n){typeof n=="object"&&(n=[].slice.call(n));for(var i=0,r=n.length;i<r;i++)t.call(n,n[i],i)}}function it(n,i){var r=Object.prototype.toString.call(i).slice(8,-1);return i!==t&&i!==null&&r===n}function s(n){return it("Function",n)}function a(n){return it("Array",n)}function et(n){var i=n.split("/"),t=i[i.length-1],r=t.indexOf("?");return r!==-1?t.substring(0,r):t}function f(n){(n=n||w,n._done)||(n(),n._done=1)}function ot(n,t,r,u){var f=typeof n=="object"?n:{test:n,success:!t?!1:a(t)?t:[t],failure:!r?!1:a(r)?r:[r],callback:u||w},e=!!f.test;return e&&!!f.success?(f.success.push(f.callback),i.load.apply(null,f.success)):e||!f.failure?u():(f.failure.push(f.callback),i.load.apply(null,f.failure)),i}function v(n){var t={},i,r;if(typeof n=="object")for(i in n)!n[i]||(t={name:i,url:n[i]});else t={name:et(n),url:n};return(r=c[t.name],r&&r.url===t.url)?r:(c[t.name]=t,t)}function y(n){n=n||c;for(var t in n)if(n.hasOwnProperty(t)&&n[t].state!==l)return!1;return!0}function st(n){n.state=ft;u(n.onpreload,function(n){n.call()})}function ht(n){n.state===t&&(n.state=nt,n.onpreload=[],rt({url:n.url,type:"cache"},function(){st(n)}))}function ct(){var n=arguments,t=n[n.length-1],r=[].slice.call(n,1),f=r[0];return(s(t)||(t=null),a(n[0]))?(n[0].push(t),i.load.apply(null,n[0]),i):(f?(u(r,function(n){s(n)||!n||ht(v(n))}),b(v(n[0]),s(f)?f:function(){i.load.apply(null,r)})):b(v(n[0])),i)}function lt(){var n=arguments,t=n[n.length-1],r={};return(s(t)||(t=null),a(n[0]))?(n[0].push(t),i.load.apply(null,n[0]),i):(u(n,function(n){n!==t&&(n=v(n),r[n.name]=n)}),u(n,function(n){n!==t&&(n=v(n),b(n,function(){y(r)&&f(t)}))}),i)}function b(n,t){if(t=t||w,n.state===l){t();return}if(n.state===tt){i.ready(n.name,t);return}if(n.state===nt){n.onpreload.push(function(){b(n,t)});return}n.state=tt;rt(n,function(){n.state=l;t();u(h[n.name],function(n){f(n)});o&&y()&&u(h.ALL,function(n){f(n)})})}function at(n){n=n||"";var t=n.split("?")[0].split(".");return t[t.length-1].toLowerCase()}function rt(t,i){function e(t){t=t||n.event;u.onload=u.onreadystatechange=u.onerror=null;i()}function o(f){f=f||n.event;(f.type==="load"||/loaded|complete/.test(u.readyState)&&(!r.documentMode||r.documentMode<9))&&(n.clearTimeout(t.errorTimeout),n.clearTimeout(t.cssTimeout),u.onload=u.onreadystatechange=u.onerror=null,i())}function s(){if(t.state!==l&&t.cssRetries<=20){for(var i=0,f=r.styleSheets.length;i<f;i++)if(r.styleSheets[i].href===u.href){o({type:"load"});return}t.cssRetries++;t.cssTimeout=n.setTimeout(s,250)}}var u,h,f;i=i||w;h=at(t.url);h==="css"?(u=r.createElement("link"),u.type="text/"+(t.type||"css"),u.rel="stylesheet",u.href=t.url,t.cssRetries=0,t.cssTimeout=n.setTimeout(s,500)):(u=r.createElement("script"),u.type="text/"+(t.type||"javascript"),u.src=t.url);u.onload=u.onreadystatechange=o;u.onerror=e;u.async=!1;u.defer=!1;t.errorTimeout=n.setTimeout(function(){e({type:"timeout"})},7e3);f=r.head||r.getElementsByTagName("head")[0];f.insertBefore(u,f.lastChild)}function vt(){for(var t,u=r.getElementsByTagName("script"),n=0,f=u.length;n<f;n++)if(t=u[n].getAttribute("data-headjs-load"),!!t){i.load(t);return}}function yt(n,t){var v,p,e;return n===r?(o?f(t):d.push(t),i):(s(n)&&(t=n,n="ALL"),a(n))?(v={},u(n,function(n){v[n]=c[n];i.ready(n,function(){y(v)&&f(t)})}),i):typeof n!="string"||!s(t)?i:(p=c[n],p&&p.state===l||n==="ALL"&&y()&&o)?(f(t),i):(e=h[n],e?e.push(t):e=h[n]=[t],i)}function e(){if(!r.body){n.clearTimeout(i.readyTimeout);i.readyTimeout=n.setTimeout(e,50);return}o||(o=!0,vt(),u(d,function(n){f(n)}))}function k(){r.addEventListener?(r.removeEventListener("DOMContentLoaded",k,!1),e()):r.readyState==="complete"&&(r.detachEvent("onreadystatechange",k),e())}var r=n.document,d=[],h={},c={},ut="async"in r.createElement("script")||"MozAppearance"in r.documentElement.style||n.opera,o,g=n.head_conf&&n.head_conf.head||"head",i=n[g]=n[g]||function(){i.ready.apply(null,arguments)},nt=1,ft=2,tt=3,l=4,p;if(r.readyState==="complete")e();else if(r.addEventListener)r.addEventListener("DOMContentLoaded",k,!1),n.addEventListener("load",e,!1);else{r.attachEvent("onreadystatechange",k);n.attachEvent("onload",e);p=!1;try{p=!n.frameElement&&r.documentElement}catch(wt){}p&&p.doScroll&&function pt(){if(!o){try{p.doScroll("left")}catch(t){n.clearTimeout(i.readyTimeout);i.readyTimeout=n.setTimeout(pt,50);return}e()}}()}i.load=i.js=ut?lt:ct;i.test=ot;i.ready=yt;i.ready(r,function(){y()&&u(h.ALL,function(n){f(n)});i.feature&&i.feature("domloaded",!0)})})(window);
+</script>
+
+
+    <link rel="dns-prefetch" href="//d39eeu56o06tnh.cloudfront.net" />
+    <link rel="dns-prefetch" href="//d1d1rdpyqc50te.cloudfront.net" />
+
+  <link rel="dns-prefetch" href="//media.expedia.com" />
+  <link rel="dns-prefetch" href="//images.pegs.com" />
+  <link rel="dns-prefetch" href="//www.tripadvisor.com" />
+  <link rel="dns-prefetch" href="//www.google.com" />
+  <link rel="dns-prefetch" href="//www.googleadservices.com" />
+  <link rel="dns-prefetch" href="//googleads.g.doubleclick.net" />
+  <link rel="dns-prefetch" href="//www.google-analytics.com" />
+  <link rel="dns-prefetch" href="//www.googletagmanager.com" />
+  <link rel="dns-prefetch" href="//js-agent.newrelic.com" />
+  <link rel="dns-prefetch" href="//beacon-1.newrelic.com" />
+
+  <link href="//dej6bpy8oabji.cloudfront.net/assets/consumer/skin/hooroo/common_vendor-ad4724b7054be7a981530b6bc758431b.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="//dej6bpy8oabji.cloudfront.net/assets/consumer/skin/hooroo/common_app-422b47e273e3a093b7991fdc5ba5ba1c.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="//dej6bpy8oabji.cloudfront.net/assets/consumer/skin/hooroo/new-forms-3b8cd3cdfc49511e97e4c2875d419dba.css" media="screen" rel="stylesheet" type="text/css" />
+
+  <!--[if lt IE 9]>
+  <link href="//dej6bpy8oabji.cloudfront.net/assets/consumer/skin/hooroo/ie-styles-fb5ee97be17aa3d7d095a43b87a0d3d6.css" media="screen" rel="stylesheet" type="text/css" />
+  <![endif]-->
+
+    <link href="//dej6bpy8oabji.cloudfront.net/assets/consumer/skin/hooroo/property-new-98422f4ab68d49c736a7980716865189.css" media="screen" rel="stylesheet" type="text/css" />
+  <link rel="canonical" href="http://hotels.hooroo.com/properties/136044-rydges-sydney-central-formerly-sebel-surry-hills?id=136044-rydges-sydney-central-formerly-sebel-surry-hills">
+
+  <meta content="Hooroo" property="og:site_name" />
+  <meta content="Rydges Sydney Central (formerly Sebel Surry Hills)" property="og:title" />
+  <meta content="http://hotels.hooroo.com/properties/136044-rydges-sydney-central-formerly-sebel-surry-hills?id=136044-rydges-sydney-central-formerly-sebel-surry-hills" property="og:url" />
+  <meta content="http://d1d1rdpyqc50te.cloudfront.net/k/images/007/875/355/size640x480.jpg?1402536569" property="og:image" />  <meta content="Ideally situated on the southern end of the corporate hub, the Hotel is only 2 minutes away from Central Station and a 10 minute walk to China Town. Book it now on Hooroo.com" property="og:description" />
+  <meta content="-33.881885" property="og:latitude" />
+  <meta content="151.209489" property="og:longitude" />
+  <meta content="28 Albion Street" property="og:street-address" />
+  <meta content="Surry Hills" property="og:locality" />
+  <meta content="NSW" property="og:region" />
+  <meta content="Australia" property="og:country_name" />
+
+
+  <meta name="description" content="Ideally situated on the southern end of the corporate hub, the Hotel is only 2 minutes away from Central Station and a 10 minute walk to China Town." />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="HandheldFriendly" content="true" />
+  <link href="//dej6bpy8oabji.cloudfront.net/assets/consumer/skin/hooroo/favicon-830df5063bbd51a7a8a4bb5fef52703f.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href='//dej6bpy8oabji.cloudfront.net/assets/consumer/skin/hooroo/ios-icons/apple-touch-icon-144x144-precomposed-8cc517271c8d2c93c54ed3bb4783adca.png' />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href='//dej6bpy8oabji.cloudfront.net/assets/consumer/skin/hooroo/ios-icons/apple-touch-icon-114x114-precomposed-14f4309886e82056c4edc9df6e46c02f.png' />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href='//dej6bpy8oabji.cloudfront.net/assets/consumer/skin/hooroo/ios-icons/apple-touch-icon-114x114-precomposed-14f4309886e82056c4edc9df6e46c02f.png' />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href='//dej6bpy8oabji.cloudfront.net/assets/consumer/skin/hooroo/ios-icons/apple-touch-icon-72x72-precomposed-0a010100f0b65da4b719f257ce8aaf89.png' />
+  <link rel="apple-touch-icon-precomposed" href='//dej6bpy8oabji.cloudfront.net/assets/consumer/skin/hooroo/ios-icons/apple-touch-icon-precomposed-29131c1640ba4ab0ff3782fa80571f9e.png' />
+
+
+
+</head>
+
+
+  <body id="property-page" class="not-signed-in">
+
+
+
+    <div class="main-container ">
+
+      <header class="app-header app-stripe" id="app-header">
+  <div class="container">
+    <h1 class="logo"><a class="no-print-link" href="//hooroo.com">Hooroo</a></h1>
+    <nav class="main-nav" id="main-nav">
+      <ul class="main-nav-list">
+
+        <li class="select-menu hotels" id="hotel-nav">
+          <h4 class="menu-title">Hotels</h4>
+          <div class="sub-nav">
+            <div class="sub-nav-column">
+              <h5>Australia</h5>
+              <ul class="show-on-mobile">
+                <li><a href="/search/list?location=Sydney%2C+NSW%2C+Australia&amp;adults=2&amp;checkIn=2014-09-30&amp;checkOut=2014-10-01">Sydney</a></li>
+                <li><a href="/search/list?location=Melbourne%2C+VIC%2C+Australia&amp;adults=2&amp;checkIn=2014-09-30&amp;checkOut=2014-10-01">Melbourne</a></li>
+                <li><a href="/search/list?location=Gold+Coast%2C+QLD%2C+Australia&amp;adults=2&amp;checkIn=2014-09-30&amp;checkOut=2014-10-01">Gold Coast</a></li>
+                <li><a href="/search/list?location=Brisbane%2C+QLD%2C+Australia&amp;adults=2&amp;checkIn=2014-09-30&amp;checkOut=2014-10-01">Brisbane</a></li>
+                <li><a href="/search/list?location=Cairns%2C+QLD%2C+Australia&amp;adults=2&amp;checkIn=2014-09-30&amp;checkOut=2014-10-01">Cairns</a></li>
+              </ul>
+              <ul class="show-on-mobile">
+                <li><a href="/search/list?location=Hobart%2C+TAS%2C+Australia&amp;adults=2&amp;checkIn=2014-09-30&amp;checkOut=2014-10-01">Hobart</a></li>
+                <li><a href="/search/list?location=Adelaide%2C+SA%2C+Australia&amp;adults=2&amp;checkIn=2014-09-30&amp;checkOut=2014-10-01">Adelaide</a></li>
+                <li><a href="/search/list?location=Perth%2C+WA%2C+Australia&amp;adults=2&amp;checkIn=2014-09-30&amp;checkOut=2014-10-01">Perth</a></li>
+                <li><a href="/search/list?location=Launceston%2C+TAS%2C+Australia&amp;adults=2&amp;checkIn=2014-09-30&amp;checkOut=2014-10-01">Launceston</a></li>
+                <li><a href="/search/list?location=Sunshine+Coast%2C+QLD%2C+Australia&amp;adults=2&amp;checkIn=2014-09-30&amp;checkOut=2014-10-01">Sunshine Coast</a></li>
+              </ul>
+              <ul>
+                <li><a href="/search/list?location=Darwin%2C+NT%2C+Australia&amp;adults=2&amp;checkIn=2014-09-30&amp;checkOut=2014-10-01">Darwin</a></li>
+                <li><a href="/search/list?location=Hunter+Valley%2C+NSW%2C+Australia&amp;adults=2&amp;checkIn=2014-09-30&amp;checkOut=2014-10-01">Hunter Valley</a></li>
+                <li><a href="/search/list?location=Port+Macquarie%2C+NSW%2C+Australia&amp;adults=2&amp;checkIn=2014-09-30&amp;checkOut=2014-10-01">Port Macquarie</a></li>
+                <li><a href="/search/list?location=Canberra%2C+ACT%2C+Australia&amp;adults=2&amp;checkIn=2014-09-30&amp;checkOut=2014-10-01">Canberra</a></li>
+                <li><a href="/search/list?location=Whitsundays%2C+QLD%2C+Australia&amp;adults=2&amp;checkIn=2014-09-30&amp;checkOut=2014-10-01">Whitsundays</a></li>
+              </ul>
+              <ul>
+                <li><a href="/search/list?location=Coffs+Harbour%2C+NSW%2C+Australia&amp;adults=2&amp;checkIn=2014-09-30&amp;checkOut=2014-10-01">Coffs Harbour</a></li>
+                <li><a href="/search/list?location=Townsville%2C+QLD%2C+Australia&amp;adults=2&amp;checkIn=2014-09-30&amp;checkOut=2014-10-01">Townsville</a></li>
+                <li><a href="/search/list?location=Lorne%2C+VIC%2C+Australia&amp;adults=2&amp;checkIn=2014-09-30&amp;checkOut=2014-10-01">Lorne</a></li>
+                <li><a href="/search/list?location=Mackay%2C+QLD%2C+Australia&amp;adults=2&amp;checkIn=2014-09-30&amp;checkOut=2014-10-01">Mackay Region</a></li>
+                <li><a href="/search/list?location=Uluru%2C+NT%2C+Australia&amp;adults=2&amp;checkIn=2014-09-30&amp;checkOut=2014-10-01">Uluru Region</a></li>
+              </ul>
+            </div>
+
+            <div class="sub-nav-column with-divider international">
+              <h5>International</h5>
+              <ul>
+                <li><a href="/search/list?location=Singapore%2C+Singapore&amp;adults=2&amp;checkIn=2014-09-30&amp;checkOut=2014-10-01">Singapore</a></li>
+                <li><a href="/search/list?location=Auckland%2C+New+Zealand&amp;adults=2&amp;checkIn=2014-09-30&amp;checkOut=2014-10-01">Auckland</a></li>
+                <li><a href="/search/list?location=Dubai%2C+United+Arab+Emirates&amp;adults=2&amp;checkIn=2014-09-30&amp;checkOut=2014-10-01">Dubai</a></li>
+                <li><a href="/search/list?location=London%2C+England%2C+United+Kingdom&amp;adults=2&amp;checkIn=2014-09-30&amp;checkOut=2014-10-01">London</a></li>
+                <li><a href="/search/list?location=New+York%2C+United+States+of+America&amp;adults=2&amp;checkIn=2014-09-30&amp;checkOut=2014-10-01">New York</a></li>
+              </ul>
+              <ul>
+                <li><a href="/search/list?location=Los+Angeles%2C+California%2C+United+States+of+America&amp;adults=2&amp;checkIn=2014-09-30&amp;checkOut=2014-10-01">Los Angeles</a></li>
+                <li><a href="/search/list?location=Kowloon%2C+Hong+Kong&amp;adults=2&amp;checkIn=2014-09-30&amp;checkOut=2014-10-01">Kowloon</a></li>
+                <li><a href="/search/list?location=Wellington%2C+New+Zealand&amp;adults=2&amp;checkIn=2014-09-30&amp;checkOut=2014-10-01">Wellington</a></li>
+                <li><a href="/search/list?location=Bangkok%2C+Thailand&amp;adults=2&amp;checkIn=2014-09-30&amp;checkOut=2014-10-01">Bangkok</a></li>
+                <li><a href="/search/list?location=Honolulu%2C+Hawaii%2C+United+States+of+America&amp;adults=2&amp;checkIn=2014-09-30&amp;checkOut=2014-10-01">Honolulu</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+
+        <li class="select-menu destinations" id="destination-nav">
+          <h4 class="menu-title">Inspire</h4>
+          <div class="sub-nav destinations-sub-nav">
+            <div class="sub-nav-column">
+              <h5>Inspiring Destinations</h5>
+              <ul class="show-on-mobile">
+                <li><a class="link" href="//hooroo.com/d/adelaide">Adelaide</a></li>
+                <li><a class="link" href="//hooroo.com/d/brisbane">Brisbane</a></li>
+                <li><a class="link" href="//hooroo.com/d/goldcoast">Gold Coast</a></li>
+                <li><a class="link" href="//hooroo.com/d/hobart">Hobart</a></li>
+              </ul>
+              <ul class="show-on-mobile">
+                <li><a class="link" href="//hooroo.com/d/melbourne">Melbourne</a></li>
+                <li><a class="link" href="//hooroo.com/d/perth">Perth</a></li>
+                <li><a class="link" href="//hooroo.com/d/sydney">Sydney</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li><a href="/deals">Deals</a></li>
+      </ul>
+    </nav>
+    <div class="qantas-group"></div>
+  </div>
+</header>
+
+      <div class="phone-sidebar">
+
+
+  <ul class="global">
+    <li class="nav-home"><a href="/"><i></i>Home</a></li>
+    <li class="nav-search"><a href="/search"><i></i>Hotels</a></li>
+    <li class="nav-deals"><a href="/deals"><i></i>Deals</a></li>
+  </ul>
+
+
+  <h5>More</h5>
+  <ul class="links">
+      <li><a href="/about-us" class="nav-about">About Us</a></li>
+      <li><a href="/enquiries/new" class="nav-contact-us">Contact Us</a></li>
+      <li><a href="/faqs" class="nav-faqs"><i></i>FAQs</a></li>
+      <li><a href="/price-promise" class="nav-doc"><i></i>Price Promise</a></li>
+      <li><a href="/privacy-policy" class="nav-doc"><i></i>Privacy Policy</a></li>
+      <li><a href="/terms-of-use" class="nav-doc"><i></i>Terms of Use</a></li>
+      <li class="social-media-links">
+        <a id="facebook-url" href="http://www.facebook.com/hooroo/" class='follow-facebook' rel='external' target='_blank'><i></i>Facebook</a>
+        <a href="http://twitter.com/hooroo" class='follow-twitter' rel='external' target='_blank'><i></i>Twitter</a>
+        <a href="http://pinterest.com/hooroo" class='follow-pinterest' rel='external' target='_blank'><i></i>Pinterest</a>
+        <a href="http://instagram.com/hooroogram" class='follow-instagram' rel='external' target='_blank'><i></i>Instagram</a>
+        <a href="https://plus.google.com/b/113591578161418564119/113591578161418564119/posts" class='follow-gplus' rel='external' target='_blank'><i></i>Google+</a>
+        <a href="http://www.youtube.com/hoorooaustralia" class='follow-youtube' rel='external' target='_blank'><i></i>YouTube</a>
+      </li>
+
+
+  </ul>
+</div>
+
+
+      <div id="main">
+
+
+
+
+
+
+
+<div id="content" class="no-toolbar container row-fluid bigger transparent property-qff-partner">
+
+
+  <div class="breadcrumb" itemscope="true" itemprop="breadcrumb">
+      <a class="back-btn btn tertiary" href="/search?adults=1&amp;checkIn=2014-10-22&amp;checkOut=2014-10-24&amp;location=Sydney%2C+NSW%2C+Australia" data-location="Sydney"><i></i><em>Back</em><span>Sydney results</span></a>
+
+    <ol>
+      <li itemscope="true" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/" itemprop="url"><i></i><span itemprop="title">Home</span></a>
+      </li>
+        <li itemscope="true" itemtype="http://data-vocabulary.org/Breadcrumb">
+          <a class="back-link-breadcrumb" href="/search?adults=1&amp;checkIn=2014-10-22&amp;checkOut=2014-10-24&amp;location=Sydney%2C+NSW%2C+Australia" itemprop="url"><i></i><span itemprop="title">Sydney</span></a>
+        </li>
+      <li itemscope="true" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <span itemprop="title">Rydges Sydney Central (formerly Sebel Surry Hills)</span>
+      </li>
+    </ol>
+  </div>
+
+  <div id="property-overview" class="property-overview " itemscope itemtype="http://schema.org/LocalBusiness">
+
+    <!-- Property name -->
+    <h1 itemprop="name">Rydges Sydney Central (formerly Sebel Surry Hills)</h1>
+
+    <div class="property-meta">
+      <!-- star rating widget -->
+      <span class="stars-container" itemscope itemtype="http://schema.org/AggregateRating">
+        <span class='stars empty stars-9 aaa-rated' data-rating-value='4.5'>
+<span class='stars stars-9'></span>
+<cite class='arrow'>
+<abbr>AAA Rated 4.5 stars</abbr>
+</cite>
+</span>
+
+      </span>
+
+      <!-- address -->
+      <small class="address-container" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+        <div id="property-address">
+          <span itemprop="streetAddress">28 Albion Street</span>, <span itemprop="addressLocality">Surry Hills</span><span itemprop="addressRegion">, NSW</span><span itemprop="postalCode">, 2010</span>, <span itemprop='addressCountry'> Australia</span>
+        </div>
+      </small>
+
+    </div>
+
+
+
+      <ul id="recent-activity">
+        <li class="viewed">
+          <i></i>
+          <strong>22</strong>
+          <span>viewed today</span>
+        </li>
+      </ul>
+  </div>
+
+  <!-- Property image -->
+  <div id="property-images" class="property-images  ">
+
+
+
+    <div class="images-container">
+      <ul class="count-30">
+              <li class="hero-image image-0">
+                <i></i>
+                <a rel="property-images" class="fancybox" href="//d1d1rdpyqc50te.cloudfront.net/k/images/004/297/281/size640x480.jpg?1396846703" title="Rydges Sydney Central Lobby">
+                </a>
+                <img src="//d1d1rdpyqc50te.cloudfront.net/k/images/004/297/281/size640x480.jpg?1396846703" data-thumb="//d1d1rdpyqc50te.cloudfront.net/k/images/004/297/281/size100x100.jpg?1396846703" alt="Rydges Sydney Central Lobby"/>
+
+                  <span class="counter">View all <strong>30 </strong> images.</span>
+
+              </li>
+              <li class="thumb thumb-1 image-1">
+                <a rel="property-images" class="fancybox" href="//d1d1rdpyqc50te.cloudfront.net/k/images/007/875/355/size640x480.jpg?1402536569" title="Hotel Exterior">
+                  <img src="//d1d1rdpyqc50te.cloudfront.net/k/images/007/875/355/size100x100.jpg?1402536569" data-hero="//d1d1rdpyqc50te.cloudfront.net/k/images/007/875/355/size640x480.jpg?1402536569"/>
+                </a>
+              </li>
+              <li class="thumb thumb-2 image-2">
+                <a rel="property-images" class="fancybox" href="//d39eeu56o06tnh.cloudfront.net/k/images/007/875/356/size640x480.jpg?1402536590" title="Lobby">
+                  <img src="//d39eeu56o06tnh.cloudfront.net/k/images/007/875/356/size100x100.jpg?1402536590" data-hero="//d39eeu56o06tnh.cloudfront.net/k/images/007/875/356/size640x480.jpg?1402536590"/>
+                </a>
+              </li>
+              <li class="thumb thumb-3 image-3">
+                <a rel="property-images" class="fancybox" href="//d1d1rdpyqc50te.cloudfront.net/k/images/007/875/357/size640x480.jpg?1402536605" title="Lobby">
+                  <img src="//d1d1rdpyqc50te.cloudfront.net/k/images/007/875/357/size100x100.jpg?1402536605" data-hero="//d1d1rdpyqc50te.cloudfront.net/k/images/007/875/357/size640x480.jpg?1402536605"/>
+                </a>
+              </li>
+              <li class="thumb thumb-4 image-4">
+                <a rel="property-images" class="fancybox" href="//d1d1rdpyqc50te.cloudfront.net/k/images/007/875/359/size640x480.jpg?1402536633" title="Lobby">
+                  <img src="//d1d1rdpyqc50te.cloudfront.net/k/images/007/875/359/size100x100.jpg?1402536633" data-hero="//d1d1rdpyqc50te.cloudfront.net/k/images/007/875/359/size640x480.jpg?1402536633"/>
+                </a>
+              </li>
+              <li class="thumb thumb-5 image-5">
+                <a rel="property-images" class="fancybox" href="//d39eeu56o06tnh.cloudfront.net/k/images/007/875/360/size640x480.jpg?1402536653" title="Lobby">
+                  <img src="//d39eeu56o06tnh.cloudfront.net/k/images/007/875/360/size100x100.jpg?1402536653" data-hero="//d39eeu56o06tnh.cloudfront.net/k/images/007/875/360/size640x480.jpg?1402536653"/>
+                </a>
+              </li>
+              <li class="thumb thumb-6 image-6">
+                <a rel="property-images" class="fancybox" href="//d1d1rdpyqc50te.cloudfront.net/k/images/007/875/361/size640x480.jpg?1402536670" title="Superior">
+                  <img src="//d1d1rdpyqc50te.cloudfront.net/k/images/007/875/361/size100x100.jpg?1402536670" data-hero="//d1d1rdpyqc50te.cloudfront.net/k/images/007/875/361/size640x480.jpg?1402536670"/>
+                </a>
+              </li>
+              <li class="thumb thumb-7 image-7">
+                <a rel="property-images" class="fancybox" href="//d39eeu56o06tnh.cloudfront.net/k/images/007/875/362/size640x480.jpg?1402536682" title="Superior">
+                  <img src="//d39eeu56o06tnh.cloudfront.net/k/images/007/875/362/size100x100.jpg?1402536682" data-hero="//d39eeu56o06tnh.cloudfront.net/k/images/007/875/362/size640x480.jpg?1402536682"/>
+                </a>
+              </li>
+              <li class="thumb thumb-8 image-8">
+                <a rel="property-images" class="fancybox" href="//d1d1rdpyqc50te.cloudfront.net/k/images/007/875/363/size640x480.jpg?1402536697" title="Superior">
+                  <img src="//d1d1rdpyqc50te.cloudfront.net/k/images/007/875/363/size100x100.jpg?1402536697" data-hero="//d1d1rdpyqc50te.cloudfront.net/k/images/007/875/363/size640x480.jpg?1402536697"/>
+                </a>
+              </li>
+              <li class="thumb thumb-9 image-9">
+                <a rel="property-images" class="fancybox" href="//d39eeu56o06tnh.cloudfront.net/k/images/007/875/364/size640x480.jpg?1402536709" title="Deluxe">
+                  <img src="//d39eeu56o06tnh.cloudfront.net/k/images/007/875/364/size100x100.jpg?1402536709" data-hero="//d39eeu56o06tnh.cloudfront.net/k/images/007/875/364/size640x480.jpg?1402536709"/>
+                </a>
+              </li>
+              <li class="thumb thumb-10 image-10">
+                <a rel="property-images" class="fancybox" href="//d1d1rdpyqc50te.cloudfront.net/k/images/007/875/365/size640x480.jpg?1402536722" title="Deluxe">
+                  <img src="//d1d1rdpyqc50te.cloudfront.net/k/images/007/875/365/size100x100.jpg?1402536722" data-hero="//d1d1rdpyqc50te.cloudfront.net/k/images/007/875/365/size640x480.jpg?1402536722"/>
+                </a>
+              </li>
+              <li class="thumb thumb-11 image-11">
+                <a rel="property-images" class="fancybox" href="//d39eeu56o06tnh.cloudfront.net/k/images/007/875/366/size640x480.jpg?1402536735" title="Deluxe">
+                  <img src="//d39eeu56o06tnh.cloudfront.net/k/images/007/875/366/size100x100.jpg?1402536735" data-hero="//d39eeu56o06tnh.cloudfront.net/k/images/007/875/366/size640x480.jpg?1402536735"/>
+                </a>
+              </li>
+              <li class="thumb thumb-12 image-12">
+                <a rel="property-images" class="fancybox" href="//d1d1rdpyqc50te.cloudfront.net/k/images/007/875/367/size640x480.jpg?1402536753" title="Deluxe">
+                  <img src="//d1d1rdpyqc50te.cloudfront.net/k/images/007/875/367/size100x100.jpg?1402536753" data-hero="//d1d1rdpyqc50te.cloudfront.net/k/images/007/875/367/size640x480.jpg?1402536753"/>
+                </a>
+              </li>
+              <li class="thumb thumb-13 image-13">
+                <a rel="property-images" class="fancybox" href="//d39eeu56o06tnh.cloudfront.net/k/images/007/875/368/size640x480.jpg?1402536772" title="Balcony">
+                  <img src="//d39eeu56o06tnh.cloudfront.net/k/images/007/875/368/size100x100.jpg?1402536772" data-hero="//d39eeu56o06tnh.cloudfront.net/k/images/007/875/368/size640x480.jpg?1402536772"/>
+                </a>
+              </li>
+              <li class="thumb thumb-14 image-14">
+                <a rel="property-images" class="fancybox" href="//d1d1rdpyqc50te.cloudfront.net/k/images/007/875/369/size640x480.jpg?1402536786" title="Studio Suite">
+                  <img src="//d1d1rdpyqc50te.cloudfront.net/k/images/007/875/369/size100x100.jpg?1402536786" data-hero="//d1d1rdpyqc50te.cloudfront.net/k/images/007/875/369/size640x480.jpg?1402536786"/>
+                </a>
+              </li>
+              <li class="thumb thumb-15 image-15">
+                <a rel="property-images" class="fancybox" href="//d39eeu56o06tnh.cloudfront.net/k/images/007/875/370/size640x480.jpg?1402536795" title="Studio Suite">
+                  <img src="//d39eeu56o06tnh.cloudfront.net/k/images/007/875/370/size100x100.jpg?1402536795" data-hero="//d39eeu56o06tnh.cloudfront.net/k/images/007/875/370/size640x480.jpg?1402536795"/>
+                </a>
+              </li>
+              <li class="thumb thumb-16 image-16">
+                <a rel="property-images" class="fancybox" href="//d1d1rdpyqc50te.cloudfront.net/k/images/007/875/371/size640x480.jpg?1402536821" title="&#x27;RISE&#x27; Breakfast">
+                  <img src="//d1d1rdpyqc50te.cloudfront.net/k/images/007/875/371/size100x100.jpg?1402536821" data-hero="//d1d1rdpyqc50te.cloudfront.net/k/images/007/875/371/size640x480.jpg?1402536821"/>
+                </a>
+              </li>
+              <li class="thumb thumb-17 image-17">
+                <a rel="property-images" class="fancybox" href="//d39eeu56o06tnh.cloudfront.net/k/images/007/875/372/size640x480.jpg?1402536834" title="&#x27;RISE&#x27; Breakfast">
+                  <img src="//d39eeu56o06tnh.cloudfront.net/k/images/007/875/372/size100x100.jpg?1402536834" data-hero="//d39eeu56o06tnh.cloudfront.net/k/images/007/875/372/size640x480.jpg?1402536834"/>
+                </a>
+              </li>
+              <li class="thumb thumb-18 image-18">
+                <a rel="property-images" class="fancybox" href="//d1d1rdpyqc50te.cloudfront.net/k/images/007/875/373/size640x480.jpg?1402536846" title="&#x27;RISE&#x27; Breakfast">
+                  <img src="//d1d1rdpyqc50te.cloudfront.net/k/images/007/875/373/size100x100.jpg?1402536846" data-hero="//d1d1rdpyqc50te.cloudfront.net/k/images/007/875/373/size640x480.jpg?1402536846"/>
+                </a>
+              </li>
+              <li class="thumb thumb-19 image-19">
+                <a rel="property-images" class="fancybox" href="//d39eeu56o06tnh.cloudfront.net/k/images/007/875/374/size640x480.jpg?1402536858" title="&#x27;RISE&#x27; Breakfast">
+                  <img src="//d39eeu56o06tnh.cloudfront.net/k/images/007/875/374/size100x100.jpg?1402536858" data-hero="//d39eeu56o06tnh.cloudfront.net/k/images/007/875/374/size640x480.jpg?1402536858"/>
+                </a>
+              </li>
+              <li class="thumb thumb-20 image-20">
+                <a rel="property-images" class="fancybox" href="//d1d1rdpyqc50te.cloudfront.net/k/images/007/875/375/size640x480.jpg?1402536867" title="&#x27;RISE&#x27; Breakfast">
+                  <img src="//d1d1rdpyqc50te.cloudfront.net/k/images/007/875/375/size100x100.jpg?1402536867" data-hero="//d1d1rdpyqc50te.cloudfront.net/k/images/007/875/375/size640x480.jpg?1402536867"/>
+                </a>
+              </li>
+              <li class="thumb thumb-21 image-21">
+                <a rel="property-images" class="fancybox" href="//d39eeu56o06tnh.cloudfront.net/k/images/007/875/376/size640x480.jpg?1402536879" title="&#x27;RISE&#x27; Breakfast">
+                  <img src="//d39eeu56o06tnh.cloudfront.net/k/images/007/875/376/size100x100.jpg?1402536879" data-hero="//d39eeu56o06tnh.cloudfront.net/k/images/007/875/376/size640x480.jpg?1402536879"/>
+                </a>
+              </li>
+              <li class="thumb thumb-22 image-22">
+                <a rel="property-images" class="fancybox" href="//d1d1rdpyqc50te.cloudfront.net/k/images/007/875/377/size640x480.jpg?1402536889" title="&#x27;RISE&#x27; Breakfast">
+                  <img src="//d1d1rdpyqc50te.cloudfront.net/k/images/007/875/377/size100x100.jpg?1402536889" data-hero="//d1d1rdpyqc50te.cloudfront.net/k/images/007/875/377/size640x480.jpg?1402536889"/>
+                </a>
+              </li>
+              <li class="thumb thumb-23 image-23">
+                <a rel="property-images" class="fancybox" href="//d39eeu56o06tnh.cloudfront.net/k/images/007/875/378/size640x480.jpg?1402536917" title="Our Hotel">
+                  <img src="//d39eeu56o06tnh.cloudfront.net/k/images/007/875/378/size100x100.jpg?1402536917" data-hero="//d39eeu56o06tnh.cloudfront.net/k/images/007/875/378/size640x480.jpg?1402536917"/>
+                </a>
+              </li>
+              <li class="thumb thumb-24 image-24">
+                <a rel="property-images" class="fancybox" href="//d1d1rdpyqc50te.cloudfront.net/k/images/007/875/379/size640x480.jpg?1402536931" title="Our Hotel">
+                  <img src="//d1d1rdpyqc50te.cloudfront.net/k/images/007/875/379/size100x100.jpg?1402536931" data-hero="//d1d1rdpyqc50te.cloudfront.net/k/images/007/875/379/size640x480.jpg?1402536931"/>
+                </a>
+              </li>
+              <li class="thumb thumb-25 image-25">
+                <a rel="property-images" class="fancybox" href="//d39eeu56o06tnh.cloudfront.net/k/images/007/875/380/size640x480.jpg?1402536938" title="Our Hotel">
+                  <img src="//d39eeu56o06tnh.cloudfront.net/k/images/007/875/380/size100x100.jpg?1402536938" data-hero="//d39eeu56o06tnh.cloudfront.net/k/images/007/875/380/size640x480.jpg?1402536938"/>
+                </a>
+              </li>
+              <li class="thumb thumb-26 image-26">
+                <a rel="property-images" class="fancybox" href="//d1d1rdpyqc50te.cloudfront.net/k/images/007/875/381/size640x480.jpg?1402536949" title="Our Hotel">
+                  <img src="//d1d1rdpyqc50te.cloudfront.net/k/images/007/875/381/size100x100.jpg?1402536949" data-hero="//d1d1rdpyqc50te.cloudfront.net/k/images/007/875/381/size640x480.jpg?1402536949"/>
+                </a>
+              </li>
+              <li class="thumb thumb-27 image-27">
+                <a rel="property-images" class="fancybox" href="//d39eeu56o06tnh.cloudfront.net/k/images/007/875/382/size640x480.jpg?1402536967" title="Facilities">
+                  <img src="//d39eeu56o06tnh.cloudfront.net/k/images/007/875/382/size100x100.jpg?1402536967" data-hero="//d39eeu56o06tnh.cloudfront.net/k/images/007/875/382/size640x480.jpg?1402536967"/>
+                </a>
+              </li>
+              <li class="thumb thumb-28 image-28">
+                <a rel="property-images" class="fancybox" href="//d1d1rdpyqc50te.cloudfront.net/k/images/007/875/383/size640x480.jpg?1402536986" title="Facilities">
+                  <img src="//d1d1rdpyqc50te.cloudfront.net/k/images/007/875/383/size100x100.jpg?1402536986" data-hero="//d1d1rdpyqc50te.cloudfront.net/k/images/007/875/383/size640x480.jpg?1402536986"/>
+                </a>
+              </li>
+              <li class="thumb thumb-29 image-29">
+                <a rel="property-images" class="fancybox" href="//d39eeu56o06tnh.cloudfront.net/k/images/007/875/384/size640x480.jpg?1402536998" title="Facilities">
+                  <img src="//d39eeu56o06tnh.cloudfront.net/k/images/007/875/384/size100x100.jpg?1402536998" data-hero="//d39eeu56o06tnh.cloudfront.net/k/images/007/875/384/size640x480.jpg?1402536998"/>
+                </a>
+              </li>
+       </ul>
+     </div>
+  </div>
+
+  <div class="property-container  " id="property-container">
+
+
+
+    <div class="availability-search">
+
+
+      <div id="search-bar" class="search-bar">
+        <label class="search-label">Showing results for</label>
+        <ul id="search-editor" class="search-editor">
+        </ul>
+      </div>
+      <div id="property-calendar" class="calendar-container" data-type="property" data-id="0"><div class="calendar"></div></div>
+
+    </div>
+
+    <!-- Property room -->
+    <div id="property-rooms" class="room-container">
+      <ul>
+        <li class="room room-type   expanded" data-id="28823" data-property-id="136044">
+  <header>
+    <i class="toggler"></i>
+
+    <h2>Superior Room</h2>
+      <div class="occupants"><i></i>x 4</div>
+
+
+  </header>
+
+  <div class="room-body">
+      <figure class="room-thumb">
+        <a href="//d1d1rdpyqc50te.cloudfront.net/k/images/007/875/361/size640x480.jpg?1402536670" class="fancybox" rel="room_28823">
+          <img alt="Superior Room" src="//d1d1rdpyqc50te.cloudfront.net/k/images/007/875/361/size249x140.jpg?1402536670" />
+
+            <span>6 <i></i></span>
+        </a>
+      </figure>
+
+        <ul class="images">
+
+              <li>
+                <a href="//d39eeu56o06tnh.cloudfront.net/k/images/007/875/384/size640x480.jpg?1402536998" class="fancybox" rel="room_28823" title="Facilities"></a>
+              </li>
+
+              <li>
+                <a href="//d39eeu56o06tnh.cloudfront.net/k/images/007/875/382/size640x480.jpg?1402536967" class="fancybox" rel="room_28823" title="Facilities"></a>
+              </li>
+
+              <li>
+                <a href="//d1d1rdpyqc50te.cloudfront.net/k/images/007/875/363/size640x480.jpg?1402536697" class="fancybox" rel="room_28823" title="Superior"></a>
+              </li>
+
+              <li>
+                <a href="//d1d1rdpyqc50te.cloudfront.net/k/images/007/875/361/size640x480.jpg?1402536670" class="fancybox" rel="room_28823" title="Superior"></a>
+              </li>
+
+              <li>
+                <a href="//d39eeu56o06tnh.cloudfront.net/k/images/007/875/362/size640x480.jpg?1402536682" class="fancybox" rel="room_28823" title="Superior"></a>
+              </li>
+
+        </ul>
+
+
+    <div class="room-description">
+      <p class="room-content">Superior rooms are spacious and enjoy the benefit of natural light from the large windows. Room features either a King bed or 2 King-Single beds, Ensuite, large LCD TV, Spacious work desk with Free WiFi, In-room mini-bar and more.</p>
+    </div>
+
+    <div class="facilities-list truncate-list">
+      <ul>
+          <li title="Wake-up calls">
+            <i>-</i><span>Wake-up calls</span>
+          </li>
+          <li title="Sofa bed">
+            <i>-</i><span>Sofa bed</span>
+          </li>
+          <li title="Phone">
+            <i>-</i><span>Phone</span>
+          </li>
+          <li title="Non-smoking only">
+            <i>-</i><span>Non-smoking only</span>
+          </li>
+          <li title="Minibar">
+            <i>-</i><span>Minibar</span>
+          </li>
+          <li title="LCD TV">
+            <i>-</i><span>LCD TV</span>
+          </li>
+          <li title="Iron &amp; ironing board">
+            <i>-</i><span>Iron &amp; ironing board</span>
+          </li>
+          <li title="In-room safe (laptop compatible)">
+            <i>-</i><span>In-room safe (laptop compatible)</span>
+          </li>
+          <li title="In-house movies">
+            <i>-</i><span>In-house movies</span>
+          </li>
+          <li title="Hairdryer">
+            <i>-</i><span>Hairdryer</span>
+          </li>
+          <li title="Free Wi-Fi">
+            <i>-</i><span>Free Wi-Fi</span>
+          </li>
+          <li title="Ensuite bathroom">
+            <i>-</i><span>Ensuite bathroom</span>
+          </li>
+          <li title="Daily housekeeping">
+            <i>-</i><span>Daily housekeeping</span>
+          </li>
+          <li title="Cribs/infant beds available">
+            <i>-</i><span>Cribs/infant beds available</span>
+          </li>
+          <li title="Coffee/tea maker">
+            <i>-</i><span>Coffee/tea maker</span>
+          </li>
+          <li title="Climate control">
+            <i>-</i><span>Climate control</span>
+          </li>
+          <li title="Cable television">
+            <i>-</i><span>Cable television</span>
+          </li>
+          <li title="Blackout drapes/curtains">
+            <i>-</i><span>Blackout drapes/curtains</span>
+          </li>
+          <li title="Bath with shower">
+            <i>-</i><span>Bath with shower</span>
+          </li>
+          <li title="Alarm clock">
+            <i>-</i><span>Alarm clock</span>
+          </li>
+      </ul>
+    </div>
+  </div>
+    <div class="room-offers">
+
+        <ul>
+          <!-- STATIC MARKUP STARTS -->
+
+
+
+
+
+<li class="room-offer offer  expanded  has-nightly-rates-breakdown" id="offer-43709" data-id="43709" data-property-id="136044" data-room-type-id="28823">
+
+  <h3 class="offer-title">Best Flexible Rate</h3>
+
+
+  <div class='offer-upper'>
+    <div class="offer-description">
+      <p class="description-text">Large rooms with a King or 2 Single beds, FREE WiFi access and a double sized Sofabed makes these rooms suitable for both the leisure and business traveller.</p>
+        <div class="inclusions inclusions-container">
+    <span>Includes</span>
+    <ul>
+        <li class="inclusion_internet"><i title="WiFi Included"></i>WiFi</li>
+    </ul>
+  </div>
+
+    </div>
+
+    <div class="offer-total">
+      <div class="offer-price">
+
+          <div class="nightly-rate-breakdown" data-title="Price per night" data-content="&lt;dl&gt;&lt;dt&gt;22-Oct&lt;/dt&gt;&lt;dd&gt;$269.00&lt;/dd&gt;&lt;/dl&gt;&lt;dl&gt;&lt;dt&gt;23-Oct&lt;/dt&gt;&lt;dd&gt;$269.00&lt;/dd&gt;&lt;/dl&gt;" data-html="true" data-trigger="manual">
+            <strong>2</strong> nights total
+            <span><i></i></span>
+          </div>
+
+        <small class="has-nightly-rates-breakdown">
+          <strong>2</strong> nights total
+        </small>
+
+        <big>
+          <span class="currency-label">AUD </span><sup>$</sup>538
+        </big>
+      </div>
+      <div class="offer-book"><a href="/properties/136044/offers/43709/booking?adults=1&amp;checkIn=2014-10-22&amp;checkOut=2014-10-24" class="btn book">Book now</a></div>
+      <div class="offer-view"><a href="javascript://" class="btn view tertiary">View</a></div>
+    </div>
+
+  </div>
+
+
+  <div class='offer-middle'>
+  </div>
+  <div class='offer-bottom has-availability-calendar'>
+
+      <p class="policy-link">
+    <a href="/offers/43709/cancellation_policy?adults=1&amp;checkIn=2014-10-22&amp;checkOut=2014-10-24" class="cancellation "><i></i>Free cancellation up to 72 hours before check-in</a>
+  </p>
+
+
+        <div class="room-offer-change-dates">
+          <div class="btn tertiary" show-text="Flexible with dates?" hide-text="Flexible with dates?"><i></i><span>Flexible with dates?</span></div>
+        </div>
+
+
+        <div class="availablility-calendar">
+          <div class="availability-search offer-search">
+            <div class="search-bar">
+              <label class="search-label">Dates based on</label>
+              <ul class="search-editor">
+              </ul>
+            </div>
+            <div class="calendar-container offer-calendar" data-type="offer" data-id="43709">
+              <div class="calendar-close-button">Close<i></i></div>
+              <div class="calendar"></div></div>
+            <div class="price-table"><div class="loader"></div><div class="price-container"></div></div>
+          </div>
+        </div>
+  </div>
+</li>
+
+        </ul>
+
+
+    </div>
+
+</li>
+<li class="room room-type   " data-id="28824" data-property-id="136044">
+  <header>
+    <i class="toggler"></i>
+
+    <h2>Deluxe Room</h2>
+      <div class="occupants"><i></i>x 4</div>
+
+
+  </header>
+
+  <div class="room-body">
+      <figure class="room-thumb">
+        <a href="//d39eeu56o06tnh.cloudfront.net/k/images/007/875/366/size640x480.jpg?1402536735" class="fancybox" rel="room_28824">
+          <img alt="Deluxe Room" src="//d39eeu56o06tnh.cloudfront.net/k/images/007/875/366/size249x140.jpg?1402536735" />
+
+            <span>7 <i></i></span>
+        </a>
+      </figure>
+
+        <ul class="images">
+
+              <li>
+                <a href="//d39eeu56o06tnh.cloudfront.net/k/images/007/875/384/size640x480.jpg?1402536998" class="fancybox" rel="room_28824" title="Facilities"></a>
+              </li>
+
+              <li>
+                <a href="//d39eeu56o06tnh.cloudfront.net/k/images/007/875/382/size640x480.jpg?1402536967" class="fancybox" rel="room_28824" title="Facilities"></a>
+              </li>
+
+              <li>
+                <a href="//d39eeu56o06tnh.cloudfront.net/k/images/007/875/364/size640x480.jpg?1402536709" class="fancybox" rel="room_28824" title="Deluxe"></a>
+              </li>
+
+              <li>
+                <a href="//d39eeu56o06tnh.cloudfront.net/k/images/007/875/366/size640x480.jpg?1402536735" class="fancybox" rel="room_28824" title="Deluxe"></a>
+              </li>
+
+              <li>
+                <a href="//d1d1rdpyqc50te.cloudfront.net/k/images/007/875/365/size640x480.jpg?1402536722" class="fancybox" rel="room_28824" title="Deluxe"></a>
+              </li>
+
+              <li>
+                <a href="//d1d1rdpyqc50te.cloudfront.net/k/images/007/875/367/size640x480.jpg?1402536753" class="fancybox" rel="room_28824" title="Deluxe"></a>
+              </li>
+
+        </ul>
+
+
+    <div class="room-description">
+      <p class="room-content">This room offers the comfort of a luxurious King bed or 2 King-Single beds, minibar, a waffle-weave bathrobe and sofa lounge, LCD television, Free WiFi, in-room safe, study desk and ensuite bathroom.</p>
+    </div>
+
+    <div class="facilities-list truncate-list">
+      <ul>
+          <li title="Shower">
+            <i>-</i><span>Shower</span>
+          </li>
+          <li title="Non-smoking only">
+            <i>-</i><span>Non-smoking only</span>
+          </li>
+          <li title="Telephone">
+            <i>-</i><span>Telephone</span>
+          </li>
+          <li title="Sofa bed">
+            <i>-</i><span>Sofa bed</span>
+          </li>
+          <li title="Slippers">
+            <i>-</i><span>Slippers</span>
+          </li>
+          <li title="Minibar">
+            <i>-</i><span>Minibar</span>
+          </li>
+          <li title="LCD TV">
+            <i>-</i><span>LCD TV</span>
+          </li>
+          <li title="Iron &amp; ironing board">
+            <i>-</i><span>Iron &amp; ironing board</span>
+          </li>
+          <li title="In-room safe (laptop compatible)">
+            <i>-</i><span>In-room safe (laptop compatible)</span>
+          </li>
+          <li title="In-house movies">
+            <i>-</i><span>In-house movies</span>
+          </li>
+          <li title="Hairdryer">
+            <i>-</i><span>Hairdryer</span>
+          </li>
+          <li title="Free Wi-Fi">
+            <i>-</i><span>Free Wi-Fi</span>
+          </li>
+          <li title="Ensuite bathroom">
+            <i>-</i><span>Ensuite bathroom</span>
+          </li>
+          <li title="Desk">
+            <i>-</i><span>Desk</span>
+          </li>
+          <li title="Daily housekeeping">
+            <i>-</i><span>Daily housekeeping</span>
+          </li>
+          <li title="Cribs/infant beds available">
+            <i>-</i><span>Cribs/infant beds available</span>
+          </li>
+          <li title="Coffee/tea maker">
+            <i>-</i><span>Coffee/tea maker</span>
+          </li>
+          <li title="Climate control">
+            <i>-</i><span>Climate control</span>
+          </li>
+          <li title="Cable television">
+            <i>-</i><span>Cable television</span>
+          </li>
+          <li title="Blackout drapes/curtains">
+            <i>-</i><span>Blackout drapes/curtains</span>
+          </li>
+          <li title="Bathrobes">
+            <i>-</i><span>Bathrobes</span>
+          </li>
+          <li title="Alarm clock">
+            <i>-</i><span>Alarm clock</span>
+          </li>
+      </ul>
+    </div>
+  </div>
+    <div class="room-offers">
+
+        <ul>
+          <!-- STATIC MARKUP STARTS -->
+
+
+
+
+
+<li class="room-offer offer    has-nightly-rates-breakdown" id="offer-43710" data-id="43710" data-property-id="136044" data-room-type-id="28824">
+
+  <h3 class="offer-title">Best Flexible Rate</h3>
+
+
+  <div class='offer-upper'>
+    <div class="offer-description">
+      <p class="description-text">Large rooms with a King or 2 Single beds, FREE WiFi access, comfy slippers and bathrobe during your stay and a double sized Sofabed makes these rooms suitable for both the leisure and business traveller.</p>
+        <div class="inclusions inclusions-container">
+    <span>Includes</span>
+    <ul>
+        <li class="inclusion_internet"><i title="WiFi Included"></i>WiFi</li>
+    </ul>
+  </div>
+
+    </div>
+
+    <div class="offer-total">
+      <div class="offer-price">
+
+          <div class="nightly-rate-breakdown" data-title="Price per night" data-content="&lt;dl&gt;&lt;dt&gt;22-Oct&lt;/dt&gt;&lt;dd&gt;$289.00&lt;/dd&gt;&lt;/dl&gt;&lt;dl&gt;&lt;dt&gt;23-Oct&lt;/dt&gt;&lt;dd&gt;$289.00&lt;/dd&gt;&lt;/dl&gt;" data-html="true" data-trigger="manual">
+            <strong>2</strong> nights total
+            <span><i></i></span>
+          </div>
+
+        <small class="has-nightly-rates-breakdown">
+          <strong>2</strong> nights total
+        </small>
+
+        <big>
+          <span class="currency-label">AUD </span><sup>$</sup>578
+        </big>
+      </div>
+      <div class="offer-book"><a href="/properties/136044/offers/43710/booking?adults=1&amp;checkIn=2014-10-22&amp;checkOut=2014-10-24" class="btn book">Book now</a></div>
+      <div class="offer-view"><a href="javascript://" class="btn view tertiary">View</a></div>
+    </div>
+
+  </div>
+
+
+  <div class='offer-middle'>
+  </div>
+  <div class='offer-bottom has-availability-calendar'>
+
+      <p class="policy-link">
+    <a href="/offers/43710/cancellation_policy?adults=1&amp;checkIn=2014-10-22&amp;checkOut=2014-10-24" class="cancellation "><i></i>Free cancellation up to 72 hours before check-in</a>
+  </p>
+
+
+        <div class="room-offer-change-dates">
+          <div class="btn tertiary" show-text="Flexible with dates?" hide-text="Flexible with dates?"><i></i><span>Flexible with dates?</span></div>
+        </div>
+
+
+        <div class="availablility-calendar">
+          <div class="availability-search offer-search">
+            <div class="search-bar">
+              <label class="search-label">Dates based on</label>
+              <ul class="search-editor">
+              </ul>
+            </div>
+            <div class="calendar-container offer-calendar" data-type="offer" data-id="43710">
+              <div class="calendar-close-button">Close<i></i></div>
+              <div class="calendar"></div></div>
+            <div class="price-table"><div class="loader"></div><div class="price-container"></div></div>
+          </div>
+        </div>
+  </div>
+</li>
+
+        </ul>
+
+
+    </div>
+
+</li>
+<li class="room room-type   " data-id="28825" data-property-id="136044">
+  <header>
+    <i class="toggler"></i>
+
+    <h2>Balcony Room</h2>
+      <div class="occupants"><i></i>x 4</div>
+
+
+  </header>
+
+  <div class="room-body">
+      <figure class="room-thumb">
+        <a href="//d39eeu56o06tnh.cloudfront.net/k/images/007/875/368/size640x480.jpg?1402536772" class="fancybox" rel="room_28825">
+          <img alt="Balcony Room" src="//d39eeu56o06tnh.cloudfront.net/k/images/007/875/368/size249x140.jpg?1402536772" />
+
+            <span>4 <i></i></span>
+        </a>
+      </figure>
+
+        <ul class="images">
+
+              <li>
+                <a href="//d39eeu56o06tnh.cloudfront.net/k/images/007/875/384/size640x480.jpg?1402536998" class="fancybox" rel="room_28825" title="Facilities"></a>
+              </li>
+
+              <li>
+                <a href="//d39eeu56o06tnh.cloudfront.net/k/images/007/875/382/size640x480.jpg?1402536967" class="fancybox" rel="room_28825" title="Facilities"></a>
+              </li>
+
+              <li>
+                <a href="//d39eeu56o06tnh.cloudfront.net/k/images/007/875/368/size640x480.jpg?1402536772" class="fancybox" rel="room_28825" title="Balcony"></a>
+              </li>
+
+        </ul>
+
+
+    <div class="room-description">
+      <p class="room-content">Spacious room features external furnished balcony. Room with king bed or two king single beds, mini bar,  bathrobes, LCD television, in-room safe, ensuite bathroom, work desk with Free WiFi, air conditioning, alarm clock radio and iron and ironing board.</p>
+    </div>
+
+    <div class="facilities-list truncate-list">
+      <ul>
+          <li title="Shower">
+            <i>-</i><span>Shower</span>
+          </li>
+          <li title="Non-smoking only">
+            <i>-</i><span>Non-smoking only</span>
+          </li>
+          <li title="Telephone">
+            <i>-</i><span>Telephone</span>
+          </li>
+          <li title="Sofa bed">
+            <i>-</i><span>Sofa bed</span>
+          </li>
+          <li title="Slippers">
+            <i>-</i><span>Slippers</span>
+          </li>
+          <li title="Minibar">
+            <i>-</i><span>Minibar</span>
+          </li>
+          <li title="LCD TV">
+            <i>-</i><span>LCD TV</span>
+          </li>
+          <li title="Iron &amp; ironing board">
+            <i>-</i><span>Iron &amp; ironing board</span>
+          </li>
+          <li title="In-room safe (laptop compatible)">
+            <i>-</i><span>In-room safe (laptop compatible)</span>
+          </li>
+          <li title="In-house movies">
+            <i>-</i><span>In-house movies</span>
+          </li>
+          <li title="Hair dryer">
+            <i>-</i><span>Hair dryer</span>
+          </li>
+          <li title="Furnished balcony">
+            <i>-</i><span>Furnished balcony</span>
+          </li>
+          <li title="Free Wi-Fi">
+            <i>-</i><span>Free Wi-Fi</span>
+          </li>
+          <li title="Desk">
+            <i>-</i><span>Desk</span>
+          </li>
+          <li title="Daily housekeeping">
+            <i>-</i><span>Daily housekeeping</span>
+          </li>
+          <li title="Cribs/infant beds available">
+            <i>-</i><span>Cribs/infant beds available</span>
+          </li>
+          <li title="Coffee/tea maker">
+            <i>-</i><span>Coffee/tea maker</span>
+          </li>
+          <li title="Climate control">
+            <i>-</i><span>Climate control</span>
+          </li>
+          <li title="Cable television">
+            <i>-</i><span>Cable television</span>
+          </li>
+          <li title="Blackout drapes/curtains">
+            <i>-</i><span>Blackout drapes/curtains</span>
+          </li>
+          <li title="Bathrobes">
+            <i>-</i><span>Bathrobes</span>
+          </li>
+          <li title="Alarm clock">
+            <i>-</i><span>Alarm clock</span>
+          </li>
+      </ul>
+    </div>
+  </div>
+    <div class="room-offers">
+
+        <ul>
+          <!-- STATIC MARKUP STARTS -->
+
+
+
+
+
+<li class="room-offer offer    has-nightly-rates-breakdown" id="offer-43711" data-id="43711" data-property-id="136044" data-room-type-id="28825">
+
+  <h3 class="offer-title">Best Flexible Rate</h3>
+
+
+  <div class='offer-upper'>
+    <div class="offer-description">
+      <p class="description-text">Large rooms with a fully furnished Balcony for extra space, with a King or 2 Single beds, FREE WiFi access, comfy slippers and bathrobe during your stay and a double sized Sofabed makes these</p>
+        <div class="inclusions inclusions-container">
+    <span>Includes</span>
+    <ul>
+        <li class="inclusion_internet"><i title="WiFi Included"></i>WiFi</li>
+    </ul>
+  </div>
+
+    </div>
+
+    <div class="offer-total">
+      <div class="offer-price">
+
+          <div class="nightly-rate-breakdown" data-title="Price per night" data-content="&lt;dl&gt;&lt;dt&gt;22-Oct&lt;/dt&gt;&lt;dd&gt;$309.00&lt;/dd&gt;&lt;/dl&gt;&lt;dl&gt;&lt;dt&gt;23-Oct&lt;/dt&gt;&lt;dd&gt;$309.00&lt;/dd&gt;&lt;/dl&gt;" data-html="true" data-trigger="manual">
+            <strong>2</strong> nights total
+            <span><i></i></span>
+          </div>
+
+        <small class="has-nightly-rates-breakdown">
+          <strong>2</strong> nights total
+        </small>
+
+        <big>
+          <span class="currency-label">AUD </span><sup>$</sup>618
+        </big>
+      </div>
+      <div class="offer-book"><a href="/properties/136044/offers/43711/booking?adults=1&amp;checkIn=2014-10-22&amp;checkOut=2014-10-24" class="btn book">Book now</a></div>
+      <div class="offer-view"><a href="javascript://" class="btn view tertiary">View</a></div>
+    </div>
+
+  </div>
+
+
+  <div class='offer-middle'>
+  </div>
+  <div class='offer-bottom has-availability-calendar'>
+
+      <p class="policy-link">
+    <a href="/offers/43711/cancellation_policy?adults=1&amp;checkIn=2014-10-22&amp;checkOut=2014-10-24" class="cancellation "><i></i>Free cancellation up to 72 hours before check-in</a>
+  </p>
+
+
+        <div class="room-offer-change-dates">
+          <div class="btn tertiary" show-text="Flexible with dates?" hide-text="Flexible with dates?"><i></i><span>Flexible with dates?</span></div>
+        </div>
+
+
+        <div class="availablility-calendar">
+          <div class="availability-search offer-search">
+            <div class="search-bar">
+              <label class="search-label">Dates based on</label>
+              <ul class="search-editor">
+              </ul>
+            </div>
+            <div class="calendar-container offer-calendar" data-type="offer" data-id="43711">
+              <div class="calendar-close-button">Close<i></i></div>
+              <div class="calendar"></div></div>
+            <div class="price-table"><div class="loader"></div><div class="price-container"></div></div>
+          </div>
+        </div>
+  </div>
+</li>
+
+        </ul>
+
+
+    </div>
+
+</li>
+<li class="room room-type   " data-id="28826" data-property-id="136044">
+  <header>
+    <i class="toggler"></i>
+
+    <h2>Studio Suite</h2>
+      <div class="occupants"><i></i>x 4</div>
+
+
+  </header>
+
+  <div class="room-body">
+      <figure class="room-thumb">
+        <a href="//d39eeu56o06tnh.cloudfront.net/k/images/007/875/370/size640x480.jpg?1402536795" class="fancybox" rel="room_28826">
+          <img alt="Studio Suite" src="//d39eeu56o06tnh.cloudfront.net/k/images/007/875/370/size249x140.jpg?1402536795" />
+
+            <span>5 <i></i></span>
+        </a>
+      </figure>
+
+        <ul class="images">
+
+              <li>
+                <a href="//d39eeu56o06tnh.cloudfront.net/k/images/007/875/384/size640x480.jpg?1402536998" class="fancybox" rel="room_28826" title="Facilities"></a>
+              </li>
+
+              <li>
+                <a href="//d39eeu56o06tnh.cloudfront.net/k/images/007/875/382/size640x480.jpg?1402536967" class="fancybox" rel="room_28826" title="Facilities"></a>
+              </li>
+
+              <li>
+                <a href="//d39eeu56o06tnh.cloudfront.net/k/images/007/875/370/size640x480.jpg?1402536795" class="fancybox" rel="room_28826" title="Studio Suite"></a>
+              </li>
+
+              <li>
+                <a href="//d1d1rdpyqc50te.cloudfront.net/k/images/007/875/369/size640x480.jpg?1402536786" class="fancybox" rel="room_28826" title="Studio Suite"></a>
+              </li>
+
+        </ul>
+
+
+    <div class="room-description">
+      <p class="room-content">The open-plan spacious Studio Suite offers all the comforts of the Deluxe Room and also features wall to wall ceiling high windows offering local views and natural light, this suite boasts a luxurious king beds and a double lounge with ottoman.</p>
+    </div>
+
+    <div class="facilities-list truncate-list">
+      <ul>
+          <li title="Telephone">
+            <i>-</i><span>Telephone</span>
+          </li>
+          <li title="Sofa bed">
+            <i>-</i><span>Sofa bed</span>
+          </li>
+          <li title="Slippers">
+            <i>-</i><span>Slippers</span>
+          </li>
+          <li title="Shower">
+            <i>-</i><span>Shower</span>
+          </li>
+          <li title="Separate sitting area">
+            <i>-</i><span>Separate sitting area</span>
+          </li>
+          <li title="Non-smoking only">
+            <i>-</i><span>Non-smoking only</span>
+          </li>
+          <li title="Minibar">
+            <i>-</i><span>Minibar</span>
+          </li>
+          <li title="LCD television">
+            <i>-</i><span>LCD television</span>
+          </li>
+          <li title="Iron &amp; ironing board">
+            <i>-</i><span>Iron &amp; ironing board</span>
+          </li>
+          <li title="In-room safe (laptop compatible)">
+            <i>-</i><span>In-room safe (laptop compatible)</span>
+          </li>
+          <li title="In-house movies">
+            <i>-</i><span>In-house movies</span>
+          </li>
+          <li title="Hairdryer">
+            <i>-</i><span>Hairdryer</span>
+          </li>
+          <li title="Free Wi-Fi">
+            <i>-</i><span>Free Wi-Fi</span>
+          </li>
+          <li title="Ensuite bathroom">
+            <i>-</i><span>Ensuite bathroom</span>
+          </li>
+          <li title="Desk">
+            <i>-</i><span>Desk</span>
+          </li>
+          <li title="Daily housekeeping">
+            <i>-</i><span>Daily housekeeping</span>
+          </li>
+          <li title="Cribs">
+            <i>-</i><span>Cribs</span>
+          </li>
+          <li title="Coffee/tea maker">
+            <i>-</i><span>Coffee/tea maker</span>
+          </li>
+          <li title="Climate control">
+            <i>-</i><span>Climate control</span>
+          </li>
+          <li title="Cable television">
+            <i>-</i><span>Cable television</span>
+          </li>
+          <li title="Blackout drapes/curtains">
+            <i>-</i><span>Blackout drapes/curtains</span>
+          </li>
+          <li title="Bathrobes">
+            <i>-</i><span>Bathrobes</span>
+          </li>
+          <li title="Alarm clock">
+            <i>-</i><span>Alarm clock</span>
+          </li>
+      </ul>
+    </div>
+  </div>
+    <div class="room-offers">
+
+        <ul>
+          <!-- STATIC MARKUP STARTS -->
+
+
+
+
+
+<li class="room-offer offer    has-nightly-rates-breakdown" id="offer-43712" data-id="43712" data-property-id="136044" data-room-type-id="28826">
+
+  <h3 class="offer-title">Best Flexible Rate</h3>
+
+
+  <div class='offer-upper'>
+    <div class="offer-description">
+      <p class="description-text">Extra large rooms with a King or 2 Single beds, FREE WiFi access, comfy slippers and bathrobe during your stay, a separate sitting area with a double sized Sofabed makes these rooms suitable for both the leisure and business traveller.</p>
+        <div class="inclusions inclusions-container">
+    <span>Includes</span>
+    <ul>
+        <li class="inclusion_internet"><i title="WiFi Included"></i>WiFi</li>
+    </ul>
+  </div>
+
+    </div>
+
+    <div class="offer-total">
+      <div class="offer-price">
+
+          <div class="nightly-rate-breakdown" data-title="Price per night" data-content="&lt;dl&gt;&lt;dt&gt;22-Oct&lt;/dt&gt;&lt;dd&gt;$339.00&lt;/dd&gt;&lt;/dl&gt;&lt;dl&gt;&lt;dt&gt;23-Oct&lt;/dt&gt;&lt;dd&gt;$339.00&lt;/dd&gt;&lt;/dl&gt;" data-html="true" data-trigger="manual">
+            <strong>2</strong> nights total
+            <span><i></i></span>
+          </div>
+
+        <small class="has-nightly-rates-breakdown">
+          <strong>2</strong> nights total
+        </small>
+
+        <big>
+          <span class="currency-label">AUD </span><sup>$</sup>678
+        </big>
+      </div>
+      <div class="offer-book"><a href="/properties/136044/offers/43712/booking?adults=1&amp;checkIn=2014-10-22&amp;checkOut=2014-10-24" class="btn book">Book now</a></div>
+      <div class="offer-view"><a href="javascript://" class="btn view tertiary">View</a></div>
+    </div>
+
+  </div>
+
+
+  <div class='offer-middle'>
+  </div>
+  <div class='offer-bottom has-availability-calendar'>
+
+      <p class="policy-link">
+    <a href="/offers/43712/cancellation_policy?adults=1&amp;checkIn=2014-10-22&amp;checkOut=2014-10-24" class="cancellation "><i></i>Free cancellation up to 72 hours before check-in</a>
+  </p>
+
+
+        <div class="room-offer-change-dates">
+          <div class="btn tertiary" show-text="Flexible with dates?" hide-text="Flexible with dates?"><i></i><span>Flexible with dates?</span></div>
+        </div>
+
+
+        <div class="availablility-calendar">
+          <div class="availability-search offer-search">
+            <div class="search-bar">
+              <label class="search-label">Dates based on</label>
+              <ul class="search-editor">
+              </ul>
+            </div>
+            <div class="calendar-container offer-calendar" data-type="offer" data-id="43712">
+              <div class="calendar-close-button">Close<i></i></div>
+              <div class="calendar"></div></div>
+            <div class="price-table"><div class="loader"></div><div class="price-container"></div></div>
+          </div>
+        </div>
+  </div>
+</li>
+
+        </ul>
+
+
+    </div>
+
+</li>
+
+      </ul>
+    </div>
+  </div>
+
+  <div id="property-details" class="property-details">
+
+
+    <!-- Property information -->
+    <div id="property-information" class="property-information">
+      <header>
+        <h5>Property Information</h5>
+      </header>
+
+      <div class="full-info">
+        <p>Rydges Sydney Central have 271 spacious guest rooms with complimentary Wi-Fi and comfortable beds to ensure you sleep sound and comfortable. But if you’re a night owl, we also have you covered with Bar Surry Hills and Albies Restaurant. Our menus feature fresh seasonal fare with rich flavour packed into every bite plus our own draft beers. Or enjoy the convenience of being located in the centre of a world class city that never sleeps.</p>
+
+<p>Maintenance Notice:</p>
+
+<p>During the period of 7-20 October, the pool & sauna facilities will be closed for necessary maintenance. We apologise for any inconvenience.</p>
+      </div>
+    </div>
+
+      <div class="checkin-container">
+        <i class="property-new-clock"></i>
+        <span>Check-in time starts at <strong>2pm</strong>.</span>
+        <span>Check-out time is <strong>11am</strong>.</span>
+      </div>
+
+    <!-- Property features -->
+    <div id="property-features" class="property-features">
+      <header>
+        <h5>Features</h5>
+      </header>
+
+      <ul class="facilities-list">
+          <li title="24-hour front desk" title="24-hour front desk">
+            <i>-</i><span>24-hour front desk</span>
+          </li>
+          <li title="Accessible bathroom" title="Accessible bathroom">
+            <i>-</i><span>Accessible bathroom</span>
+          </li>
+          <li title="Accessible parking" title="Accessible parking">
+            <i>-</i><span>Accessible parking</span>
+          </li>
+          <li title="Accessible path of travel" title="Accessible path of travel">
+            <i>-</i><span>Accessible path of travel</span>
+          </li>
+          <li title="Air-conditioned public areas" title="Air-conditioned public areas">
+            <i>-</i><span>Air-conditioned public areas</span>
+          </li>
+          <li title="Babysitting or childcare (surcharge)" title="Babysitting or childcare (surcharge)">
+            <i>-</i><span>Babysitting or childcare (surcharge)</span>
+          </li>
+          <li title="Banquet facilities" title="Banquet facilities">
+            <i>-</i><span>Banquet facilities</span>
+          </li>
+          <li title="Bar" title="Bar">
+            <i>-</i><span>Bar</span>
+          </li>
+          <li title="Bar/lounge" title="Bar/lounge">
+            <i>-</i><span>Bar/lounge</span>
+          </li>
+          <li title="Breakfast available (surcharge)" title="Breakfast available (surcharge)">
+            <i>-</i><span>Breakfast available (surcharge)</span>
+          </li>
+          <li title="Business services" title="Business services">
+            <i>-</i><span>Business services</span>
+          </li>
+          <li title="Cafe" title="Cafe">
+            <i>-</i><span>Cafe</span>
+          </li>
+          <li title="Computer station" title="Computer station">
+            <i>-</i><span>Computer station</span>
+          </li>
+          <li title="Concierge" title="Concierge">
+            <i>-</i><span>Concierge</span>
+          </li>
+          <li title="Concierge services" title="Concierge services">
+            <i>-</i><span>Concierge services</span>
+          </li>
+          <li title="Conference / convention" title="Conference / convention">
+            <i>-</i><span>Conference / convention</span>
+          </li>
+          <li title="Currency exchange" title="Currency exchange">
+            <i>-</i><span>Currency exchange</span>
+          </li>
+          <li title="Disabled access rooms" title="Disabled access rooms">
+            <i>-</i><span>Disabled access rooms</span>
+          </li>
+          <li title="Dry cleaning/laundry service" title="Dry cleaning/laundry service">
+            <i>-</i><span>Dry cleaning/laundry service</span>
+          </li>
+          <li title="Elevator/lift" title="Elevator/lift">
+            <i>-</i><span>Elevator/lift</span>
+          </li>
+          <li title="Fitness facilities" title="Fitness facilities">
+            <i>-</i><span>Fitness facilities</span>
+          </li>
+          <li title="Free Wi-Fi" title="Free Wi-Fi">
+            <i>-</i><span>Free Wi-Fi</span>
+          </li>
+          <li title="Free wi-fi in public areas" title="Free wi-fi in public areas">
+            <i>-</i><span>Free wi-fi in public areas</span>
+          </li>
+          <li title="Garage parking (surcharge)" title="Garage parking (surcharge)">
+            <i>-</i><span>Garage parking (surcharge)</span>
+          </li>
+          <li title="Gay friendly" title="Gay friendly">
+            <i>-</i><span>Gay friendly</span>
+          </li>
+          <li title="Gymnasium" title="Gymnasium">
+            <i>-</i><span>Gymnasium</span>
+          </li>
+          <li title="Health club" title="Health club">
+            <i>-</i><span>Health club</span>
+          </li>
+          <li title="In-room accessibility" title="In-room accessibility">
+            <i>-</i><span>In-room accessibility</span>
+          </li>
+          <li title="Interconnecting rooms" title="Interconnecting rooms">
+            <i>-</i><span>Interconnecting rooms</span>
+          </li>
+          <li title="Internet computer" title="Internet computer">
+            <i>-</i><span>Internet computer</span>
+          </li>
+          <li title="Local Expert Concierge" title="Local Expert Concierge">
+            <i>-</i><span>Local Expert Concierge</span>
+          </li>
+          <li title="Luggage storage" title="Luggage storage">
+            <i>-</i><span>Luggage storage</span>
+          </li>
+          <li title="Multilingual staff" title="Multilingual staff">
+            <i>-</i><span>Multilingual staff</span>
+          </li>
+          <li title="Multiple large conference rooms" title="Multiple large conference rooms">
+            <i>-</i><span>Multiple large conference rooms</span>
+          </li>
+          <li title="Multiple small meeting rooms" title="Multiple small meeting rooms">
+            <i>-</i><span>Multiple small meeting rooms</span>
+          </li>
+          <li title="Non-smoking establishment" title="Non-smoking establishment">
+            <i>-</i><span>Non-smoking establishment</span>
+          </li>
+          <li title="Number of bars/lounges" title="Number of bars/lounges">
+            <i>-</i><span>Number of bars/lounges</span>
+          </li>
+          <li title="Pool – indoor heated" title="Pool – indoor heated">
+            <i>-</i><span>Pool – indoor heated</span>
+          </li>
+          <li title="Restaurant" title="Restaurant">
+            <i>-</i><span>Restaurant</span>
+          </li>
+          <li title="Roll-in shower" title="Roll-in shower">
+            <i>-</i><span>Roll-in shower</span>
+          </li>
+          <li title="Room Service – 24 hours" title="Room Service – 24 hours">
+            <i>-</i><span>Room Service – 24 hours</span>
+          </li>
+          <li title="Safety deposit box" title="Safety deposit box">
+            <i>-</i><span>Safety deposit box</span>
+          </li>
+          <li title="Sauna" title="Sauna">
+            <i>-</i><span>Sauna</span>
+          </li>
+          <li title="Self parking (surcharge)" title="Self parking (surcharge)">
+            <i>-</i><span>Self parking (surcharge)</span>
+          </li>
+          <li title="Spa bath / jacuzzi" title="Spa bath / jacuzzi">
+            <i>-</i><span>Spa bath / jacuzzi</span>
+          </li>
+          <li title="Suitable for children" title="Suitable for children">
+            <i>-</i><span>Suitable for children</span>
+          </li>
+          <li title="Tea / coffee making" title="Tea / coffee making">
+            <i>-</i><span>Tea / coffee making</span>
+          </li>
+          <li title="Terrace" title="Terrace">
+            <i>-</i><span>Terrace</span>
+          </li>
+          <li title="Tour assistance" title="Tour assistance">
+            <i>-</i><span>Tour assistance</span>
+          </li>
+          <li title="Tours/ticket assistance" title="Tours/ticket assistance">
+            <i>-</i><span>Tours/ticket assistance</span>
+          </li>
+          <li title="Valet parking (surcharge)" title="Valet parking (surcharge)">
+            <i>-</i><span>Valet parking (surcharge)</span>
+          </li>
+          <li title="Wedding services" title="Wedding services">
+            <i>-</i><span>Wedding services</span>
+          </li>
+          <li title="Wheel chair access" title="Wheel chair access">
+            <i>-</i><span>Wheel chair access</span>
+          </li>
+      </ul>
+    </div>
+
+    <!-- Property map -->
+    <div id="property-map" data-latitude="-33.881885" data-longitude="151.209489"></div>
+
+  </div>
+</div>
+
+
+      </div>
+
+      <script src="//dej6bpy8oabji.cloudfront.net/assets/jquery-99d3a37c2289c9b3ce811ced59b7a5e4.js" type="text/javascript"></script>
+<script src="//dej6bpy8oabji.cloudfront.net/assets/consumer/vendor_core-23c4956b8276f6a3f79b385fbdee66a7.js" type="text/javascript"></script>
+<script src="//dej6bpy8oabji.cloudfront.net/assets/consumer/vendor_widget-5a914335c7e7b7bc6daa6b11f12c4891.js" type="text/javascript"></script>
+
+  <script src="//dej6bpy8oabji.cloudfront.net/assets/consumer/leaflet_all-32679a94d8907941dcb62ea48f2358da.js" type="text/javascript"></script>
+
+
+<script src="//dej6bpy8oabji.cloudfront.net/assets/consumer_common-6bb49c30f7e8a0edf838edc871987d77.js" type="text/javascript"></script>
+
+  <script src="//dej6bpy8oabji.cloudfront.net/assets/consumer_property-45966149b0e1fbeff00e4c607de51a8e.js" type="text/javascript"></script>
+
+
+<script type="text/javascript">
+
+  Newco.brand = 'hooroo';
+  Newco.brandDisplay = 'Hooroo';
+
+  Newco.assets = {"mapCenterMarker":"//dej6bpy8oabji.cloudfront.net/assets/consumer/skin/hooroo/map/marker-center-point-a60666a2dddb258dbe4f3a1c1a608b63.png","mapMarkerSingle":"//dej6bpy8oabji.cloudfront.net/assets/consumer/skin/hooroo/map/marker-single-ab51809e10dddcdadafa9f53633f0854.png","processingLoader":"//dej6bpy8oabji.cloudfront.net/assets/consumer/skin/hooroo/progressing-130d3ea032f1eb752ff9592952fa147a.gif"};
+
+  Newco.paths = {"default_redirect":"http://hotels.hooroo.com/search/list","propertiesPath":"/properties","dealsPath":"/deals","dealsPathJson":"/deals.json","searchPath":"/search","searchPathJson":"/search.json","destinationSearchPathJson":"/destination/search.json","propertyAvailableOffersJsonTemplate":"/properties","bookAnOfferPathTemplate":"/properties/%7B%7Bproperty_id%7D%7D/offers/%7B%7Boffer_id%7D%7D/booking","offersCancellationPolicyTemplate":"/offers/%7B%7Boffer_id%7D%7D/cancellation_policy","bookingPathTemplate":"/bookings/%7B%7Bbooking_id%7D%7D","bookingPathJsonTemplate":"/bookings/%7B%7Bbooking_id%7D%7D.json","featureStatePath":"/feature/state","qffLogoutPath":"http://www.qantas.com.au/fflyer/dyn/logout?thirdParty=hooroos","qffLogoutWardenPath":"/qff_logout"};
+
+
+  Newco.featureState = {"features":["jetstar_price_beat_guarantee","screen_for_fraud"]};
+
+</script>
+
+<script id="bootstrap" type="text/json">
+  {}
+</script>
+
+<script type="text/javascript">
+
+  Newco.assignBootstrapData();
+
+  $(function() {
+
+    if (Newco.global) {
+      Newco.global.ready();
+    }
+
+    if (Newco.bootstrapCustomer) {
+      Newco.customer = new Newco.social.Customer(Newco.bootstrapCustomer);
+    }
+
+      Newco.property.ready({ showCalendarOnLoad: false });
+
+
+    $('html').removeClass('ui-loading');
+
+    if (Newco.isPhone()) {
+      $("#facebook-url").attr('href', 'http://www.facebook.com/hooroo');
+    }
+
+    if (Newco.bootstrapData && Newco.bootstrapData.analytics_data && Newco.bootstrapData.analytics_data.skipDefaultPageView) {
+      // noop
+    } else {
+      Newco.analytics.trackPageView();
+    }
+  });
+</script>
+
+      <div id="app-footer" class="row-fluid app-footer app-stripe">
+  <div class="footer-inner">
+    <div class="container">
+
+      <ul class="links">
+        <li><a href="//hooroo.com/about" class="nav-about">About</a></li>
+        <li><a href="/enquiries/new" class="nav-contact-us">Contact Us</a></li>
+        <li><a href="//hooroo.com/faq" class="nav-faqs">FAQs</a></li>
+        <li><a href="//hooroo.com/price-promise" class="nav-price-promise">Price Promise</a></li>
+        <li><a href="//hooroo.com/privacy" class="nav-privacy-policy">Privacy Policy</a></li>
+        <li><a href="//hooroo.com/terms" class="nav-faqs">Terms of Use</a></li>
+        <li class="nav-last-item"><a href="/accommodation/australia">Popular Australian Destinations</a></li>
+      </ul>
+
+      <ul class="social-media-links">
+        <li><a id="facebook-url" href="http://www.facebook.com/hooroo/" class='follow-facebook' rel='external' target='_blank'>Facebook</a></li>
+        <li><a href="http://twitter.com/hooroo" class='follow-twitter' rel='external' target='_blank'>Twitter</a></li>
+        <li><a href="http://pinterest.com/hooroo" class='follow-pinterest' rel='external' target='_blank'>Pinterest</a></li>
+        <li><a href="http://instagram.com/hooroogram" class='follow-instagram' rel='external' target='_blank'>Instagram</a></li>
+        <li><a href="https://plus.google.com/b/113591578161418564119/113591578161418564119/posts" class='follow-gplus' rel='external' target='_blank'>Google+</a></li>
+        <li><a href="http://www.youtube.com/hoorooaustralia" class='follow-youtube' rel='external' target='_blank'>YouTube</a></li>
+      </ul>
+
+      <div class="logo"><a class="no-print-link" href="//hooroo.com">Hooroo</a></div>
+
+      <div class="copy">
+  <p><span>&copy; 2014 Hooroo Pty Ltd. </span><span>ABN 32 152 774 457</span></p>
+</div>
+
+
+    </div>
+  </div>
+</div>
+
+
+    </div>
+
+    <!--[if lte IE 7]>
+      <script type="text/javascript" src="//dej6bpy8oabji.cloudfront.net/assets/consumer/icon-font-ie7-ed3857fa2e73a8681b4f0251da38e8dc.js">
+    <![endif]-->
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32956056-1']);
+  _gaq.push(['_setDomainName', 'hotels.hooroo.com']);
+  _gaq.push(['_setAllowLinker', true]);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+    <!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PFQ6" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PFQ6');</script>
+<!-- End Google Tag Manager -->
+
+
+
+
+  </body>
+</html>

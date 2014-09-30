@@ -1,0 +1,24 @@
+{
+    "pages": [
+        {
+            "url": "http://www.google.com",
+            "timingsHistory": [
+                {
+                    "timestamp": "1412057483907",
+                    "timeToFirstByte": 311.5,
+                    "domInteractive": 525,
+                    "domComplete": 1225.5,
+                    "httpTrafficCompleted": 1428.5
+                },
+                {
+                    "timestamp": "1412057471880",
+                    "timeToFirstByte": 311,
+                    "domInteractive": 499,
+                    "domComplete": 1079,
+                    "httpTrafficCompleted": 1215.5
+                }
+            ],
+            "gruntPhantomasReport": "httpwwwgooglecom/index.html"
+        }
+    ]
+}

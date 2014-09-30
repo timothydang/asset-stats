@@ -1,0 +1,2222 @@
+{
+  "assertions": {
+    "requests": {
+      "value": 200
+    },
+    "cssCount": {
+      "value": 6
+    },
+    "jsCount": {
+      "value": 12
+    },
+    "imageCount": {
+      "value": 30
+    },
+    "smallImages": {
+      "value": 20
+    },
+    "imageSize": {
+      "value": 512000
+    },
+    "webfontCount": {
+      "value": 4
+    },
+    "multipleRequests": {
+      "value": 1
+    },
+    "imagesWithoutDimensions": {
+      "value": 5
+    },
+    "commentsSize": {
+      "value": 1000
+    },
+    "whiteSpacesSize": {
+      "value": 8000
+    },
+    "DOMelementsCount": {
+      "value": 2000
+    },
+    "DOMqueries": {
+      "value": 200
+    },
+    "DOMqueriesDuplicated": {
+      "value": 30
+    },
+    "DOMinserts": {
+      "value": 100
+    },
+    "jQuerySizzleCalls": {
+      "value": 300
+    },
+    "headersSentSize": {
+      "value": 20000
+    }
+  },
+  "metrics": {
+    "requests": {
+      "values": [
+        39,
+        52,
+        null
+      ],
+      "sum": 91,
+      "min": 39,
+      "max": 52,
+      "median": 45.5,
+      "average": 45.5
+    },
+    "gzipRequests": {
+      "values": [
+        12,
+        12,
+        null
+      ],
+      "sum": 24,
+      "min": 12,
+      "max": 12,
+      "median": 12,
+      "average": 12
+    },
+    "postRequests": {
+      "values": [
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "httpsRequests": {
+      "values": [
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "notFound": {
+      "values": [
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "bodySize": {
+      "values": [
+        1034487,
+        1216965,
+        null
+      ],
+      "sum": 2251452,
+      "min": 1034487,
+      "max": 1216965,
+      "median": 1125726,
+      "average": 1125726
+    },
+    "contentLength": {
+      "values": [
+        1070052,
+        1250236,
+        null
+      ],
+      "sum": 2320288,
+      "min": 1070052,
+      "max": 1250236,
+      "median": 1160144,
+      "average": 1160144
+    },
+    "httpTrafficCompleted": {
+      "values": [
+        3119,
+        6497,
+        null
+      ],
+      "sum": 9616,
+      "min": 3119,
+      "max": 6497,
+      "median": 4808,
+      "average": 4808
+    },
+    "timeToFirstByte": {
+      "values": [
+        300,
+        512,
+        null
+      ],
+      "sum": 812,
+      "min": 300,
+      "max": 512,
+      "median": 406,
+      "average": 406
+    },
+    "timeToLastByte": {
+      "values": [
+        325,
+        540,
+        null
+      ],
+      "sum": 865,
+      "min": 325,
+      "max": 540,
+      "median": 432.5,
+      "average": 432.5
+    },
+    "ajaxRequests": {
+      "values": [
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "htmlCount": {
+      "values": [
+        1,
+        1,
+        null
+      ],
+      "sum": 2,
+      "min": 1,
+      "max": 1,
+      "median": 1,
+      "average": 1
+    },
+    "htmlSize": {
+      "values": [
+        92658,
+        104921,
+        null
+      ],
+      "sum": 197579,
+      "min": 92658,
+      "max": 104921,
+      "median": 98789.5,
+      "average": 98789.5
+    },
+    "cssCount": {
+      "values": [
+        4,
+        4,
+        null
+      ],
+      "sum": 8,
+      "min": 4,
+      "max": 4,
+      "median": 4,
+      "average": 4
+    },
+    "cssSize": {
+      "values": [
+        351450,
+        357951,
+        null
+      ],
+      "sum": 709401,
+      "min": 351450,
+      "max": 357951,
+      "median": 354700.5,
+      "average": 354700.5
+    },
+    "jsCount": {
+      "values": [
+        9,
+        9,
+        null
+      ],
+      "sum": 18,
+      "min": 9,
+      "max": 9,
+      "median": 9,
+      "average": 9
+    },
+    "jsSize": {
+      "values": [
+        424331,
+        426290,
+        null
+      ],
+      "sum": 850621,
+      "min": 424331,
+      "max": 426290,
+      "median": 425310.5,
+      "average": 425310.5
+    },
+    "jsonCount": {
+      "values": [
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "jsonSize": {
+      "values": [
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "imageCount": {
+      "values": [
+        21,
+        30,
+        null
+      ],
+      "sum": 51,
+      "min": 21,
+      "max": 30,
+      "median": 25.5,
+      "average": 25.5
+    },
+    "imageSize": {
+      "values": [
+        169182,
+        344591,
+        null
+      ],
+      "sum": 513773,
+      "min": 169182,
+      "max": 344591,
+      "median": 256886.5,
+      "average": 256886.5
+    },
+    "videoCount": {
+      "values": [
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "videoSize": {
+      "values": [
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "webfontCount": {
+      "values": [
+        1,
+        1,
+        null
+      ],
+      "sum": 2,
+      "min": 1,
+      "max": 1,
+      "median": 1,
+      "average": 1
+    },
+    "webfontSize": {
+      "values": [
+        23242,
+        23242,
+        null
+      ],
+      "sum": 46484,
+      "min": 23242,
+      "max": 23242,
+      "median": 23242,
+      "average": 23242
+    },
+    "base64Count": {
+      "values": [
+        1,
+        1,
+        null
+      ],
+      "sum": 2,
+      "min": 1,
+      "max": 1,
+      "median": 1,
+      "average": 1
+    },
+    "base64Size": {
+      "values": [
+        26160,
+        26160,
+        null
+      ],
+      "sum": 52320,
+      "min": 26160,
+      "max": 26160,
+      "median": 26160,
+      "average": 26160
+    },
+    "otherCount": {
+      "values": [
+        3,
+        7,
+        null
+      ],
+      "sum": 10,
+      "min": 3,
+      "max": 7,
+      "median": 5,
+      "average": 5
+    },
+    "otherSize": {
+      "values": [
+        729,
+        1701,
+        null
+      ],
+      "sum": 2430,
+      "min": 729,
+      "max": 1701,
+      "median": 1215,
+      "average": 1215
+    },
+    "cacheHits": {
+      "values": [
+        34,
+        42,
+        null
+      ],
+      "sum": 76,
+      "min": 34,
+      "max": 42,
+      "median": 38,
+      "average": 38
+    },
+    "cacheMisses": {
+      "values": [
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "cachePasses": {
+      "values": [
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "cachingNotSpecified": {
+      "values": [
+        1,
+        2,
+        null
+      ],
+      "sum": 3,
+      "min": 1,
+      "max": 2,
+      "median": 1.5,
+      "average": 1.5
+    },
+    "cachingTooShort": {
+      "values": [
+        2,
+        2,
+        null
+      ],
+      "sum": 4,
+      "min": 2,
+      "max": 2,
+      "median": 2,
+      "average": 2
+    },
+    "cachingDisabled": {
+      "values": [
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "oldCachingHeaders": {
+      "values": [
+        35,
+        43,
+        null
+      ],
+      "sum": 78,
+      "min": 35,
+      "max": 43,
+      "median": 39,
+      "average": 39
+    },
+    "consoleMessages": {
+      "values": [
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "cookiesSent": {
+      "values": [
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "cookiesRecv": {
+      "values": [
+        255,
+        358,
+        null
+      ],
+      "sum": 613,
+      "min": 255,
+      "max": 358,
+      "median": 306.5,
+      "average": 306.5
+    },
+    "domainsWithCookies": {
+      "values": [
+        1,
+        2,
+        null
+      ],
+      "sum": 3,
+      "min": 1,
+      "max": 2,
+      "median": 1.5,
+      "average": 1.5
+    },
+    "documentCookiesLength": {
+      "values": [
+        400,
+        401,
+        null
+      ],
+      "sum": 801,
+      "min": 400,
+      "max": 401,
+      "median": 400.5,
+      "average": 400.5
+    },
+    "documentCookiesCount": {
+      "values": [
+        6,
+        6,
+        null
+      ],
+      "sum": 12,
+      "min": 6,
+      "max": 6,
+      "median": 6,
+      "average": 6
+    },
+    "documentHeight": {
+      "values": [
+        4632,
+        4798,
+        null
+      ],
+      "sum": 9430,
+      "min": 4632,
+      "max": 4798,
+      "median": 4715,
+      "average": 4715
+    },
+    "domains": {
+      "values": [
+        7,
+        8,
+        null
+      ],
+      "sum": 15,
+      "min": 7,
+      "max": 8,
+      "median": 7.5,
+      "average": 7.5
+    },
+    "maxRequestsPerDomain": {
+      "values": [
+        24,
+        24,
+        null
+      ],
+      "sum": 48,
+      "min": 24,
+      "max": 24,
+      "median": 24,
+      "average": 24
+    },
+    "medianRequestsPerDomain": {
+      "values": [
+        1.5,
+        2,
+        null
+      ],
+      "sum": 3.5,
+      "min": 1.5,
+      "max": 2,
+      "median": 1.75,
+      "average": 1.75
+    },
+    "commentsSize": {
+      "values": [
+        253,
+        253,
+        null
+      ],
+      "sum": 506,
+      "min": 253,
+      "max": 253,
+      "median": 253,
+      "average": 253
+    },
+    "hiddenContentSize": {
+      "values": [
+        10247,
+        10247,
+        null
+      ],
+      "sum": 20494,
+      "min": 10247,
+      "max": 10247,
+      "median": 10247,
+      "average": 10247
+    },
+    "whiteSpacesSize": {
+      "values": [
+        9897,
+        9897,
+        null
+      ],
+      "sum": 19794,
+      "min": 9897,
+      "max": 9897,
+      "median": 9897,
+      "average": 9897
+    },
+    "DOMelementsCount": {
+      "values": [
+        1447,
+        1447,
+        null
+      ],
+      "sum": 2894,
+      "min": 1447,
+      "max": 1447,
+      "median": 1447,
+      "average": 1447
+    },
+    "DOMelementMaxDepth": {
+      "values": [
+        13,
+        13,
+        null
+      ],
+      "sum": 26,
+      "min": 13,
+      "max": 13,
+      "median": 13,
+      "average": 13
+    },
+    "nodesWithInlineCSS": {
+      "values": [
+        4,
+        4,
+        null
+      ],
+      "sum": 8,
+      "min": 4,
+      "max": 4,
+      "median": 4,
+      "average": 4
+    },
+    "DOMmutationsInserts": {
+      "values": [
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "DOMmutationsRemoves": {
+      "values": [
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "DOMmutationsAttributes": {
+      "values": [
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "DOMqueries": {
+      "values": [
+        539,
+        539,
+        null
+      ],
+      "sum": 1078,
+      "min": 539,
+      "max": 539,
+      "median": 539,
+      "average": 539
+    },
+    "DOMqueriesById": {
+      "values": [
+        16,
+        16,
+        null
+      ],
+      "sum": 32,
+      "min": 16,
+      "max": 16,
+      "median": 16,
+      "average": 16
+    },
+    "DOMqueriesByClassName": {
+      "values": [
+        23,
+        23,
+        null
+      ],
+      "sum": 46,
+      "min": 23,
+      "max": 23,
+      "median": 23,
+      "average": 23
+    },
+    "DOMqueriesByTagName": {
+      "values": [
+        446,
+        446,
+        null
+      ],
+      "sum": 892,
+      "min": 446,
+      "max": 446,
+      "median": 446,
+      "average": 446
+    },
+    "DOMqueriesByQuerySelectorAll": {
+      "values": [
+        54,
+        54,
+        null
+      ],
+      "sum": 108,
+      "min": 54,
+      "max": 54,
+      "median": 54,
+      "average": 54
+    },
+    "DOMinserts": {
+      "values": [
+        94,
+        94,
+        null
+      ],
+      "sum": 188,
+      "min": 94,
+      "max": 94,
+      "median": 94,
+      "average": 94
+    },
+    "DOMqueriesDuplicated": {
+      "values": [
+        19,
+        19,
+        null
+      ],
+      "sum": 38,
+      "min": 19,
+      "max": 19,
+      "median": 19,
+      "average": 19
+    },
+    "eventsBound": {
+      "values": [
+        524,
+        524,
+        null
+      ],
+      "sum": 1048,
+      "min": 524,
+      "max": 524,
+      "median": 524,
+      "average": 524
+    },
+    "globalVariables": {
+      "values": [
+        37,
+        37,
+        null
+      ],
+      "sum": 74,
+      "min": 37,
+      "max": 37,
+      "median": 37,
+      "average": 37
+    },
+    "globalVariablesFalsy": {
+      "values": [
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "headersCount": {
+      "values": [
+        638,
+        831,
+        null
+      ],
+      "sum": 1469,
+      "min": 638,
+      "max": 831,
+      "median": 734.5,
+      "average": 734.5
+    },
+    "headersSentCount": {
+      "values": [
+        116,
+        155,
+        null
+      ],
+      "sum": 271,
+      "min": 116,
+      "max": 155,
+      "median": 135.5,
+      "average": 135.5
+    },
+    "headersRecvCount": {
+      "values": [
+        522,
+        676,
+        null
+      ],
+      "sum": 1198,
+      "min": 522,
+      "max": 676,
+      "median": 599,
+      "average": 599
+    },
+    "headersSize": {
+      "values": [
+        27190,
+        35578,
+        null
+      ],
+      "sum": 62768,
+      "min": 27190,
+      "max": 35578,
+      "median": 31384,
+      "average": 31384
+    },
+    "headersSentSize": {
+      "values": [
+        8438,
+        11259,
+        null
+      ],
+      "sum": 19697,
+      "min": 8438,
+      "max": 11259,
+      "median": 9848.5,
+      "average": 9848.5
+    },
+    "headersRecvSize": {
+      "values": [
+        18752,
+        24319,
+        null
+      ],
+      "sum": 43071,
+      "min": 18752,
+      "max": 24319,
+      "median": 21535.5,
+      "average": 21535.5
+    },
+    "headersBiggerThanContent": {
+      "values": [
+        4,
+        8,
+        null
+      ],
+      "sum": 12,
+      "min": 4,
+      "max": 8,
+      "median": 6,
+      "average": 6
+    },
+    "documentWriteCalls": {
+      "values": [
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "evalCalls": {
+      "values": [
+        3,
+        3,
+        null
+      ],
+      "sum": 6,
+      "min": 3,
+      "max": 3,
+      "median": 3,
+      "average": 3
+    },
+    "jQueryOnDOMReadyFunctions": {
+      "values": [
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "jQuerySizzleCalls": {
+      "values": [
+        103,
+        103,
+        null
+      ],
+      "sum": 206,
+      "min": 103,
+      "max": 103,
+      "median": 103,
+      "average": 103
+    },
+    "jsErrors": {
+      "values": [
+        1,
+        1,
+        null
+      ],
+      "sum": 2,
+      "min": 1,
+      "max": 1,
+      "median": 1,
+      "average": 1
+    },
+    "localStorageEntries": {
+      "values": [
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "redirects": {
+      "values": [
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "redirectsTime": {
+      "values": [
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "assetsNotGzipped": {
+      "values": [
+        2,
+        2,
+        null
+      ],
+      "sum": 4,
+      "min": 2,
+      "max": 2,
+      "median": 2,
+      "average": 2
+    },
+    "assetsWithQueryString": {
+      "values": [
+        8,
+        17,
+        null
+      ],
+      "sum": 25,
+      "min": 8,
+      "max": 17,
+      "median": 12.5,
+      "average": 12.5
+    },
+    "assetsWithCookies": {
+      "values": [
+        0,
+        1,
+        null
+      ],
+      "sum": 1,
+      "min": 0,
+      "max": 1,
+      "median": 0.5,
+      "average": 0.5
+    },
+    "smallImages": {
+      "values": [
+        9,
+        9,
+        null
+      ],
+      "sum": 18,
+      "min": 9,
+      "max": 9,
+      "median": 9,
+      "average": 9
+    },
+    "multipleRequests": {
+      "values": [
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "timeToFirstCss": {
+      "values": [
+        399,
+        587,
+        null
+      ],
+      "sum": 986,
+      "min": 399,
+      "max": 587,
+      "median": 493,
+      "average": 493
+    },
+    "timeToFirstJs": {
+      "values": [
+        490,
+        800,
+        null
+      ],
+      "sum": 1290,
+      "min": 490,
+      "max": 800,
+      "median": 645,
+      "average": 645
+    },
+    "timeToFirstImage": {
+      "values": [
+        1590,
+        2828,
+        null
+      ],
+      "sum": 4418,
+      "min": 1590,
+      "max": 2828,
+      "median": 2209,
+      "average": 2209
+    },
+    "domInteractive": {
+      "values": [
+        1613,
+        1947,
+        null
+      ],
+      "sum": 3560,
+      "min": 1613,
+      "max": 1947,
+      "median": 1780,
+      "average": 1780
+    },
+    "domContentLoaded": {
+      "values": [
+        1613,
+        1947,
+        null
+      ],
+      "sum": 3560,
+      "min": 1613,
+      "max": 1947,
+      "median": 1780,
+      "average": 1780
+    },
+    "domContentLoadedEnd": {
+      "values": [
+        1995,
+        4135,
+        null
+      ],
+      "sum": 6130,
+      "min": 1995,
+      "max": 4135,
+      "median": 3065,
+      "average": 3065
+    },
+    "domComplete": {
+      "values": [
+        2927,
+        6466,
+        null
+      ],
+      "sum": 9393,
+      "min": 2927,
+      "max": 6466,
+      "median": 4696.5,
+      "average": 4696.5
+    },
+    "timeBackend": {
+      "values": [
+        7,
+        9,
+        null
+      ],
+      "sum": 16,
+      "min": 7,
+      "max": 9,
+      "median": 8,
+      "average": 8
+    },
+    "timeFrontend": {
+      "values": [
+        91,
+        93,
+        null
+      ],
+      "sum": 184,
+      "min": 91,
+      "max": 93,
+      "median": 92,
+      "average": 92
+    },
+    "windowAlerts": {
+      "values": [
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "windowConfirms": {
+      "values": [
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "windowPrompts": {
+      "values": [
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "bodyHTMLSize": {
+      "values": [
+        202623,
+        204101,
+        null
+      ],
+      "sum": 406724,
+      "min": 202623,
+      "max": 204101,
+      "median": 203362,
+      "average": 203362
+    },
+    "iframesCount": {
+      "values": [
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "imagesWithoutDimensions": {
+      "values": [
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "smallestResponse": {
+      "values": [
+        35,
+        35,
+        null
+      ],
+      "sum": 70,
+      "min": 35,
+      "max": 35,
+      "median": 35,
+      "average": 35
+    },
+    "biggestResponse": {
+      "values": [
+        138141,
+        144642,
+        null
+      ],
+      "sum": 282783,
+      "min": 138141,
+      "max": 144642,
+      "median": 141391.5,
+      "average": 141391.5
+    },
+    "fastestResponse": {
+      "values": [
+        32,
+        57,
+        null
+      ],
+      "sum": 89,
+      "min": 32,
+      "max": 57,
+      "median": 44.5,
+      "average": 44.5
+    },
+    "slowestResponse": {
+      "values": [
+        1240,
+        1819,
+        null
+      ],
+      "sum": 3059,
+      "min": 1240,
+      "max": 1819,
+      "median": 1529.5,
+      "average": 1529.5
+    },
+    "smallestLatency": {
+      "values": [
+        32,
+        55,
+        null
+      ],
+      "sum": 87,
+      "min": 32,
+      "max": 55,
+      "median": 43.5,
+      "average": 43.5
+    },
+    "biggestLatency": {
+      "values": [
+        884,
+        1819,
+        null
+      ],
+      "sum": 2703,
+      "min": 884,
+      "max": 1819,
+      "median": 1351.5,
+      "average": 1351.5
+    },
+    "medianResponse": {
+      "values": [
+        852,
+        1197,
+        null
+      ],
+      "sum": 2049,
+      "min": 852,
+      "max": 1197,
+      "median": 1024.5,
+      "average": 1024.5
+    },
+    "medianLatency": {
+      "values": [
+        509,
+        1197,
+        null
+      ],
+      "sum": 1706,
+      "min": 509,
+      "max": 1197,
+      "median": 853,
+      "average": 853
+    }
+  },
+  "offenders": {
+    "gzipRequests": [
+      "http://qantas.staging.jqdev.net/search/list?adults=2&checkIn=2014-09-30&checkOut=2014-10-01&location=Melbourne+CBD%2C+VIC%2C+Australia (gzip: 102.46 kB / uncompressed: 102.46 kB)",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/skin/qantas/new-forms-3c25bf9d9d73e9214c03604741894fa2.css (gzip: 53.70 kB / uncompressed: 53.70 kB)",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/skin/qantas/common_vendor-14540a9b9cf587e526db5afe512492a0.css (gzip: 134.90 kB / uncompressed: 134.90 kB)",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/skin/qantas/search-0f3e26ee6d522c254b9685430ba64372.css (gzip: 99.58 kB / uncompressed: 99.58 kB)",
+      "http://d34z65866jidvd.cloudfront.net/assets/jquery-87ecc5add5d4fa9721dfa0f2b0745919.js (gzip: 45.20 kB / uncompressed: 45.20 kB)",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/vendor_widget-b311fe3721617491da0bf1a998dcf9d9.js (gzip: 55.43 kB / uncompressed: 55.43 kB)",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/vendor_core-d4401c9724dc5364afc27f3c4021b501.js (gzip: 56.43 kB / uncompressed: 56.43 kB)",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer_search-fb7604b28ae8ea47dc070ee0486e0ab2.js (gzip: 55.55 kB / uncompressed: 55.55 kB)",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer_common-b2d6bfb10ccd9b93ac5f1cb091a607b0.js (gzip: 61.28 kB / uncompressed: 61.28 kB)",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/leaflet_all-cde063a3a9aaa721b38361f5c0958f66.js (gzip: 60.71 kB / uncompressed: 60.71 kB)",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/skin/qantas/common_app-ffd138a8baebcb0460441bd97f7dd0ed.css (gzip: 55.02 kB / uncompressed: 55.02 kB)",
+      "http://js-agent.newrelic.com/nr-460.min.js (gzip: 17.53 kB / uncompressed: 17.53 kB)",
+      "http://qantas.staging.jqdev.net/search/list?adults=2&checkIn=2014-09-30&checkOut=2014-10-01&location=Melbourne+CBD%2C+VIC%2C+Australia (gzip: 90.49 kB / uncompressed: 90.49 kB)",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/skin/qantas/common_vendor-14540a9b9cf587e526db5afe512492a0.css (gzip: 141.25 kB / uncompressed: 141.25 kB)",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/vendor_widget-b311fe3721617491da0bf1a998dcf9d9.js (gzip: 58.16 kB / uncompressed: 58.16 kB)",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer_common-b2d6bfb10ccd9b93ac5f1cb091a607b0.js (gzip: 64.55 kB / uncompressed: 64.55 kB)",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/leaflet_all-cde063a3a9aaa721b38361f5c0958f66.js (gzip: 63.16 kB / uncompressed: 63.16 kB)",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/vendor_core-d4401c9724dc5364afc27f3c4021b501.js (gzip: 51.65 kB / uncompressed: 51.65 kB)",
+      "http://d34z65866jidvd.cloudfront.net/assets/jquery-87ecc5add5d4fa9721dfa0f2b0745919.js (gzip: 52.33 kB / uncompressed: 52.33 kB)"
+    ],
+    "htmlCount": [
+      "http://qantas.staging.jqdev.net/search/list?adults=2&checkIn=2014-09-30&checkOut=2014-10-01&location=Melbourne+CBD%2C+VIC%2C+Australia (102.46 kB)",
+      "http://qantas.staging.jqdev.net/search/list?adults=2&checkIn=2014-09-30&checkOut=2014-10-01&location=Melbourne+CBD%2C+VIC%2C+Australia (90.49 kB)"
+    ],
+    "cssCount": [
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/skin/qantas/new-forms-3c25bf9d9d73e9214c03604741894fa2.css (53.70 kB)",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/skin/qantas/common_vendor-14540a9b9cf587e526db5afe512492a0.css (134.90 kB)",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/skin/qantas/search-0f3e26ee6d522c254b9685430ba64372.css (99.58 kB)",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/skin/qantas/common_app-ffd138a8baebcb0460441bd97f7dd0ed.css (55.02 kB)",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/skin/qantas/common_vendor-14540a9b9cf587e526db5afe512492a0.css (141.25 kB)"
+    ],
+    "jsCount": [
+      "http://d34z65866jidvd.cloudfront.net/assets/jquery-87ecc5add5d4fa9721dfa0f2b0745919.js (45.20 kB)",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/vendor_widget-b311fe3721617491da0bf1a998dcf9d9.js (55.43 kB)",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/vendor_core-d4401c9724dc5364afc27f3c4021b501.js (56.43 kB)",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer_search-fb7604b28ae8ea47dc070ee0486e0ab2.js (55.55 kB)",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer_common-b2d6bfb10ccd9b93ac5f1cb091a607b0.js (61.28 kB)",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/leaflet_all-cde063a3a9aaa721b38361f5c0958f66.js (60.71 kB)",
+      "http://www.google-analytics.com/ga.js (39.95 kB)",
+      "http://www.googletagmanager.com/gtm.js?id=GTM-794X (22.31 kB)",
+      "http://js-agent.newrelic.com/nr-460.min.js (17.53 kB)",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/vendor_widget-b311fe3721617491da0bf1a998dcf9d9.js (58.16 kB)",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer_common-b2d6bfb10ccd9b93ac5f1cb091a607b0.js (64.55 kB)",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/leaflet_all-cde063a3a9aaa721b38361f5c0958f66.js (63.16 kB)",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/vendor_core-d4401c9724dc5364afc27f3c4021b501.js (51.65 kB)",
+      "http://d34z65866jidvd.cloudfront.net/assets/jquery-87ecc5add5d4fa9721dfa0f2b0745919.js (52.33 kB)",
+      "http://www.googletagmanager.com/gtm.js?id=GTM-794X (13.42 kB)"
+    ],
+    "imageCount": [
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/skin/qantas/spritemap/common-s590b409b51-2467ea33373362161fbd444dfb8e3a9e.png (47.11 kB)",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/skin/qantas/logo-oneworld-2f5563a4f8ec158ea9b213365cf9fb1b.png (4.27 kB)",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/skin/qantas/logo-28e6e24ee4cb9a41443677e75f135851.png (8.55 kB)",
+      "http://d19xv8kiylvduv.cloudfront.net/k/images/000/032/365/size270x140.jpg?1334123347 (18.02 kB)",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/skin/qantas/drop-down-arrow-8057d97d93209fcab975807f426718e4.png (1.08 kB)",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/skin/qantas/star-rating-delete-a7672de4aae35309636a25ec5dd33a96.png (1.36 kB)",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/skin/qantas/star-rating-e4660b01f001c50cccfa7315c01da388.png (1.81 kB)",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/skin/qantas/stars-self-rated-73ce29fa7648655698f342a692b11e58.png (1.15 kB)",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/skin/qantas/loader-property-card-2b8e00111b2f1f6f966912f0de5bed49.gif (3.13 kB)",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/skin/qantas/sash-start-e62959fce5e49abf8b38b9ee2ffcae05.png (1.07 kB)",
+      "http://d3kgudgg5o30mx.cloudfront.net/k/images/000/025/542/size270x140.jpg?1327470284 (12.32 kB)",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/skin/qantas/sash-bg-cb2882c0af823a932f318b18df966076.png (0.94 kB)",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/skin/qantas/sash-end-c4ea7547c668df4319db3ac61ac02e25.png (1.33 kB)",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/skin/qantas/stars-865fa858bf8802d2a2e47d1d6ae59c33.png (1.24 kB)",
+      "http://d19xv8kiylvduv.cloudfront.net/k/images/000/015/547/size270x140.jpg?1326511069 (12.96 kB)",
+      "http://d19xv8kiylvduv.cloudfront.net/k/images/000/027/945/size270x140.jpg?1329718149 (8.63 kB)",
+      "http://d3kgudgg5o30mx.cloudfront.net/k/images/000/003/030/size270x140.jpg?1326462739 (8.07 kB)",
+      "http://d3kgudgg5o30mx.cloudfront.net/k/images/000/011/524/size270x140.jpg?1326494467 (9.40 kB)",
+      "http://d3kgudgg5o30mx.cloudfront.net/k/images/000/058/512/size270x140.jpg?1351549775 (12.32 kB)",
+      "http://d3kgudgg5o30mx.cloudfront.net/k/images/000/025/494/size270x140.jpg?1327457134 (17.98 kB)",
+      "http://d3kgudgg5o30mx.cloudfront.net/k/images/000/033/724/size270x140.jpg?1335829670 (12.32 kB)",
+      "http://d3kgudgg5o30mx.cloudfront.net/k/images/000/037/820/size270x140.jpg?1337308787 (12.02 kB)",
+      "http://d3kgudgg5o30mx.cloudfront.net/k/images/000/025/564/size270x140.jpg?1327476374 (13.14 kB)",
+      "http://d19xv8kiylvduv.cloudfront.net/k/images/000/003/065/size270x140.jpg?1326462945 (14.65 kB)",
+      "http://d3kgudgg5o30mx.cloudfront.net/k/images/000/048/182/size270x140.jpg?1343113015 (15.60 kB)",
+      "http://d3kgudgg5o30mx.cloudfront.net/k/images/000/023/734/size270x140.jpg?1326547586 (16.74 kB)",
+      "http://d3kgudgg5o30mx.cloudfront.net/k/images/000/017/800/size270x140.jpg?1326521188 (7.75 kB)",
+      "http://www.iceportal.com/brochures/media/show.aspx?brochureid=ICE37144&did=3073&mtype=3073&type=pic&lang=en&publicid=6698777&resizing=X (70.44 kB)",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/skin/qantas/tick-66b6d492b061ebf0714f4c78b256f450.png (1.06 kB)",
+      "http://www.google-analytics.com/__utm.gif?utmwv=5.5.8&utms=1&utmn=1674106693&utmhn=qantas.staging.jqdev.net&utme=8(Logged%20In%20Status)9(LoggedIn%3Afalse)&utmcs=UTF-8&utmsr=1280x800&utmvp=2560x2048&utmsc=32-bit&utmul=en-au&utmje=0&utmfl=-&utmdt=Search%20results%20for%20Melbourne%20CBD%2C%20VIC%2C%20Australia%20%7C%20Qantas%20hotels&utmhid=171606536&utmr=-&utmp=%2Fsearch%2Flist%3Fadults%3D2%26checkIn%3D2014-09-30%26checkOut%3D2014-10-01%26location%3DMelbourne%2BCBD%25252C%2BVIC%25252C%2BAustralia&utmht=1412057294996&utmac=UA-32359880-2&utmcc=__utma%3D119070729.901737647.1412057295.1412057295.1412057295.1%3B%2B__utmz%3D119070729.1412057295.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&utmu=qxC~ (0.03 kB)",
+      "http://www.google-analytics.com/__utm.gif?utmwv=5.5.8&utms=1&utmn=1379986978&utmhn=qantas.staging.jqdev.net&utme=8(Logged%20In%20Status)9(LoggedIn%3Afalse)&utmcs=UTF-8&utmsr=1280x800&utmvp=1280x1024&utmsc=32-bit&utmul=en-au&utmje=0&utmfl=-&utmdt=Search%20results%20for%20Melbourne%20CBD%2C%20VIC%2C%20Australia%20%7C%20Qantas%20hotels&utmhid=605476612&utmr=-&utmp=%2Fsearch%2Flist%3Fadults%3D2%26checkIn%3D2014-09-30%26checkOut%3D2014-10-01%26location%3DMelbourne%2BCBD%25252C%2BVIC%25252C%2BAustralia&utmht=1412057293702&utmac=UA-32359880-2&utmcc=__utma%3D119070729.1632047851.1412057294.1412057294.1412057294.1%3B%2B__utmz%3D119070729.1412057294.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&utmu=qxC~ (0.03 kB)"
+    ],
+    "webfontCount": [
+      "http://d34z65866jidvd.cloudfront.net/assets/flama_condensed_semibold/FlamaCondensedSemibold.eot? (22.70 kB)"
+    ],
+    "otherCount": [
+      "http://d3kgudgg5o30mx.cloudfront.net/k/images/001/875/058/size270x140.jpg?1382325766 (0.24 kB)",
+      "http://d19xv8kiylvduv.cloudfront.net/k/images/001/869/383/size270x140.jpg?1372981297 (0.24 kB)",
+      "http://d19xv8kiylvduv.cloudfront.net/k/images/007/910/879/size270x140.jpg?1409538536 (0.24 kB)",
+      "http://d19xv8kiylvduv.cloudfront.net/k/images/001/860/599/size270x140.jpg?1369967247 (0.24 kB)",
+      "http://d19xv8kiylvduv.cloudfront.net/k/images/001/860/371/size270x140.jpg?1369373537 (0.24 kB)",
+      "http://d3kgudgg5o30mx.cloudfront.net/k/images/007/910/896/size270x140.jpg?1409543406 (0.24 kB)",
+      "http://d3kgudgg5o30mx.cloudfront.net/k/images/004/296/226/size270x140.jpg?1394143680 (0.24 kB)"
+    ],
+    "cacheHits": [
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/skin/qantas/new-forms-3c25bf9d9d73e9214c03604741894fa2.css",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/skin/qantas/common_vendor-14540a9b9cf587e526db5afe512492a0.css",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/skin/qantas/search-0f3e26ee6d522c254b9685430ba64372.css",
+      "http://d34z65866jidvd.cloudfront.net/assets/jquery-87ecc5add5d4fa9721dfa0f2b0745919.js",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/vendor_widget-b311fe3721617491da0bf1a998dcf9d9.js",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/vendor_core-d4401c9724dc5364afc27f3c4021b501.js",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer_search-fb7604b28ae8ea47dc070ee0486e0ab2.js",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer_common-b2d6bfb10ccd9b93ac5f1cb091a607b0.js",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/leaflet_all-cde063a3a9aaa721b38361f5c0958f66.js",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/skin/qantas/common_app-ffd138a8baebcb0460441bd97f7dd0ed.css",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/skin/qantas/spritemap/common-s590b409b51-2467ea33373362161fbd444dfb8e3a9e.png",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/skin/qantas/logo-oneworld-2f5563a4f8ec158ea9b213365cf9fb1b.png",
+      "http://www.google-analytics.com/ga.js",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/skin/qantas/logo-28e6e24ee4cb9a41443677e75f135851.png",
+      "http://d34z65866jidvd.cloudfront.net/assets/flama_condensed_semibold/FlamaCondensedSemibold.eot?",
+      "http://d19xv8kiylvduv.cloudfront.net/k/images/000/032/365/size270x140.jpg?1334123347",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/skin/qantas/drop-down-arrow-8057d97d93209fcab975807f426718e4.png",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/skin/qantas/star-rating-delete-a7672de4aae35309636a25ec5dd33a96.png",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/skin/qantas/star-rating-e4660b01f001c50cccfa7315c01da388.png",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/skin/qantas/stars-self-rated-73ce29fa7648655698f342a692b11e58.png",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/skin/qantas/loader-property-card-2b8e00111b2f1f6f966912f0de5bed49.gif",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/skin/qantas/sash-start-e62959fce5e49abf8b38b9ee2ffcae05.png",
+      "http://d3kgudgg5o30mx.cloudfront.net/k/images/000/025/542/size270x140.jpg?1327470284",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/skin/qantas/sash-bg-cb2882c0af823a932f318b18df966076.png",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/skin/qantas/sash-end-c4ea7547c668df4319db3ac61ac02e25.png",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/skin/qantas/stars-865fa858bf8802d2a2e47d1d6ae59c33.png",
+      "http://d19xv8kiylvduv.cloudfront.net/k/images/000/015/547/size270x140.jpg?1326511069",
+      "http://d19xv8kiylvduv.cloudfront.net/k/images/000/027/945/size270x140.jpg?1329718149",
+      "http://d3kgudgg5o30mx.cloudfront.net/k/images/000/003/030/size270x140.jpg?1326462739",
+      "http://d3kgudgg5o30mx.cloudfront.net/k/images/000/011/524/size270x140.jpg?1326494467",
+      "http://d3kgudgg5o30mx.cloudfront.net/k/images/000/058/512/size270x140.jpg?1351549775",
+      "http://d3kgudgg5o30mx.cloudfront.net/k/images/000/025/494/size270x140.jpg?1327457134",
+      "http://d3kgudgg5o30mx.cloudfront.net/k/images/000/033/724/size270x140.jpg?1335829670",
+      "http://d3kgudgg5o30mx.cloudfront.net/k/images/000/037/820/size270x140.jpg?1337308787",
+      "http://d3kgudgg5o30mx.cloudfront.net/k/images/000/025/564/size270x140.jpg?1327476374",
+      "http://d19xv8kiylvduv.cloudfront.net/k/images/000/003/065/size270x140.jpg?1326462945",
+      "http://d3kgudgg5o30mx.cloudfront.net/k/images/000/048/182/size270x140.jpg?1343113015",
+      "http://d3kgudgg5o30mx.cloudfront.net/k/images/000/023/734/size270x140.jpg?1326547586",
+      "http://d3kgudgg5o30mx.cloudfront.net/k/images/000/017/800/size270x140.jpg?1326521188",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/skin/qantas/tick-66b6d492b061ebf0714f4c78b256f450.png",
+      "http://www.google-analytics.com/__utm.gif?utmwv=5.5.8&utms=1&utmn=1674106693&utmhn=qantas.staging.jqdev.net&utme=8(Logged%20In%20Status)9(LoggedIn%3Afalse)&utmcs=UTF-8&utmsr=1280x800&utmvp=2560x2048&utmsc=32-bit&utmul=en-au&utmje=0&utmfl=-&utmdt=Search%20results%20for%20Melbourne%20CBD%2C%20VIC%2C%20Australia%20%7C%20Qantas%20hotels&utmhid=171606536&utmr=-&utmp=%2Fsearch%2Flist%3Fadults%3D2%26checkIn%3D2014-09-30%26checkOut%3D2014-10-01%26location%3DMelbourne%2BCBD%25252C%2BVIC%25252C%2BAustralia&utmht=1412057294996&utmac=UA-32359880-2&utmcc=__utma%3D119070729.901737647.1412057295.1412057295.1412057295.1%3B%2B__utmz%3D119070729.1412057295.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&utmu=qxC~",
+      "http://js-agent.newrelic.com/nr-460.min.js",
+      "http://www.google-analytics.com/__utm.gif?utmwv=5.5.8&utms=1&utmn=1379986978&utmhn=qantas.staging.jqdev.net&utme=8(Logged%20In%20Status)9(LoggedIn%3Afalse)&utmcs=UTF-8&utmsr=1280x800&utmvp=1280x1024&utmsc=32-bit&utmul=en-au&utmje=0&utmfl=-&utmdt=Search%20results%20for%20Melbourne%20CBD%2C%20VIC%2C%20Australia%20%7C%20Qantas%20hotels&utmhid=605476612&utmr=-&utmp=%2Fsearch%2Flist%3Fadults%3D2%26checkIn%3D2014-09-30%26checkOut%3D2014-10-01%26location%3DMelbourne%2BCBD%25252C%2BVIC%25252C%2BAustralia&utmht=1412057293702&utmac=UA-32359880-2&utmcc=__utma%3D119070729.1632047851.1412057294.1412057294.1412057294.1%3B%2B__utmz%3D119070729.1412057294.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&utmu=qxC~"
+    ],
+    "cachingNotSpecified": [
+      "http://www.iceportal.com/brochures/media/show.aspx?brochureid=ICE37144&did=3073&mtype=3073&type=pic&lang=en&publicid=6698777&resizing=X",
+      "http://www.google-analytics.com/__utm.gif?utmwv=5.5.8&utms=1&utmn=1674106693&utmhn=qantas.staging.jqdev.net&utme=8(Logged%20In%20Status)9(LoggedIn%3Afalse)&utmcs=UTF-8&utmsr=1280x800&utmvp=2560x2048&utmsc=32-bit&utmul=en-au&utmje=0&utmfl=-&utmdt=Search%20results%20for%20Melbourne%20CBD%2C%20VIC%2C%20Australia%20%7C%20Qantas%20hotels&utmhid=171606536&utmr=-&utmp=%2Fsearch%2Flist%3Fadults%3D2%26checkIn%3D2014-09-30%26checkOut%3D2014-10-01%26location%3DMelbourne%2BCBD%25252C%2BVIC%25252C%2BAustralia&utmht=1412057294996&utmac=UA-32359880-2&utmcc=__utma%3D119070729.901737647.1412057295.1412057295.1412057295.1%3B%2B__utmz%3D119070729.1412057295.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&utmu=qxC~",
+      "http://www.google-analytics.com/__utm.gif?utmwv=5.5.8&utms=1&utmn=1379986978&utmhn=qantas.staging.jqdev.net&utme=8(Logged%20In%20Status)9(LoggedIn%3Afalse)&utmcs=UTF-8&utmsr=1280x800&utmvp=1280x1024&utmsc=32-bit&utmul=en-au&utmje=0&utmfl=-&utmdt=Search%20results%20for%20Melbourne%20CBD%2C%20VIC%2C%20Australia%20%7C%20Qantas%20hotels&utmhid=605476612&utmr=-&utmp=%2Fsearch%2Flist%3Fadults%3D2%26checkIn%3D2014-09-30%26checkOut%3D2014-10-01%26location%3DMelbourne%2BCBD%25252C%2BVIC%25252C%2BAustralia&utmht=1412057293702&utmac=UA-32359880-2&utmcc=__utma%3D119070729.1632047851.1412057294.1412057294.1412057294.1%3B%2B__utmz%3D119070729.1412057294.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&utmu=qxC~"
+    ],
+    "cachingTooShort": [
+      "http://www.google-analytics.com/ga.js cached for 7200 s",
+      "http://www.googletagmanager.com/gtm.js?id=GTM-794X cached for 967 s"
+    ],
+    "oldCachingHeaders": [
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/skin/qantas/new-forms-3c25bf9d9d73e9214c03604741894fa2.css - Expires: Fri, 25 Sep 2015 12:47:24 GMT",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/skin/qantas/common_vendor-14540a9b9cf587e526db5afe512492a0.css - Expires: Fri, 25 Sep 2015 12:47:15 GMT",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/skin/qantas/search-0f3e26ee6d522c254b9685430ba64372.css - Expires: Tue, 29 Sep 2015 12:05:37 GMT",
+      "http://d34z65866jidvd.cloudfront.net/assets/jquery-87ecc5add5d4fa9721dfa0f2b0745919.js - Expires: Fri, 03 Jan 2014 00:05:02 GMT",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/vendor_widget-b311fe3721617491da0bf1a998dcf9d9.js - Expires: Wed, 05 Mar 2014 00:45:41 GMT",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/vendor_core-d4401c9724dc5364afc27f3c4021b501.js - Expires: Fri, 28 Aug 2015 12:26:25 GMT",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer_search-fb7604b28ae8ea47dc070ee0486e0ab2.js - Expires: Sat, 22 Aug 2015 10:35:43 GMT",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer_common-b2d6bfb10ccd9b93ac5f1cb091a607b0.js - Expires: Sat, 29 Aug 2015 12:01:42 GMT",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/leaflet_all-cde063a3a9aaa721b38361f5c0958f66.js - Expires: Fri, 09 Jan 2015 10:17:23 GMT",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/skin/qantas/common_app-ffd138a8baebcb0460441bd97f7dd0ed.css - Expires: Tue, 29 Sep 2015 12:05:33 GMT",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/skin/qantas/spritemap/common-s590b409b51-2467ea33373362161fbd444dfb8e3a9e.png - Expires: Fri, 25 Sep 2015 12:47:20 GMT",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/skin/qantas/logo-oneworld-2f5563a4f8ec158ea9b213365cf9fb1b.png - Expires: Fri, 03 Jan 2014 00:10:27 GMT",
+      "http://www.google-analytics.com/ga.js - Expires: Tue, 30 Sep 2014 06:15:04 GMT",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/skin/qantas/logo-28e6e24ee4cb9a41443677e75f135851.png - Expires: Fri, 03 Jan 2014 00:11:18 GMT",
+      "http://www.googletagmanager.com/gtm.js?id=GTM-794X - Expires: Tue, 30 Sep 2014 06:08:13 GMT",
+      "http://d19xv8kiylvduv.cloudfront.net/k/images/000/032/365/size270x140.jpg?1334123347 - Expires: Sat, 15 Aug 2015 08:39:36 GMT",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/skin/qantas/drop-down-arrow-8057d97d93209fcab975807f426718e4.png - Expires: Fri, 03 Jan 2014 00:11:38 GMT",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/skin/qantas/star-rating-delete-a7672de4aae35309636a25ec5dd33a96.png - Expires: Fri, 03 Jan 2014 00:11:09 GMT",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/skin/qantas/star-rating-e4660b01f001c50cccfa7315c01da388.png - Expires: Fri, 03 Jan 2014 00:14:57 GMT",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/skin/qantas/stars-self-rated-73ce29fa7648655698f342a692b11e58.png - Expires: Fri, 05 Sep 2014 03:17:21 GMT",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/skin/qantas/loader-property-card-2b8e00111b2f1f6f966912f0de5bed49.gif - Expires: Fri, 03 Jan 2014 00:10:30 GMT",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/skin/qantas/sash-start-e62959fce5e49abf8b38b9ee2ffcae05.png - Expires: Fri, 09 May 2014 02:10:58 GMT",
+      "http://d3kgudgg5o30mx.cloudfront.net/k/images/000/025/542/size270x140.jpg?1327470284 - Expires: Sat, 15 Aug 2015 08:39:25 GMT",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/skin/qantas/sash-bg-cb2882c0af823a932f318b18df966076.png - Expires: Fri, 09 May 2014 02:10:28 GMT",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/skin/qantas/sash-end-c4ea7547c668df4319db3ac61ac02e25.png - Expires: Fri, 09 May 2014 05:41:57 GMT",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/skin/qantas/stars-865fa858bf8802d2a2e47d1d6ae59c33.png - Expires: Fri, 05 Sep 2014 03:17:17 GMT",
+      "http://d19xv8kiylvduv.cloudfront.net/k/images/000/015/547/size270x140.jpg?1326511069 - Expires: Sat, 15 Aug 2015 08:39:24 GMT",
+      "http://d19xv8kiylvduv.cloudfront.net/k/images/000/027/945/size270x140.jpg?1329718149 - Expires: Sat, 15 Aug 2015 08:39:25 GMT",
+      "http://d3kgudgg5o30mx.cloudfront.net/k/images/000/003/030/size270x140.jpg?1326462739 - Expires: Sat, 15 Aug 2015 08:39:24 GMT",
+      "http://d3kgudgg5o30mx.cloudfront.net/k/images/000/011/524/size270x140.jpg?1326494467 - Expires: Sat, 15 Aug 2015 08:39:23 GMT",
+      "http://d3kgudgg5o30mx.cloudfront.net/k/images/000/058/512/size270x140.jpg?1351549775 - Expires: Thu, 29 Oct 2015 07:19:52 GMT",
+      "http://d3kgudgg5o30mx.cloudfront.net/k/images/000/025/494/size270x140.jpg?1327457134 - Expires: Sat, 15 Aug 2015 08:39:24 GMT",
+      "http://d3kgudgg5o30mx.cloudfront.net/k/images/000/033/724/size270x140.jpg?1335829670 - Expires: Sat, 15 Aug 2015 08:39:24 GMT",
+      "http://d3kgudgg5o30mx.cloudfront.net/k/images/000/037/820/size270x140.jpg?1337308787 - Expires: Sat, 15 Aug 2015 08:39:29 GMT",
+      "http://d3kgudgg5o30mx.cloudfront.net/k/images/000/025/564/size270x140.jpg?1327476374 - Expires: Sat, 15 Aug 2015 08:39:24 GMT",
+      "http://d19xv8kiylvduv.cloudfront.net/k/images/000/003/065/size270x140.jpg?1326462945 - Expires: Sat, 15 Aug 2015 08:39:23 GMT",
+      "http://d3kgudgg5o30mx.cloudfront.net/k/images/000/048/182/size270x140.jpg?1343113015 - Expires: Sat, 15 Aug 2015 08:39:23 GMT",
+      "http://d3kgudgg5o30mx.cloudfront.net/k/images/000/023/734/size270x140.jpg?1326547586 - Expires: Sat, 15 Aug 2015 08:39:26 GMT",
+      "http://d3kgudgg5o30mx.cloudfront.net/k/images/000/017/800/size270x140.jpg?1326521188 - Expires: Sat, 15 Aug 2015 08:39:24 GMT",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/skin/qantas/tick-66b6d492b061ebf0714f4c78b256f450.png - Expires: Fri, 03 Jan 2014 00:11:29 GMT",
+      "http://www.google-analytics.com/__utm.gif?utmwv=5.5.8&utms=1&utmn=1674106693&utmhn=qantas.staging.jqdev.net&utme=8(Logged%20In%20Status)9(LoggedIn%3Afalse)&utmcs=UTF-8&utmsr=1280x800&utmvp=2560x2048&utmsc=32-bit&utmul=en-au&utmje=0&utmfl=-&utmdt=Search%20results%20for%20Melbourne%20CBD%2C%20VIC%2C%20Australia%20%7C%20Qantas%20hotels&utmhid=171606536&utmr=-&utmp=%2Fsearch%2Flist%3Fadults%3D2%26checkIn%3D2014-09-30%26checkOut%3D2014-10-01%26location%3DMelbourne%2BCBD%25252C%2BVIC%25252C%2BAustralia&utmht=1412057294996&utmac=UA-32359880-2&utmcc=__utma%3D119070729.901737647.1412057295.1412057295.1412057295.1%3B%2B__utmz%3D119070729.1412057295.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&utmu=qxC~ - Pragma: no-cache",
+      "http://www.google-analytics.com/__utm.gif?utmwv=5.5.8&utms=1&utmn=1674106693&utmhn=qantas.staging.jqdev.net&utme=8(Logged%20In%20Status)9(LoggedIn%3Afalse)&utmcs=UTF-8&utmsr=1280x800&utmvp=2560x2048&utmsc=32-bit&utmul=en-au&utmje=0&utmfl=-&utmdt=Search%20results%20for%20Melbourne%20CBD%2C%20VIC%2C%20Australia%20%7C%20Qantas%20hotels&utmhid=171606536&utmr=-&utmp=%2Fsearch%2Flist%3Fadults%3D2%26checkIn%3D2014-09-30%26checkOut%3D2014-10-01%26location%3DMelbourne%2BCBD%25252C%2BVIC%25252C%2BAustralia&utmht=1412057294996&utmac=UA-32359880-2&utmcc=__utma%3D119070729.901737647.1412057295.1412057295.1412057295.1%3B%2B__utmz%3D119070729.1412057295.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&utmu=qxC~ - Expires: Wed, 19 Apr 2000 11:43:00 GMT",
+      "http://js-agent.newrelic.com/nr-460.min.js - Expires: Thu, 31 Dec 2037 23:55:55 GMT",
+      "http://www.googletagmanager.com/gtm.js?id=GTM-794X - Expires: Tue, 30 Sep 2014 06:08:12 GMT",
+      "http://www.google-analytics.com/__utm.gif?utmwv=5.5.8&utms=1&utmn=1379986978&utmhn=qantas.staging.jqdev.net&utme=8(Logged%20In%20Status)9(LoggedIn%3Afalse)&utmcs=UTF-8&utmsr=1280x800&utmvp=1280x1024&utmsc=32-bit&utmul=en-au&utmje=0&utmfl=-&utmdt=Search%20results%20for%20Melbourne%20CBD%2C%20VIC%2C%20Australia%20%7C%20Qantas%20hotels&utmhid=605476612&utmr=-&utmp=%2Fsearch%2Flist%3Fadults%3D2%26checkIn%3D2014-09-30%26checkOut%3D2014-10-01%26location%3DMelbourne%2BCBD%25252C%2BVIC%25252C%2BAustralia&utmht=1412057293702&utmac=UA-32359880-2&utmcc=__utma%3D119070729.1632047851.1412057294.1412057294.1412057294.1%3B%2B__utmz%3D119070729.1412057294.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&utmu=qxC~ - Pragma: no-cache",
+      "http://www.google-analytics.com/__utm.gif?utmwv=5.5.8&utms=1&utmn=1379986978&utmhn=qantas.staging.jqdev.net&utme=8(Logged%20In%20Status)9(LoggedIn%3Afalse)&utmcs=UTF-8&utmsr=1280x800&utmvp=1280x1024&utmsc=32-bit&utmul=en-au&utmje=0&utmfl=-&utmdt=Search%20results%20for%20Melbourne%20CBD%2C%20VIC%2C%20Australia%20%7C%20Qantas%20hotels&utmhid=605476612&utmr=-&utmp=%2Fsearch%2Flist%3Fadults%3D2%26checkIn%3D2014-09-30%26checkOut%3D2014-10-01%26location%3DMelbourne%2BCBD%25252C%2BVIC%25252C%2BAustralia&utmht=1412057293702&utmac=UA-32359880-2&utmcc=__utma%3D119070729.1632047851.1412057294.1412057294.1412057294.1%3B%2B__utmz%3D119070729.1412057294.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&utmu=qxC~ - Expires: Wed, 19 Apr 2000 11:43:00 GMT"
+    ],
+    "domainsWithCookies": [
+      "qantas.staging.jqdev.net: 1 cookie(s)",
+      "www.iceportal.com: 2 cookie(s)"
+    ],
+    "domains": [
+      "d34z65866jidvd.cloudfront.net: 24 request(s)",
+      "d3kgudgg5o30mx.cloudfront.net: 14 request(s)",
+      "d19xv8kiylvduv.cloudfront.net: 8 request(s)",
+      "www.google-analytics.com: 2 request(s)",
+      "qantas.staging.jqdev.net: 1 request(s)",
+      "www.googletagmanager.com: 1 request(s)",
+      "www.iceportal.com: 1 request(s)",
+      "js-agent.newrelic.com: 1 request(s)",
+      "d3kgudgg5o30mx.cloudfront.net: 7 request(s)",
+      "d19xv8kiylvduv.cloudfront.net: 3 request(s)"
+    ],
+    "commentsSize": [
+      "body > #comment[3] (177 characters)"
+    ],
+    "hiddenContentSize": [
+      "body > div.main-container.allow-toggle-points > div.phone-sidebar (1506 characters)",
+      "body > div.ui-selectmenu-menu (1079 characters)"
+    ],
+    "nodesWithInlineCSS": [
+      "body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div.tool-bar-inner.hidden-phone.span8 > div.sort > div[2] > a#ui-selectmenu-b236b83d-button (width: 124px; )",
+      "body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div.tool-bar-inner.hidden-phone.span8 > section#dollar-to-points-popup (display: block; )",
+      "body > div.main-container.allow-toggle-points > div#main > div#content > div#aside > div.aside-container > ul#search-filters > li#max-rate-filter > div.aside-body > div.slider.ui-slider.ui-slider-horizontal.ui-widget.ui-widget-content.ui-corner-all > div.ui-slider-range.ui-widget-header.ui-slider-range-min (width: 100%; )",
+      "body > div.main-container.allow-toggle-points > div#main > div#content > div#aside > div.aside-container > ul#search-filters > li#max-rate-filter > div.aside-body > div.slider.ui-slider.ui-slider-horizontal.ui-widget.ui-widget-content.ui-corner-all > a.ui-slider-handle.ui-state-default.ui-corner-all (left: 100%; )",
+      "body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div.tool-bar-inner.hidden-phone.span8 > div.sort > div[2] > a#ui-selectmenu-f5e2ddda-button (width: 125px; )"
+    ],
+    "DOMqueriesByClassName": [
+      ".e",
+      ".menu-link",
+      ".list",
+      ".ui-selectmenu-item-selected",
+      ".ui-selectmenu-status",
+      ".display-value",
+      ".slider",
+      ".ui-slider-handle",
+      ".cash-toggle"
+    ],
+    "DOMqueriesByTagName": [
+      "*",
+      "a",
+      "input",
+      "tbody",
+      "link",
+      "head",
+      "body",
+      "script",
+      "td",
+      "html",
+      "li",
+      "option",
+      "select",
+      "img",
+      "div"
+    ],
+    "DOMqueriesByQuerySelectorAll": [
+      ".TEST",
+      ".lt-ie8#booking-page legend",
+      "a[rel*=\"external\"]",
+      "#booking-page #hotel-fees",
+      "header#common",
+      "#tool-bar .search-summary",
+      "#tool-bar .sort",
+      "[id='search-bar'] #_view79",
+      "[id='search-editor'] #_view81",
+      "[id='search-editor'] #_view82",
+      "[id='search-editor'] #_view83",
+      "[id='search-editor'] .search-button button",
+      "[id='search-bar'] #_view80",
+      "[id='ui-selectmenu-fb4958e8-menu'] li:first",
+      "[id='ui-selectmenu-fb4958e8-menu'] li:last",
+      "[id='ui-selectmenu-fb4958e8-menu'] li:not(.ui-selectmenu-group)",
+      "[id='__sizzle__'] a:eq(0)",
+      "[id='ui-selectmenu-f4f97a74-menu'] li:first",
+      "[id='ui-selectmenu-f4f97a74-menu'] li:last",
+      "[id='ui-selectmenu-f4f97a74-menu'] li:not(.ui-selectmenu-group)",
+      "[id='search-filters'] #_view84",
+      "[id='max-rate-filter'] .display-value em",
+      "[id='max-rate-filter'] .display-value span",
+      "[id='search-filters'] #_view85",
+      "[id='search-filters'] #_view86",
+      "[id='results-container'] #no-results",
+      "[id='results-container'] #results",
+      "[id='result-list'] .inclusions dt",
+      "[id='ui-selectmenu-c27ef54e-menu'] li:first",
+      "[id='ui-selectmenu-c27ef54e-menu'] li:last",
+      "[id='ui-selectmenu-c27ef54e-menu'] li:not(.ui-selectmenu-group)",
+      "[id='ui-selectmenu-c21dd51-menu'] li:first",
+      "[id='ui-selectmenu-c21dd51-menu'] li:last",
+      "[id='ui-selectmenu-c21dd51-menu'] li:not(.ui-selectmenu-group)",
+      "[id='ui-selectmenu-b236b83d-menu'] li:first",
+      "[id='ui-selectmenu-b236b83d-menu'] li:last",
+      "[id='ui-selectmenu-b236b83d-menu'] li:not(.ui-selectmenu-group)",
+      "[id='ui-selectmenu-296d288f-menu'] li:first",
+      "[id='ui-selectmenu-296d288f-menu'] li:last",
+      "[id='ui-selectmenu-296d288f-menu'] li:not(.ui-selectmenu-group)",
+      "[id='ui-selectmenu-43590458-menu'] li:first",
+      "[id='ui-selectmenu-43590458-menu'] li:last",
+      "[id='ui-selectmenu-43590458-menu'] li:not(.ui-selectmenu-group)",
+      "[id='ui-selectmenu-5dbb7559-menu'] li:first",
+      "[id='ui-selectmenu-5dbb7559-menu'] li:last",
+      "[id='ui-selectmenu-5dbb7559-menu'] li:not(.ui-selectmenu-group)",
+      "[id='ui-selectmenu-7c0101db-menu'] li:first",
+      "[id='ui-selectmenu-7c0101db-menu'] li:last",
+      "[id='ui-selectmenu-7c0101db-menu'] li:not(.ui-selectmenu-group)",
+      "[id='ui-selectmenu-12008bf1-menu'] li:first",
+      "[id='ui-selectmenu-12008bf1-menu'] li:last",
+      "[id='ui-selectmenu-12008bf1-menu'] li:not(.ui-selectmenu-group)",
+      "[id='ui-selectmenu-f5e2ddda-menu'] li:first",
+      "[id='ui-selectmenu-f5e2ddda-menu'] li:last",
+      "[id='ui-selectmenu-f5e2ddda-menu'] li:not(.ui-selectmenu-group)",
+      "[id='ui-selectmenu-7722b518-menu'] li:first",
+      "[id='ui-selectmenu-7722b518-menu'] li:last",
+      "[id='ui-selectmenu-7722b518-menu'] li:not(.ui-selectmenu-group)"
+    ],
+    "DOMinserts": [
+      "\"div\" appended to \"html\"",
+      "\"style\" appended to \"head\"",
+      "\"div\" appended to \"body\"",
+      "\"script\" appended to \"head\"",
+      "\"div\" appended to \"body > div[0]\"",
+      "\"DocumentFragment > div[0]\" appended to \"body\"",
+      "\"DocumentFragment > div.result-count\" appended to \"body > div.main-container.allow-toggle-points > div#main > div#sub-header > div#search-bar\"",
+      "\"DocumentFragment > ul.ui-autocomplete\" appended to \"body\"",
+      "\"DocumentFragment > ul#search-editor\" appended to \"body > div.main-container.allow-toggle-points > div#main > div#sub-header > div#search-bar\"",
+      "\"DocumentFragment > select.needsclick\" appended to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div.tool-bar-inner.hidden-phone.span8 > div.sort\"",
+      "\"DocumentFragment > select.needsclick\" appended to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div#refine-actions > div.sort\"",
+      "\"DocumentFragment > div[0]\" appended to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div.tool-bar-inner.hidden-phone.span8 > div.sort\"",
+      "\"DocumentFragment > span.ui-selectmenu-icon.ui-icon\" appended to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div.tool-bar-inner.hidden-phone.span8 > div.sort > div[2] > a#ui-selectmenu-fb4958e8-button\"",
+      "\"span.ui-selectmenu-status\" appended to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div.tool-bar-inner.hidden-phone.span8 > div.sort > div[2] > a#ui-selectmenu-fb4958e8-button\"",
+      "\"DocumentFragment > div.ui-selectmenu-menu\" appended to \"body\"",
+      "\"DocumentFragment > li[0]\" appended to \"body > div.ui-selectmenu-menu > ul#ui-selectmenu-fb4958e8-menu\"",
+      "\"DocumentFragment > div[0]\" appended to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div#refine-actions > div.sort\"",
+      "\"DocumentFragment > span.ui-selectmenu-icon.ui-icon\" appended to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div#refine-actions > div.sort > div[2] > a#ui-selectmenu-f4f97a74-button\"",
+      "\"span.ui-selectmenu-status\" appended to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div#refine-actions > div.sort > div[2] > a#ui-selectmenu-f4f97a74-button\"",
+      "\"DocumentFragment > li[0]\" appended to \"body > div.ui-selectmenu-menu > ul#ui-selectmenu-f4f97a74-menu\"",
+      "\"DocumentFragment > li#min-rating-filter\" appended to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#aside > div.aside-container > ul#search-filters\"",
+      "\"DocumentFragment > div[0]\" appended to \"li#max-rate-filter > div.aside-body > div.slider.ui-slider.ui-slider-horizontal.ui-widget.ui-widget-content.ui-corner-all\"",
+      "\"DocumentFragment > a.ui-slider-handle.ui-state-default.ui-corner-all\" appended to \"li#max-rate-filter > div.aside-body > div.slider.ui-slider.ui-slider-horizontal.ui-widget.ui-widget-content.ui-corner-all\"",
+      "\"DocumentFragment > #text[0]\" appended to \"li#max-rate-filter > div.aside-body > div.display-value > span[2]\"",
+      "\"DocumentFragment > li#max-rate-filter\" appended to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#aside > div.aside-container > ul#search-filters\"",
+      "\"DocumentFragment > li#category-filter\" appended to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#aside > div.aside-container > ul#search-filters\"",
+      "\"DocumentFragment > div#result-list\" appended to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results\"",
+      "\"DocumentFragment > ul[0]\" appended to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list\"",
+      "\"DocumentFragment > div.pagination\" appended to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list\"",
+      "\"DocumentFragment\" appended to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0]\"",
+      "\"DocumentFragment > span.ui-selectmenu-icon.ui-icon\" appended to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div.tool-bar-inner.hidden-phone.span8 > div.sort > div[2] > a#ui-selectmenu-c27ef54e-button\"",
+      "\"span.ui-selectmenu-status\" appended to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div.tool-bar-inner.hidden-phone.span8 > div.sort > div[2] > a#ui-selectmenu-c27ef54e-button\"",
+      "\"DocumentFragment > li[0]\" appended to \"body > div.ui-selectmenu-menu > ul#ui-selectmenu-c27ef54e-menu\"",
+      "\"DocumentFragment > span.ui-selectmenu-icon.ui-icon\" appended to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div#refine-actions > div.sort > div[2] > a#ui-selectmenu-c21dd51-button\"",
+      "\"span.ui-selectmenu-status\" appended to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div#refine-actions > div.sort > div[2] > a#ui-selectmenu-c21dd51-button\"",
+      "\"DocumentFragment > li[0]\" appended to \"body > div.ui-selectmenu-menu > ul#ui-selectmenu-c21dd51-menu\"",
+      "\"DocumentFragment > #text[0]\" appended to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#aside > div.aside-container > ul#search-filters > li#max-rate-filter > div.aside-body > div.display-value > span[2]\"",
+      "\"DocumentFragment > span.ui-selectmenu-icon.ui-icon\" appended to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div.tool-bar-inner.hidden-phone.span8 > div.sort > div[2] > a#ui-selectmenu-b236b83d-button\"",
+      "\"span.ui-selectmenu-status\" appended to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div.tool-bar-inner.hidden-phone.span8 > div.sort > div[2] > a#ui-selectmenu-b236b83d-button\"",
+      "\"DocumentFragment > li[0]\" appended to \"body > div.ui-selectmenu-menu > ul#ui-selectmenu-b236b83d-menu\"",
+      "\"DocumentFragment > span.ui-selectmenu-icon.ui-icon\" appended to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div#refine-actions > div.sort > div[2] > a#ui-selectmenu-296d288f-button\"",
+      "\"span.ui-selectmenu-status\" appended to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div#refine-actions > div.sort > div[2] > a#ui-selectmenu-296d288f-button\"",
+      "\"DocumentFragment > li[0]\" appended to \"body > div.ui-selectmenu-menu > ul#ui-selectmenu-296d288f-menu\"",
+      "\"DocumentFragment > section[0]\" appended to \"body\"",
+      "\"script\" appended to \"body\"",
+      "\"DocumentFragment > span.ui-selectmenu-icon.ui-icon\" appended to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div.tool-bar-inner.hidden-phone.span8 > div.sort > div[2] > a#ui-selectmenu-43590458-button\"",
+      "\"span.ui-selectmenu-status\" appended to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div.tool-bar-inner.hidden-phone.span8 > div.sort > div[2] > a#ui-selectmenu-43590458-button\"",
+      "\"DocumentFragment > li[0]\" appended to \"body > div.ui-selectmenu-menu > ul#ui-selectmenu-43590458-menu\"",
+      "\"DocumentFragment > span.ui-selectmenu-icon.ui-icon\" appended to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div#refine-actions > div.sort > div[2] > a#ui-selectmenu-5dbb7559-button\"",
+      "\"span.ui-selectmenu-status\" appended to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div#refine-actions > div.sort > div[2] > a#ui-selectmenu-5dbb7559-button\"",
+      "\"DocumentFragment > li[0]\" appended to \"body > div.ui-selectmenu-menu > ul#ui-selectmenu-5dbb7559-menu\"",
+      "\"DocumentFragment > span.ui-selectmenu-icon.ui-icon\" appended to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div.tool-bar-inner.hidden-phone.span8 > div.sort > div[2] > a#ui-selectmenu-7c0101db-button\"",
+      "\"span.ui-selectmenu-status\" appended to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div.tool-bar-inner.hidden-phone.span8 > div.sort > div[2] > a#ui-selectmenu-7c0101db-button\"",
+      "\"DocumentFragment > li[0]\" appended to \"body > div.ui-selectmenu-menu > ul#ui-selectmenu-7c0101db-menu\"",
+      "\"DocumentFragment > span.ui-selectmenu-icon.ui-icon\" appended to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div#refine-actions > div.sort > div[2] > a#ui-selectmenu-12008bf1-button\"",
+      "\"span.ui-selectmenu-status\" appended to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div#refine-actions > div.sort > div[2] > a#ui-selectmenu-12008bf1-button\"",
+      "\"DocumentFragment > li[0]\" appended to \"body > div.ui-selectmenu-menu > ul#ui-selectmenu-12008bf1-menu\"",
+      "\"DocumentFragment > span.ui-selectmenu-icon.ui-icon\" appended to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div.tool-bar-inner.hidden-phone.span8 > div.sort > div[2] > a#ui-selectmenu-f5e2ddda-button\"",
+      "\"span.ui-selectmenu-status\" appended to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div.tool-bar-inner.hidden-phone.span8 > div.sort > div[2] > a#ui-selectmenu-f5e2ddda-button\"",
+      "\"DocumentFragment > li[0]\" appended to \"body > div.ui-selectmenu-menu > ul#ui-selectmenu-f5e2ddda-menu\"",
+      "\"DocumentFragment > span.ui-selectmenu-icon.ui-icon\" appended to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div#refine-actions > div.sort > div[2] > a#ui-selectmenu-7722b518-button\"",
+      "\"span.ui-selectmenu-status\" appended to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div#refine-actions > div.sort > div[2] > a#ui-selectmenu-7722b518-button\"",
+      "\"DocumentFragment > li[0]\" appended to \"body > div.ui-selectmenu-menu > ul#ui-selectmenu-7722b518-menu\""
+    ],
+    "DOMqueriesDuplicated": [
+      "tag name \"script\": 272 queries",
+      "tag name \"*\": 117 queries",
+      "tag name \"li\": 15 queries",
+      "tag name \"a\": 13 queries",
+      "tag name \"option\": 13 queries",
+      "class \".ui-selectmenu-item-selected\": 6 queries",
+      "class \".ui-selectmenu-status\": 6 queries",
+      "selector \"[id='__sizzle__'] a:eq(0)\": 6 queries",
+      "selector \"[id='max-rate-filter'] .display-value em\": 5 queries",
+      "selector \"[id='max-rate-filter'] .display-value span\": 5 queries",
+      "tag name \"body\": 3 queries",
+      "tag name \"html\": 3 queries",
+      "class \".slider\": 3 queries",
+      "class \".e\": 2 queries",
+      "tag name \"head\": 2 queries",
+      "id \"#dollars-to-points-toggler\": 2 queries",
+      "tag name \"select\": 2 queries",
+      "selector \"[id='results-container'] #no-results\": 2 queries",
+      "class \".cash-toggle\": 2 queries"
+    ],
+    "eventsBound": [
+      "\"DOMContentLoaded\" bound to \"#document\"",
+      "\"load\" bound to \"window\"",
+      "\"resize\" bound to \"window\"",
+      "\"ajaxBeforeSend\" bound to \"#document\"",
+      "\"click\" bound to \"#document\"",
+      "\"submit\" bound to \"#document\"",
+      "\"ajaxComplete\" bound to \"#document\"",
+      "\"mouseup\" bound to \"#document\"",
+      "\"mouseout\" bound to \"DocumentFragment > div#ui-datepicker-div\"",
+      "\"mouseover\" bound to \"DocumentFragment > div#ui-datepicker-div\"",
+      "\"click\" bound to \"body > div.main-container.allow-toggle-points > header#common > div.container > ul#global-nav\"",
+      "\"click\" bound to \"body > div.main-container.allow-toggle-points > header#common > div.container > div.menu-link.hidden-desktop\"",
+      "\"scroll\" bound to \"#document\"",
+      "\"popstate\" bound to \"window\"",
+      "\"click\" bound to\"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div.tool-bar-inner.hidden-phone.span8 > ul#results-nav\"",
+      "\"click\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#aside > div.aside-container > ul#search-filters\"",
+      "\"click\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div.tool-bar-inner.hidden-phone.span8 > ul#dollars-to-points-toggler\"",
+      "\"click\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div.tool-bar-inner.hidden-phone.span8 > section#dollar-to-points-popup\"",
+      "\"keydown\" bound to \"#document\"",
+      "\"click\" bound to \"ul#search-editor\"",
+      "\"click\" bound to \"li.date-range-input\"",
+      "\"click\" bound to \"li.occupants-input\"",
+      "\"blur\" bound to \"li.search-field > input#location-search\"",
+      "\"remove\" bound to \"li.search-field > input#location-search\"",
+      "\"keydown\" bound to \"li.search-field > input#location-search\"",
+      "\"keypress\" bound to \"li.search-field > input#location-search\"",
+      "\"focus\" bound to \"li.search-field > input#location-search\"",
+      "\"mousedown\" bound to \"body > ul.ui-autocomplete\"",
+      "\"remove\" bound to \"body > ul.ui-autocomplete\"",
+      "\"click\" bound to \"body > ul.ui-autocomplete.ui-menu.ui-widget.ui-widget-content.ui-corner-all\"",
+      "\"mouseover\" bound to \"body > ul.ui-autocomplete.ui-menu.ui-widget.ui-widget-content.ui-corner-all\"",
+      "\"mouseout\" bound to \"body > ul.ui-autocomplete.ui-menu.ui-widget.ui-widget-content.ui-corner-all\"",
+      "\"keyup\" bound to \"li.search-field > input#location-search\"",
+      "\"change\" bound to \"li.search-field > input#location-search\"",
+      "\"remove\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div.tool-bar-inner.hidden-phone.span8 > div.sort > select.needsclick\"",
+      "\"click\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div.tool-bar-inner.hidden-phone.span8 > div.sort > select.needsclick\"",
+      "\"touchend\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div.tool-bar-inner.hidden-phone.span8 > div.sort > div[2] > a#ui-selectmenu-fb4958e8-button\"",
+      "\"mousedown\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div.tool-bar-inner.hidden-phone.span8 > div.sort > div[2] > a#ui-selectmenu-fb4958e8-button\"",
+      "\"click\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div.tool-bar-inner.hidden-phone.span8 > div.sort > div[2] > a#ui-selectmenu-fb4958e8-button\"",
+      "\"keydown\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div.tool-bar-inner.hidden-phone.span8 > div.sort > div[2] > a#ui-selectmenu-fb4958e8-button\"",
+      "\"keypress\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div.tool-bar-inner.hidden-phone.span8 > div.sort > div[2] > a#ui-selectmenu-fb4958e8-button\"",
+      "\"mouseover\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div.tool-bar-inner.hidden-phone.span8 > div.sort > div[2] > a#ui-selectmenu-fb4958e8-button\"",
+      "\"focus\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div.tool-bar-inner.hidden-phone.span8 > div.sort > div[2] > a#ui-selectmenu-fb4958e8-button\"",
+      "\"mouseout\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div.tool-bar-inner.hidden-phone.span8 > div.sort > div[2] > a#ui-selectmenu-fb4958e8-button\"",
+      "\"blur\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div.tool-bar-inner.hidden-phone.span8 > div.sort > div[2] > a#ui-selectmenu-fb4958e8-button\"",
+      "\"mousedown\" bound to \"#document\"",
+      "\"focus\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div.tool-bar-inner.hidden-phone.span8 > div.sort > select.needsclick\"",
+      "\"keydown\" bound to \"body > div.ui-selectmenu-menu > ul#ui-selectmenu-fb4958e8-menu\"",
+      "\"keypress\" bound to \"body > div.ui-selectmenu-menu > ul#ui-selectmenu-fb4958e8-menu\"",
+      "\"mousedown\" bound to \"body > div.ui-selectmenu-menu > ul#ui-selectmenu-fb4958e8-menu\"",
+      "\"mouseup\" bound to \"body > div.ui-selectmenu-menu > ul#ui-selectmenu-fb4958e8-menu\"",
+      "\"mouseup\" bound to \"li\"",
+      "\"touchend\" bound to \"li\"",
+      "\"click\" bound to \"li\"",
+      "\"mouseover\" bound to \"li\"",
+      "\"focus\" bound to \"li\"",
+      "\"mouseout\" bound to \"li\"",
+      "\"blur\" bound to \"li\"",
+      "\"remove\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div#refine-actions > div.sort > select.needsclick\"",
+      "\"click\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div#refine-actions > div.sort > select.needsclick\"",
+      "\"touchend\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div#refine-actions > div.sort > div[2] > a#ui-selectmenu-f4f97a74-button\"",
+      "\"mousedown\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div#refine-actions > div.sort > div[2] > a#ui-selectmenu-f4f97a74-button\"",
+      "\"click\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div#refine-actions > div.sort > div[2] > a#ui-selectmenu-f4f97a74-button\"",
+      "\"keydown\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div#refine-actions > div.sort > div[2] > a#ui-selectmenu-f4f97a74-button\"",
+      "\"keypress\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div#refine-actions > div.sort > div[2] > a#ui-selectmenu-f4f97a74-button\"",
+      "\"mouseover\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div#refine-actions > div.sort > div[2] > a#ui-selectmenu-f4f97a74-button\"",
+      "\"focus\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div#refine-actions > div.sort > div[2] > a#ui-selectmenu-f4f97a74-button\"",
+      "\"mouseout\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div#refine-actions > div.sort > div[2] > a#ui-selectmenu-f4f97a74-button\"",
+      "\"blur\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div#refine-actions > div.sort > div[2] > a#ui-selectmenu-f4f97a74-button\"",
+      "\"focus\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div#refine-actions > div.sort > select.needsclick\"",
+      "\"keydown\" bound to \"body > div.ui-selectmenu-menu > ul#ui-selectmenu-f4f97a74-menu\"",
+      "\"keypress\" bound to \"body > div.ui-selectmenu-menu > ul#ui-selectmenu-f4f97a74-menu\"",
+      "\"mousedown\" bound to \"body > div.ui-selectmenu-menu > ul#ui-selectmenu-f4f97a74-menu\"",
+      "\"mouseup\" bound to \"body > div.ui-selectmenu-menu > ul#ui-selectmenu-f4f97a74-menu\"",
+      "\"change\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div.tool-bar-inner.hidden-phone.span8 > div.sort > select.needsclick\"",
+      "\"change\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div#refine-actions > div.sort > select.needsclick\"",
+      "\"click\" bound to \"li#min-rating-filter\"",
+      "\"mouseover\" bound to \"li#min-rating-filter\"",
+      "\"mouseout\" bound to \"li#min-rating-filter\"",
+      "\"click\" bound to \"li#category-filter\"",
+      "\"change\" bound to \"li#min-rating-filter > div.aside-body > select.needsclick\"",
+      "\"remove\" bound to \"li#max-rate-filter > div.aside-body > div.slider\"",
+      "\"mousedown\" bound to \"li#max-rate-filter > div.aside-body > div.slider\"",
+      "\"click\" bound to \"li#max-rate-filter > div.aside-body > div.slider\"",
+      "\"click\" bound to \"li#max-rate-filter > div.aside-body > div.slider.ui-slider.ui-slider-horizontal.ui-widget.ui-widget-content.ui-corner-all > a.ui-slider-handle.ui-state-default.ui-corner-all\"",
+      "\"mouseover\" bound to \"li#max-rate-filter > div.aside-body > div.slider.ui-slider.ui-slider-horizontal.ui-widget.ui-widget-content.ui-corner-all > a.ui-slider-handle.ui-state-default.ui-corner-all\"",
+      "\"mouseout\" bound to \"li#max-rate-filter > div.aside-body > div.slider.ui-slider.ui-slider-horizontal.ui-widget.ui-widget-content.ui-corner-all > a.ui-slider-handle.ui-state-default.ui-corner-all\"",
+      "\"focus\" bound to \"li#max-rate-filter > div.aside-body > div.slider.ui-slider.ui-slider-horizontal.ui-widget.ui-widget-content.ui-corner-all > a.ui-slider-handle.ui-state-default.ui-corner-all\"",
+      "\"blur\" bound to \"li#max-rate-filter > div.aside-body > div.slider.ui-slider.ui-slider-horizontal.ui-widget.ui-widget-content.ui-corner-all > a.ui-slider-handle.ui-state-default.ui-corner-all\"",
+      "\"keydown\" bound to \"li#max-rate-filter > div.aside-body > div.slider.ui-slider.ui-slider-horizontal.ui-widget.ui-widget-content.ui-corner-all > a.ui-slider-handle.ui-state-default.ui-corner-all\"",
+      "\"keyup\" bound to \"li#max-rate-filter > div.aside-body > div.slider.ui-slider.ui-slider-horizontal.ui-widget.ui-widget-content.ui-corner-all > a.ui-slider-handle.ui-state-default.ui-corner-all\"",
+      "\"scroll\" bound to \"window\"",
+      "\"mouseover\" bound to \"div#result-list\"",
+      "\"mouseout\" bound to \"div#result-list\"",
+      "\"focus\" bound to \"#document\"",
+      "\"click\" bound to \"div#result-list\"",
+      "\"unveil\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-0 > a.item-target > div.img-container > img[3]\"",
+      "\"unveil\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-1 > a.item-target > div.img-container > img[3]\"",
+      "\"unveil\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-2 > a.item-target > div.img-container > img[3]\"",
+      "\"unveil\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-3 > a.item-target > div.img-container > img[3]\"",
+      "\"unveil\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-4 > a.item-target > div.img-container > img[3]\"",
+      "\"unveil\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-5 > a.item-target > div.img-container > img[3]\"",
+      "\"unveil\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-6 > a.item-target > div.img-container > img[3]\"",
+      "\"unveil\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-7 > a.item-target > div.img-container > img[3]\"",
+      "\"unveil\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-8 > a.item-target > div.img-container > img[3]\"",
+      "\"unveil\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-9 > a.item-target > div.img-container > img[3]\"",
+      "\"unveil\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list >ul[0] > li#item-10 > a.item-target > div.img-container > img[3]\"",
+      "\"unveil\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-11 > a.item-target > div.img-container > img[3]\"",
+      "\"unveil\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-12 > a.item-target > div.img-container > img[3]\"",
+      "\"unveil\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-13 > a.item-target > div.img-container > img[3]\"",
+      "\"unveil\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-14 > a.item-target > div.img-container > img[3]\"",
+      "\"unveil\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-15 > a.item-target > div.img-container > img[3]\"",
+      "\"unveil\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-16 > a.item-target > div.img-container > img[3]\"",
+      "\"unveil\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-17 > a.item-target > div.img-container > img[3]\"",
+      "\"unveil\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-18 > a.item-target > div.img-container > img[3]\"",
+      "\"unveil\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-19 > a.item-target > div.img-container > img[3]\"",
+      "\"unveil\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-20 > a.item-target > div.img-container > img[3]\"",
+      "\"unveil\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-21 > a.item-target > div.img-container > img[3]\"",
+      "\"unveil\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-22 > a.item-target > div.img-container > img[3]\"",
+      "\"unveil\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-23 > a.item-target > div.img-container > img[3]\"",
+      "\"unveil\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-24 > a.item-target > div.img-container > img[3]\"",
+      "\"unveil\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-25 > a.item-target > div.img-container > img[3]\"",
+      "\"unveil\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-26 > a.item-target > div.img-container > img[3]\"",
+      "\"unveil\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-27 > a.item-target > div.img-container > img[3]\"",
+      "\"unveil\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-28 > a.item-target > div.img-container > img[3]\"",
+      "\"unveil\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-29 > a.item-target > div.img-container > img[3]\"",
+      "\"unveil\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-30 > a.item-target > div.img-container > img[3]\"",
+      "\"unveil\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-31 > a.item-target > div.img-container > img[3]\"",
+      "\"unveil\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-32 > a.item-target > div.img-container > img[3]\"",
+      "\"unveil\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-33 > a.item-target > div.img-container > img[3]\"",
+      "\"unveil\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-34 > a.item-target > div.img-container > img[3]\"",
+      "\"unveil\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-35 > a.item-target > div.img-container > img[3]\"",
+      "\"unveil\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-36 > a.item-target > div.img-container > img[3]\"",
+      "\"unveil\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-37 > a.item-target > div.img-container > img[3]\"",
+      "\"unveil\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-38 > a.item-target > div.img-container > img[3]\"",
+      "\"unveil\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-39 > a.item-target > div.img-container > img[3]\"",
+      "\"unveil\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-40 > a.item-target > div.img-container > img[3]\"",
+      "\"unveil\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-41 > a.item-target > div.img-container > img[3]\"",
+      "\"unveil\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-42 > a.item-target > div.img-container > img[3]\"",
+      "\"unveil\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-43 > a.item-target > div.img-container > img[3]\"",
+      "\"unveil\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-44 > a.item-target > div.img-container > img[3]\"",
+      "\"unveil\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-45 > a.item-target > div.img-container > img[3]\"",
+      "\"unveil\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-46 > a.item-target > div.img-container > img[3]\"",
+      "\"unveil\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-47 > a.item-target > div.img-container > img[3]\"",
+      "\"unveil\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-48 > a.item-target > div.img-container > img[3]\"",
+      "\"unveil\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-49 > a.item-target > div.img-container > img[3]\"",
+      "\"unveil\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-50 > a.item-target > div.img-container > img[3]\"",
+      "\"unveil\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-51 > a.item-target > div.img-container > img[3]\"",
+      "\"unveil\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-52 > a.item-target > div.img-container > img[3]\"",
+      "\"unveil\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-53 > a.item-target > div.img-container > img[3]\"",
+      "\"unveil\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-54 > a.item-target > div.img-container > img[3]\"",
+      "\"unveil\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-55 > a.item-target > div.img-container > img[3]\"",
+      "\"unveil\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-56 > a.item-target > div.img-container > img[3]\"",
+      "\"unveil\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-57 > a.item-target > div.img-container > img[3]\"",
+      "\"unveil\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-58 > a.item-target > div.img-container > img[3]\"",
+      "\"unveil\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-59 > a.item-target > div.img-container > img[3]\"",
+      "\"focus\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-2 > a.item-target > div.inclusions.inclusions-container > dl[1] > dt.inclusion_internet\"",
+      "\"blur\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-2 > a.item-target > div.inclusions.inclusions-container > dl[1] > dt.inclusion_internet\"",
+      "\"mouseover\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-2 > a.item-target > div.inclusions.inclusions-container > dl[1] > dt.inclusion_internet\"",
+      "\"mouseout\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-2 > a.item-target > div.inclusions.inclusions-container > dl[1] > dt.inclusion_internet\"",
+      "\"focus\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-5 > a.item-target > div.inclusions.inclusions-container > dl[1] > dt.inclusion_internet\"",
+      "\"blur\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-5 > a.item-target > div.inclusions.inclusions-container > dl[1] > dt.inclusion_internet\"",
+      "\"mouseover\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-5 > a.item-target > div.inclusions.inclusions-container > dl[1] > dt.inclusion_internet\"",
+      "\"mouseout\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-5 > a.item-target > div.inclusions.inclusions-container > dl[1] > dt.inclusion_internet\"",
+      "\"focus\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-13 > a.item-target > div.inclusions.inclusions-container > dl[1] > dt.inclusion_internet\"",
+      "\"blur\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-13 > a.item-target > div.inclusions.inclusions-container > dl[1] > dt.inclusion_internet\"",
+      "\"mouseover\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-13 > a.item-target > div.inclusions.inclusions-container > dl[1] > dt.inclusion_internet\"",
+      "\"mouseout\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-13 > a.item-target > div.inclusions.inclusions-container > dl[1] > dt.inclusion_internet\"",
+      "\"focus\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-18 > a.item-target > div.inclusions.inclusions-container > dl[1] > dt.inclusion_internet\"",
+      "\"blur\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-18 > a.item-target > div.inclusions.inclusions-container > dl[1] > dt.inclusion_internet\"",
+      "\"mouseover\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-18 > a.item-target > div.inclusions.inclusions-container > dl[1] > dt.inclusion_internet\"",
+      "\"mouseout\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-18 > a.item-target > div.inclusions.inclusions-container > dl[1] > dt.inclusion_internet\"",
+      "\"focus\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-21 > a.item-target > div.inclusions.inclusions-container > dl[1] > dt.inclusion_internet\"",
+      "\"blur\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-21 > a.item-target > div.inclusions.inclusions-container > dl[1] > dt.inclusion_internet\"",
+      "\"mouseover\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-21 > a.item-target > div.inclusions.inclusions-container >dl[1] > dt.inclusion_internet\"",
+      "\"mouseout\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-21 > a.item-target > div.inclusions.inclusions-container > dl[1] > dt.inclusion_internet\"",
+      "\"focus\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-30 > a.item-target > div.inclusions.inclusions-container > dl[1] > dt.inclusion_internet\"",
+      "\"blur\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-30 > a.item-target > div.inclusions.inclusions-container > dl[1] > dt.inclusion_internet\"",
+      "\"mouseover\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-30 > a.item-target > div.inclusions.inclusions-container > dl[1] > dt.inclusion_internet\"",
+      "\"mouseout\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-30 > a.item-target > div.inclusions.inclusions-container > dl[1] > dt.inclusion_internet\"",
+      "\"focus\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-31 > a.item-target > div.inclusions.inclusions-container > dl[1] > dt.inclusion_internet\"",
+      "\"blur\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-31 > a.item-target > div.inclusions.inclusions-container > dl[1] > dt.inclusion_internet\"",
+      "\"mouseover\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-31 > a.item-target > div.inclusions.inclusions-container > dl[1] > dt.inclusion_internet\"",
+      "\"mouseout\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-31 > a.item-target > div.inclusions.inclusions-container > dl[1] > dt.inclusion_internet\"",
+      "\"focus\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-37 > a.item-target > div.inclusions.inclusions-container > dl[1] > dt.inclusion_internet\"",
+      "\"blur\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-37 > a.item-target > div.inclusions.inclusions-container > dl[1] > dt.inclusion_internet\"",
+      "\"mouseover\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-37 > a.item-target > div.inclusions.inclusions-container > dl[1] > dt.inclusion_internet\"",
+      "\"mouseout\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-37 > a.item-target > div.inclusions.inclusions-container > dl[1] > dt.inclusion_internet\"",
+      "\"focus\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-43 > a.item-target > div.inclusions.inclusions-container > dl[1] > dt.inclusion_breakfast\"",
+      "\"blur\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-43 > a.item-target > div.inclusions.inclusions-container > dl[1] > dt.inclusion_breakfast\"",
+      "\"mouseover\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-43 > a.item-target > div.inclusions.inclusions-container > dl[1] > dt.inclusion_breakfast\"",
+      "\"mouseout\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-43 > a.item-target > div.inclusions.inclusions-container > dl[1] > dt.inclusion_breakfast\"",
+      "\"focus\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-43 > a.item-target > div.inclusions.inclusions-container > dl[1] > dt.inclusion_late_checkout\"",
+      "\"blur\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-43 > a.item-target > div.inclusions.inclusions-container > dl[1] > dt.inclusion_late_checkout\"",
+      "\"mouseover\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-43 > a.item-target > div.inclusions.inclusions-container > dl[1] > dt.inclusion_late_checkout\"",
+      "\"mouseout\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-43 > a.item-target > div.inclusions.inclusions-container > dl[1] > dt.inclusion_late_checkout\"",
+      "\"touchend\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div.tool-bar-inner.hidden-phone.span8 > div.sort > div[2] > a#ui-selectmenu-c27ef54e-button\"",
+      "\"mousedown\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div.tool-bar-inner.hidden-phone.span8 > div.sort > div[2] > a#ui-selectmenu-c27ef54e-button\"",
+      "\"click\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div.tool-bar-inner.hidden-phone.span8 > div.sort > div[2] > a#ui-selectmenu-c27ef54e-button\"",
+      "\"keydown\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div.tool-bar-inner.hidden-phone.span8 > div.sort > div[2] > a#ui-selectmenu-c27ef54e-button\"",
+      "\"keypress\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div.tool-bar-inner.hidden-phone.span8 > div.sort > div[2] > a#ui-selectmenu-c27ef54e-button\"",
+      "\"mouseover\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div.tool-bar-inner.hidden-phone.span8 > div.sort > div[2] > a#ui-selectmenu-c27ef54e-button\"",
+      "\"focus\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div.tool-bar-inner.hidden-phone.span8 > div.sort > div[2] > a#ui-selectmenu-c27ef54e-button\"",
+      "\"mouseout\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div.tool-bar-inner.hidden-phone.span8 > div.sort > div[2] > a#ui-selectmenu-c27ef54e-button\"",
+      "\"blur\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div.tool-bar-inner.hidden-phone.span8 > div.sort > div[2] > a#ui-selectmenu-c27ef54e-button\"",
+      "\"keydown\" bound to \"body > div.ui-selectmenu-menu > ul#ui-selectmenu-c27ef54e-menu\"",
+      "\"keypress\" bound to \"body > div.ui-selectmenu-menu > ul#ui-selectmenu-c27ef54e-menu\"",
+      "\"mousedown\" bound to \"body > div.ui-selectmenu-menu > ul#ui-selectmenu-c27ef54e-menu\"",
+      "\"mouseup\" bound to \"body > div.ui-selectmenu-menu > ul#ui-selectmenu-c27ef54e-menu\"",
+      "\"touchend\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div#refine-actions > div.sort > div[2] > a#ui-selectmenu-c21dd51-button\"",
+      "\"mousedown\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div#refine-actions > div.sort > div[2] > a#ui-selectmenu-c21dd51-button\"",
+      "\"click\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div#refine-actions > div.sort > div[2] > a#ui-selectmenu-c21dd51-button\"",
+      "\"keydown\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div#refine-actions > div.sort > div[2] > a#ui-selectmenu-c21dd51-button\"",
+      "\"keypress\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div#refine-actions > div.sort > div[2] > a#ui-selectmenu-c21dd51-button\"",
+      "\"mouseover\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div#refine-actions > div.sort > div[2] > a#ui-selectmenu-c21dd51-button\"",
+      "\"focus\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div#refine-actions > div.sort > div[2] > a#ui-selectmenu-c21dd51-button\"",
+      "\"mouseout\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div#refine-actions > div.sort > div[2] > a#ui-selectmenu-c21dd51-button\"",
+      "\"blur\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div#refine-actions > div.sort > div[2] > a#ui-selectmenu-c21dd51-button\"",
+      "\"keydown\" bound to \"body > div.ui-selectmenu-menu > ul#ui-selectmenu-c21dd51-menu\"",
+      "\"keypress\" bound to \"body > div.ui-selectmenu-menu > ul#ui-selectmenu-c21dd51-menu\"",
+      "\"mousedown\" bound to \"body > div.ui-selectmenu-menu > ul#ui-selectmenu-c21dd51-menu\"",
+      "\"mouseup\" bound to \"body > div.ui-selectmenu-menu > ul#ui-selectmenu-c21dd51-menu\"",
+      "\"touchend\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div.tool-bar-inner.hidden-phone.span8 > div.sort > div[2] > a#ui-selectmenu-b236b83d-button\"",
+      "\"mousedown\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div.tool-bar-inner.hidden-phone.span8 > div.sort > div[2] > a#ui-selectmenu-b236b83d-button\"",
+      "\"click\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div.tool-bar-inner.hidden-phone.span8 > div.sort > div[2] > a#ui-selectmenu-b236b83d-button\"",
+      "\"keydown\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div.tool-bar-inner.hidden-phone.span8 > div.sort > div[2] > a#ui-selectmenu-b236b83d-button\"",
+      "\"keypress\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div.tool-bar-inner.hidden-phone.span8 > div.sort > div[2] > a#ui-selectmenu-b236b83d-button\"",
+      "\"mouseover\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div.tool-bar-inner.hidden-phone.span8 > div.sort > div[2] > a#ui-selectmenu-b236b83d-button\"",
+      "\"focus\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div.tool-bar-inner.hidden-phone.span8 > div.sort > div[2] > a#ui-selectmenu-b236b83d-button\"",
+      "\"mouseout\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div.tool-bar-inner.hidden-phone.span8 > div.sort > div[2] > a#ui-selectmenu-b236b83d-button\"",
+      "\"blur\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div.tool-bar-inner.hidden-phone.span8 > div.sort > div[2] > a#ui-selectmenu-b236b83d-button\"",
+      "\"keydown\" bound to \"body > div.ui-selectmenu-menu > ul#ui-selectmenu-b236b83d-menu\"",
+      "\"keypress\" bound to \"body > div.ui-selectmenu-menu > ul#ui-selectmenu-b236b83d-menu\"",
+      "\"mousedown\" bound to \"body > div.ui-selectmenu-menu > ul#ui-selectmenu-b236b83d-menu\"",
+      "\"mouseup\" bound to \"body > div.ui-selectmenu-menu > ul#ui-selectmenu-b236b83d-menu\"",
+      "\"touchend\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div#refine-actions > div.sort > div[2] > a#ui-selectmenu-296d288f-button\"",
+      "\"mousedown\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div#refine-actions > div.sort > div[2] > a#ui-selectmenu-296d288f-button\"",
+      "\"click\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div#refine-actions > div.sort > div[2] > a#ui-selectmenu-296d288f-button\"",
+      "\"keydown\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div#refine-actions > div.sort > div[2] > a#ui-selectmenu-296d288f-button\"",
+      "\"keypress\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div#refine-actions > div.sort > div[2] > a#ui-selectmenu-296d288f-button\"",
+      "\"mouseover\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div#refine-actions > div.sort > div[2] > a#ui-selectmenu-296d288f-button\"",
+      "\"focus\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div#refine-actions > div.sort > div[2] > a#ui-selectmenu-296d288f-button\"",
+      "\"mouseout\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div#refine-actions > div.sort > div[2] > a#ui-selectmenu-296d288f-button\"",
+      "\"blur\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div#refine-actions > div.sort > div[2] > a#ui-selectmenu-296d288f-button\"",
+      "\"keydown\" bound to \"body > div.ui-selectmenu-menu > ul#ui-selectmenu-296d288f-menu\"",
+      "\"keypress\" bound to \"body > div.ui-selectmenu-menu > ul#ui-selectmenu-296d288f-menu\"",
+      "\"mousedown\" bound to \"body > div.ui-selectmenu-menu > ul#ui-selectmenu-296d288f-menu\"",
+      "\"mouseup\" bound to \"body > div.ui-selectmenu-menu > ul#ui-selectmenu-296d288f-menu\"",
+      "\"focus\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div.tool-bar-inner.hidden-phone.span8 > ul#dollars-to-points-toggler\"",
+      "\"blur\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div.tool-bar-inner.hidden-phone.span8 > ul#dollars-to-points-toggler\"",
+      "\"mouseover\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div.tool-bar-inner.hidden-phone.span8 > ul#dollars-to-points-toggler\"",
+      "\"mouseout\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div.tool-bar-inner.hidden-phone.span8 > ul#dollars-to-points-toggler\"",
+      "\"beforeunload\" bound to \"window\"",
+      "\"pagehide\" bound to \"window\"",
+      "\"unload\" bound to \"window\"",
+      "\"click\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div.tool-bar-inner.hidden-phone.span8 > ul#results-nav\"",
+      "\"touchend\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div.tool-bar-inner.hidden-phone.span8 > div.sort > div[2] > a#ui-selectmenu-43590458-button\"",
+      "\"mousedown\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div.tool-bar-inner.hidden-phone.span8 > div.sort > div[2] > a#ui-selectmenu-43590458-button\"",
+      "\"click\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div.tool-bar-inner.hidden-phone.span8 > div.sort > div[2] > a#ui-selectmenu-43590458-button\"",
+      "\"keydown\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div.tool-bar-inner.hidden-phone.span8 > div.sort > div[2] > a#ui-selectmenu-43590458-button\"",
+      "\"keypress\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div.tool-bar-inner.hidden-phone.span8 > div.sort > div[2] > a#ui-selectmenu-43590458-button\"",
+      "\"mouseover\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div.tool-bar-inner.hidden-phone.span8 > div.sort > div[2] > a#ui-selectmenu-43590458-button\"",
+      "\"focus\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div.tool-bar-inner.hidden-phone.span8 > div.sort > div[2] > a#ui-selectmenu-43590458-button\"",
+      "\"mouseout\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div.tool-bar-inner.hidden-phone.span8 > div.sort > div[2] > a#ui-selectmenu-43590458-button\"",
+      "\"blur\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div.tool-bar-inner.hidden-phone.span8 > div.sort > div[2] > a#ui-selectmenu-43590458-button\"",
+      "\"keydown\" bound to \"body > div.ui-selectmenu-menu > ul#ui-selectmenu-43590458-menu\"",
+      "\"keypress\" bound to \"body > div.ui-selectmenu-menu > ul#ui-selectmenu-43590458-menu\"",
+      "\"mousedown\" bound to \"body > div.ui-selectmenu-menu > ul#ui-selectmenu-43590458-menu\"",
+      "\"mouseup\" bound to \"body > div.ui-selectmenu-menu > ul#ui-selectmenu-43590458-menu\"",
+      "\"touchend\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div#refine-actions > div.sort > div[2] > a#ui-selectmenu-5dbb7559-button\"",
+      "\"mousedown\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div#refine-actions > div.sort > div[2] > a#ui-selectmenu-5dbb7559-button\"",
+      "\"click\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div#refine-actions > div.sort > div[2] > a#ui-selectmenu-5dbb7559-button\"",
+      "\"keydown\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div#refine-actions > div.sort > div[2] > a#ui-selectmenu-5dbb7559-button\"",
+      "\"keypress\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div#refine-actions > div.sort > div[2] > a#ui-selectmenu-5dbb7559-button\"",
+      "\"mouseover\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div#refine-actions > div.sort > div[2] > a#ui-selectmenu-5dbb7559-button\"",
+      "\"focus\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div#refine-actions > div.sort > div[2] > a#ui-selectmenu-5dbb7559-button\"",
+      "\"mouseout\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div#refine-actions > div.sort > div[2] > a#ui-selectmenu-5dbb7559-button\"",
+      "\"blur\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div#refine-actions > div.sort > div[2] > a#ui-selectmenu-5dbb7559-button\"",
+      "\"keydown\" bound to \"body > div.ui-selectmenu-menu > ul#ui-selectmenu-5dbb7559-menu\"",
+      "\"keypress\" bound to \"body > div.ui-selectmenu-menu > ul#ui-selectmenu-5dbb7559-menu\"",
+      "\"mousedown\" bound to \"body > div.ui-selectmenu-menu > ul#ui-selectmenu-5dbb7559-menu\"",
+      "\"mouseup\" bound to \"body > div.ui-selectmenu-menu > ul#ui-selectmenu-5dbb7559-menu\"",
+      "\"change\" bound to \"body >div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div#refine-actions > div.sort > select.needsclick\"",
+      "\"unveil\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-10 > a.item-target > div.img-container > img[3]\"",
+      "\"mouseover\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#content > div#results-container > div#results > div#result-list > ul[0] > li#item-21 > a.item-target > div.inclusions.inclusions-container > dl[1] > dt.inclusion_internet\"",
+      "\"touchend\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div.tool-bar-inner.hidden-phone.span8 > div.sort > div[2] > a#ui-selectmenu-7c0101db-button\"",
+      "\"mousedown\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div.tool-bar-inner.hidden-phone.span8 > div.sort > div[2] > a#ui-selectmenu-7c0101db-button\"",
+      "\"click\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div.tool-bar-inner.hidden-phone.span8 > div.sort > div[2] > a#ui-selectmenu-7c0101db-button\"",
+      "\"keydown\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div.tool-bar-inner.hidden-phone.span8 > div.sort > div[2] > a#ui-selectmenu-7c0101db-button\"",
+      "\"keypress\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div.tool-bar-inner.hidden-phone.span8 > div.sort > div[2] > a#ui-selectmenu-7c0101db-button\"",
+      "\"mouseover\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div.tool-bar-inner.hidden-phone.span8 > div.sort > div[2] > a#ui-selectmenu-7c0101db-button\"",
+      "\"focus\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div.tool-bar-inner.hidden-phone.span8 > div.sort > div[2] > a#ui-selectmenu-7c0101db-button\"",
+      "\"mouseout\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div.tool-bar-inner.hidden-phone.span8 > div.sort > div[2] > a#ui-selectmenu-7c0101db-button\"",
+      "\"blur\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div.tool-bar-inner.hidden-phone.span8 > div.sort > div[2] > a#ui-selectmenu-7c0101db-button\"",
+      "\"keydown\" bound to \"body > div.ui-selectmenu-menu > ul#ui-selectmenu-7c0101db-menu\"",
+      "\"keypress\" bound to \"body > div.ui-selectmenu-menu > ul#ui-selectmenu-7c0101db-menu\"",
+      "\"mousedown\" bound to \"body > div.ui-selectmenu-menu > ul#ui-selectmenu-7c0101db-menu\"",
+      "\"mouseup\" bound to \"body > div.ui-selectmenu-menu > ul#ui-selectmenu-7c0101db-menu\"",
+      "\"touchend\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div#refine-actions > div.sort > div[2] > a#ui-selectmenu-12008bf1-button\"",
+      "\"mousedown\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div#refine-actions > div.sort > div[2] > a#ui-selectmenu-12008bf1-button\"",
+      "\"click\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div#refine-actions > div.sort > div[2] > a#ui-selectmenu-12008bf1-button\"",
+      "\"keydown\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div#refine-actions > div.sort > div[2] > a#ui-selectmenu-12008bf1-button\"",
+      "\"keypress\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div#refine-actions > div.sort > div[2] > a#ui-selectmenu-12008bf1-button\"",
+      "\"mouseover\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div#refine-actions > div.sort > div[2] > a#ui-selectmenu-12008bf1-button\"",
+      "\"focus\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div#refine-actions > div.sort > div[2] > a#ui-selectmenu-12008bf1-button\"",
+      "\"mouseout\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div#refine-actions > div.sort > div[2] > a#ui-selectmenu-12008bf1-button\"",
+      "\"blur\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div#refine-actions > div.sort > div[2] > a#ui-selectmenu-12008bf1-button\"",
+      "\"keydown\" bound to \"body > div.ui-selectmenu-menu > ul#ui-selectmenu-12008bf1-menu\"",
+      "\"keypress\" bound to \"body > div.ui-selectmenu-menu > ul#ui-selectmenu-12008bf1-menu\"",
+      "\"mousedown\" bound to \"body > div.ui-selectmenu-menu > ul#ui-selectmenu-12008bf1-menu\"",
+      "\"mouseup\" bound to \"body > div.ui-selectmenu-menu > ul#ui-selectmenu-12008bf1-menu\"",
+      "\"touchend\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div.tool-bar-inner.hidden-phone.span8 > div.sort > div[2] > a#ui-selectmenu-f5e2ddda-button\"",
+      "\"mousedown\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div.tool-bar-inner.hidden-phone.span8 > div.sort > div[2] > a#ui-selectmenu-f5e2ddda-button\"",
+      "\"click\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div.tool-bar-inner.hidden-phone.span8 > div.sort > div[2] > a#ui-selectmenu-f5e2ddda-button\"",
+      "\"keydown\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div.tool-bar-inner.hidden-phone.span8 > div.sort > div[2] > a#ui-selectmenu-f5e2ddda-button\"",
+      "\"keypress\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div.tool-bar-inner.hidden-phone.span8 > div.sort > div[2] > a#ui-selectmenu-f5e2ddda-button\"",
+      "\"mouseover\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div.tool-bar-inner.hidden-phone.span8 > div.sort > div[2] > a#ui-selectmenu-f5e2ddda-button\"",
+      "\"focus\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div.tool-bar-inner.hidden-phone.span8 > div.sort > div[2] > a#ui-selectmenu-f5e2ddda-button\"",
+      "\"mouseout\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div.tool-bar-inner.hidden-phone.span8 > div.sort > div[2] > a#ui-selectmenu-f5e2ddda-button\"",
+      "\"blur\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div.tool-bar-inner.hidden-phone.span8 > div.sort > div[2] > a#ui-selectmenu-f5e2ddda-button\"",
+      "\"keydown\" bound to \"body > div.ui-selectmenu-menu > ul#ui-selectmenu-f5e2ddda-menu\"",
+      "\"keypress\" bound to \"body > div.ui-selectmenu-menu > ul#ui-selectmenu-f5e2ddda-menu\"",
+      "\"mousedown\" bound to \"body > div.ui-selectmenu-menu > ul#ui-selectmenu-f5e2ddda-menu\"",
+      "\"mouseup\" bound to \"body > div.ui-selectmenu-menu > ul#ui-selectmenu-f5e2ddda-menu\"",
+      "\"touchend\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div#refine-actions > div.sort > div[2] > a#ui-selectmenu-7722b518-button\"",
+      "\"mousedown\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div#refine-actions > div.sort > div[2] > a#ui-selectmenu-7722b518-button\"",
+      "\"click\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div#refine-actions > div.sort > div[2] > a#ui-selectmenu-7722b518-button\"",
+      "\"keydown\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div#refine-actions > div.sort > div[2] > a#ui-selectmenu-7722b518-button\"",
+      "\"keypress\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div#refine-actions > div.sort > div[2] > a#ui-selectmenu-7722b518-button\"",
+      "\"mouseover\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div#refine-actions > div.sort > div[2] > a#ui-selectmenu-7722b518-button\"",
+      "\"focus\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div#refine-actions > div.sort > div[2] > a#ui-selectmenu-7722b518-button\"",
+      "\"mouseout\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div#refine-actions > div.sort > div[2] > a#ui-selectmenu-7722b518-button\"",
+      "\"blur\" bound to \"body > div.main-container.allow-toggle-points > div#main > div#tool-bar-container > div#tool-bar > div#refine-actions > div.sort > div[2] > a#ui-selectmenu-7722b518-button\"",
+      "\"keydown\" bound to \"body > div.ui-selectmenu-menu > ul#ui-selectmenu-7722b518-menu\"",
+      "\"keypress\" bound to \"body > div.ui-selectmenu-menu > ul#ui-selectmenu-7722b518-menu\"",
+      "\"mousedown\" bound to \"body > div.ui-selectmenu-menu > ul#ui-selectmenu-7722b518-menu\"",
+      "\"mouseup\" bound to \"body > div.ui-selectmenu-menu > ul#ui-selectmenu-7722b518-menu\""
+    ],
+    "globalVariables": [
+      "Mustache",
+      "handlebars",
+      "wax",
+      "w",
+      "Hammer",
+      "XDate",
+      "functionType",
+      "FastClick",
+      "html",
+      "Handlebars",
+      "html4",
+      "html_sanitize",
+      "jQuery",
+      "NREUM",
+      "__nr_require",
+      "domReadyStarted",
+      "head",
+      "$",
+      "toString",
+      "_",
+      "Backbone",
+      "Spinner",
+      "Hooroo",
+      "DP_jQuery_1412057292594",
+      "L",
+      "reqwest",
+      "Newco",
+      "_gaq",
+      "PerformanceTracker",
+      "requestAnimFrame",
+      "accounting",
+      "dataLayer",
+      "jQuery17106455874831881374",
+      "searchResultsCollection_XYZ",
+      "_gat",
+      "gaGlobal",
+      "google_tag_manager",
+      "DP_jQuery_1412057292379",
+      "jQuery17109831871432252228"
+    ],
+    "headersBiggerThanContent": [
+      "http://d3kgudgg5o30mx.cloudfront.net/k/images/001/875/058/size270x140.jpg?1382325766 (body: 0.24 kB / headers: 0.31 kB)",
+      "http://d19xv8kiylvduv.cloudfront.net/k/images/001/869/383/size270x140.jpg?1372981297 (body: 0.24 kB / headers: 0.31 kB)",
+      "http://d19xv8kiylvduv.cloudfront.net/k/images/007/910/879/size270x140.jpg?1409538536 (body: 0.24 kB / headers: 0.31 kB)",
+      "http://d19xv8kiylvduv.cloudfront.net/k/images/001/860/599/size270x140.jpg?1369967247 (body: 0.24 kB / headers: 0.30 kB)",
+      "http://d19xv8kiylvduv.cloudfront.net/k/images/001/860/371/size270x140.jpg?1369373537 (body: 0.24 kB / headers: 0.30 kB)",
+      "http://d3kgudgg5o30mx.cloudfront.net/k/images/007/910/896/size270x140.jpg?1409543406 (body: 0.24 kB / headers: 0.30 kB)",
+      "http://www.google-analytics.com/__utm.gif?utmwv=5.5.8&utms=1&utmn=1674106693&utmhn=qantas.staging.jqdev.net&utme=8(Logged%20In%20Status)9(LoggedIn%3Afalse)&utmcs=UTF-8&utmsr=1280x800&utmvp=2560x2048&utmsc=32-bit&utmul=en-au&utmje=0&utmfl=-&utmdt=Search%20results%20for%20Melbourne%20CBD%2C%20VIC%2C%20Australia%20%7C%20Qantas%20hotels&utmhid=171606536&utmr=-&utmp=%2Fsearch%2Flist%3Fadults%3D2%26checkIn%3D2014-09-30%26checkOut%3D2014-10-01%26location%3DMelbourne%2BCBD%25252C%2BVIC%25252C%2BAustralia&utmht=1412057294996&utmac=UA-32359880-2&utmcc=__utma%3D119070729.901737647.1412057295.1412057295.1412057295.1%3B%2B__utmz%3D119070729.1412057295.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&utmu=qxC~ (body: 0.03 kB / headers: 0.35 kB)",
+      "http://d3kgudgg5o30mx.cloudfront.net/k/images/004/296/226/size270x140.jpg?1394143680 (body: 0.24 kB / headers: 0.31 kB)",
+      "http://www.google-analytics.com/__utm.gif?utmwv=5.5.8&utms=1&utmn=1379986978&utmhn=qantas.staging.jqdev.net&utme=8(Logged%20In%20Status)9(LoggedIn%3Afalse)&utmcs=UTF-8&utmsr=1280x800&utmvp=1280x1024&utmsc=32-bit&utmul=en-au&utmje=0&utmfl=-&utmdt=Search%20results%20for%20Melbourne%20CBD%2C%20VIC%2C%20Australia%20%7C%20Qantas%20hotels&utmhid=605476612&utmr=-&utmp=%2Fsearch%2Flist%3Fadults%3D2%26checkIn%3D2014-09-30%26checkOut%3D2014-10-01%26location%3DMelbourne%2BCBD%25252C%2BVIC%25252C%2BAustralia&utmht=1412057293702&utmac=UA-32359880-2&utmcc=__utma%3D119070729.1632047851.1412057294.1412057294.1412057294.1%3B%2B__utmz%3D119070729.1412057294.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&utmu=qxC~ (body: 0.03 kB / headers: 0.35 kB)"
+    ],
+    "jsErrors": [
+      "TypeError: 'undefined' is not an object (evaluating 'n.type') - r(): http://js-agent.newrelic.com/nr-460.min.js @ 1 / t(): http://js-agent.newrelic.com/nr-460.min.js @ 1 / unknown fn: http://js-agent.newrelic.com/nr-460.min.js @ 1 / unknown fn: http://js-agent.newrelic.com/nr-460.min.js @ 1 / r(): http://js-agent.newrelic.com/nr-460.min.js @ 1 / unknown fn: http://js-agent.newrelic.com/nr-460.min.js @ 1 / unknown fn: http://js-agent.newrelic.com/nr-460.min.js @ 1"
+    ],
+    "assetsNotGzipped": [
+      "http://www.google-analytics.com/ga.js (JS)",
+      "http://www.googletagmanager.com/gtm.js?id=GTM-794X (JS)"
+    ],
+    "assetsWithQueryString": [
+      "http://www.googletagmanager.com/gtm.js?id=GTM-794X (JS)",
+      "http://d19xv8kiylvduv.cloudfront.net/k/images/000/032/365/size270x140.jpg?1334123347 (IMAGE)",
+      "http://d3kgudgg5o30mx.cloudfront.net/k/images/000/025/542/size270x140.jpg?1327470284 (IMAGE)",
+      "http://d19xv8kiylvduv.cloudfront.net/k/images/000/015/547/size270x140.jpg?1326511069 (IMAGE)",
+      "http://d19xv8kiylvduv.cloudfront.net/k/images/000/027/945/size270x140.jpg?1329718149 (IMAGE)",
+      "http://d3kgudgg5o30mx.cloudfront.net/k/images/000/003/030/size270x140.jpg?1326462739 (IMAGE)",
+      "http://d3kgudgg5o30mx.cloudfront.net/k/images/000/011/524/size270x140.jpg?1326494467 (IMAGE)",
+      "http://d3kgudgg5o30mx.cloudfront.net/k/images/000/058/512/size270x140.jpg?1351549775 (IMAGE)",
+      "http://d3kgudgg5o30mx.cloudfront.net/k/images/000/025/494/size270x140.jpg?1327457134 (IMAGE)",
+      "http://d3kgudgg5o30mx.cloudfront.net/k/images/000/033/724/size270x140.jpg?1335829670 (IMAGE)",
+      "http://d3kgudgg5o30mx.cloudfront.net/k/images/000/037/820/size270x140.jpg?1337308787 (IMAGE)",
+      "http://d3kgudgg5o30mx.cloudfront.net/k/images/000/025/564/size270x140.jpg?1327476374 (IMAGE)",
+      "http://d19xv8kiylvduv.cloudfront.net/k/images/000/003/065/size270x140.jpg?1326462945 (IMAGE)",
+      "http://d3kgudgg5o30mx.cloudfront.net/k/images/000/048/182/size270x140.jpg?1343113015 (IMAGE)",
+      "http://d3kgudgg5o30mx.cloudfront.net/k/images/000/023/734/size270x140.jpg?1326547586 (IMAGE)",
+      "http://d3kgudgg5o30mx.cloudfront.net/k/images/000/017/800/size270x140.jpg?1326521188 (IMAGE)",
+      "http://www.iceportal.com/brochures/media/show.aspx?brochureid=ICE37144&did=3073&mtype=3073&type=pic&lang=en&publicid=6698777&resizing=X (IMAGE)"
+    ],
+    "assetsWithCookies": [
+      "http://www.iceportal.com/brochures/media/show.aspx?brochureid=ICE37144&did=3073&mtype=3073&type=pic&lang=en&publicid=6698777&resizing=X (IMAGE)"
+    ],
+    "smallImages": [
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/skin/qantas/drop-down-arrow-8057d97d93209fcab975807f426718e4.png (1.08 kB)",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/skin/qantas/star-rating-delete-a7672de4aae35309636a25ec5dd33a96.png (1.36 kB)",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/skin/qantas/star-rating-e4660b01f001c50cccfa7315c01da388.png (1.81 kB)",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/skin/qantas/stars-self-rated-73ce29fa7648655698f342a692b11e58.png (1.15 kB)",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/skin/qantas/sash-start-e62959fce5e49abf8b38b9ee2ffcae05.png (1.07 kB)",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/skin/qantas/sash-bg-cb2882c0af823a932f318b18df966076.png (0.94 kB)",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/skin/qantas/sash-end-c4ea7547c668df4319db3ac61ac02e25.png (1.33 kB)",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/skin/qantas/stars-865fa858bf8802d2a2e47d1d6ae59c33.png (1.24 kB)",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/skin/qantas/tick-66b6d492b061ebf0714f4c78b256f450.png (1.06 kB)"
+    ],
+    "timeToFirstCss": [
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/skin/qantas/new-forms-3c25bf9d9d73e9214c03604741894fa2.css received in 587 ms",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/skin/qantas/new-forms-3c25bf9d9d73e9214c03604741894fa2.css received in 399 ms"
+    ],
+    "timeToFirstJs": [
+      "http://d34z65866jidvd.cloudfront.net/assets/jquery-87ecc5add5d4fa9721dfa0f2b0745919.js received in 800 ms",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/vendor_widget-b311fe3721617491da0bf1a998dcf9d9.js received in 490 ms"
+    ],
+    "timeToFirstImage": [
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/skin/qantas/spritemap/common-s590b409b51-2467ea33373362161fbd444dfb8e3a9e.png received in 2828 ms",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/skin/qantas/logo-28e6e24ee4cb9a41443677e75f135851.png received in 1590 ms"
+    ],
+    "smallestResponse": [
+      "http://www.google-analytics.com/__utm.gif?utmwv=5.5.8&utms=1&utmn=1674106693&utmhn=qantas.staging.jqdev.net&utme=8(Logged%20In%20Status)9(LoggedIn%3Afalse)&utmcs=UTF-8&utmsr=1280x800&utmvp=2560x2048&utmsc=32-bit&utmul=en-au&utmje=0&utmfl=-&utmdt=Search%20results%20for%20Melbourne%20CBD%2C%20VIC%2C%20Australia%20%7C%20Qantas%20hotels&utmhid=171606536&utmr=-&utmp=%2Fsearch%2Flist%3Fadults%3D2%26checkIn%3D2014-09-30%26checkOut%3D2014-10-01%26location%3DMelbourne%2BCBD%25252C%2BVIC%25252C%2BAustralia&utmht=1412057294996&utmac=UA-32359880-2&utmcc=__utma%3D119070729.901737647.1412057295.1412057295.1412057295.1%3B%2B__utmz%3D119070729.1412057295.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&utmu=qxC~ (0.03 kB)",
+      "http://www.google-analytics.com/__utm.gif?utmwv=5.5.8&utms=1&utmn=1379986978&utmhn=qantas.staging.jqdev.net&utme=8(Logged%20In%20Status)9(LoggedIn%3Afalse)&utmcs=UTF-8&utmsr=1280x800&utmvp=1280x1024&utmsc=32-bit&utmul=en-au&utmje=0&utmfl=-&utmdt=Search%20results%20for%20Melbourne%20CBD%2C%20VIC%2C%20Australia%20%7C%20Qantas%20hotels&utmhid=605476612&utmr=-&utmp=%2Fsearch%2Flist%3Fadults%3D2%26checkIn%3D2014-09-30%26checkOut%3D2014-10-01%26location%3DMelbourne%2BCBD%25252C%2BVIC%25252C%2BAustralia&utmht=1412057293702&utmac=UA-32359880-2&utmcc=__utma%3D119070729.1632047851.1412057294.1412057294.1412057294.1%3B%2B__utmz%3D119070729.1412057294.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&utmu=qxC~ (0.03 kB)"
+    ],
+    "biggestResponse": [
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/skin/qantas/common_vendor-14540a9b9cf587e526db5afe512492a0.css (134.90 kB)",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/skin/qantas/common_vendor-14540a9b9cf587e526db5afe512492a0.css (141.25 kB)"
+    ],
+    "fastestResponse": [
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/skin/qantas/tick-66b6d492b061ebf0714f4c78b256f450.png (57 ms)",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/skin/qantas/tick-66b6d492b061ebf0714f4c78b256f450.png (32 ms)"
+    ],
+    "slowestResponse": [
+      "http://www.iceportal.com/brochures/media/show.aspx?brochureid=ICE37144&did=3073&mtype=3073&type=pic&lang=en&publicid=6698777&resizing=X (1819 ms)",
+      "http://www.googletagmanager.com/gtm.js?id=GTM-794X (1240 ms)"
+    ],
+    "smallestLatency": [
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/skin/qantas/spritemap/common-s590b409b51-2467ea33373362161fbd444dfb8e3a9e.png (55 ms)",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/skin/qantas/tick-66b6d492b061ebf0714f4c78b256f450.png (32 ms)"
+    ],
+    "biggestLatency": [
+      "http://www.iceportal.com/brochures/media/show.aspx?brochureid=ICE37144&did=3073&mtype=3073&type=pic&lang=en&publicid=6698777&resizing=X (1819 ms)",
+      "http://d34z65866jidvd.cloudfront.net/assets/consumer/skin/qantas/drop-down-arrow-8057d97d93209fcab975807f426718e4.png (884 ms)"
+    ]
+  }
+}
