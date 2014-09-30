@@ -4,19 +4,18 @@ block content
   .l-wrapper
     .l-paneInput
       h1.c-title #{title}
-      p.c-description Style Stats
 
       ul.c-tabs#js-tabs
         li.c-tabs-s-item.is-active.js-tab-uri(data-mode='qantas')
           a.block(href="#qantas") Qantas
         li.c-tabs-s-item.js-tab-uri(data-mode='jetstar')
-          a.block(href="#jetstar") File Upload
+          a.block(href="#jetstar") Jetstar
         li.c-tabs-s-item.js-tab-uri(data-mode='hooroo')
           a.block(href="#hooroo") Hooroo
 
       .u-mbm
         button.c-button#js-parse
-          span#js-text Parse
+          span#js-text Get
 
     .l-paneOutput#js-view
 
